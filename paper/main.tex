@@ -7,6 +7,11 @@
 % =====================================================================
 \documentclass{article}
 
+% Two builds come out of this file, and they differ only in the line below.
+%   \usepackage{tmlr}             anonymous -- what TMLR's portal takes
+%   \usepackage[preprint]{tmlr}   named     -- what Zenodo and arXiv take
+% submissions/tmlr/ holds the first, submissions/zenodo/ the second. Rebuilding one
+% without switching the flag back overwrites the other with the wrong author block.
 \usepackage{tmlr}
 \usepackage{amsmath,amssymb}
 \usepackage{booktabs}
