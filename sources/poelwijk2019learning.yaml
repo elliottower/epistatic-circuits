@@ -1,0 +1,23 @@
+citation: poelwijk2019learning
+depth: quoted
+title: Learning the Pattern of Epistasis Linking Genotype and Phenotype in a Protein
+authors:
+- Poelwijk, Frank J.
+- Socolich, Michael
+- Ranganathan, Rama
+year: '2019'
+venue: Nature Communications
+doi: 10.1038/s41467-019-12130-8
+quotes:
+- text: energy
+  locator: sec_background.tex:43
+  verified: false
+attributed_claims:
+- claim: 'The decomposition is reference-free: unlike pairwise epistasis measured against a single wildtype,
+    each Walsh coefficient averages the relevant interaction over all possible backgrounds, eliminating
+    dependence on an arbitrary reference state~[CITE].'
+  locator: sec_background.tex:36
+- claim: The Walsh--Hadamard transform already averages interaction coefficients over all 2^n head coalitions
+    rather than anchoring to a single reference state~[CITE] --- the standard approach for removing dependence
+    on an arbitrary baseline.
+  locator: sec_weight_geometry.tex:80

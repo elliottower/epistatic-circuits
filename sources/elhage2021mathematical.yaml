@@ -1,0 +1,54 @@
+citation: elhage2021mathematical
+depth: cited
+title: A Mathematical Framework for Transformer Circuits
+authors:
+- Elhage, Nelson
+- Nanda, Neel
+- Olsson, Catherine
+- Henighan, Tom
+- Joseph, Nicholas
+- Mann, Ben
+- Askell, Amanda
+- Bai, Yuntao
+- Chen, Anna
+- Conerly, Tom
+- DasSarma, Nova
+- Drain, Dawn
+- Ganguli, Deep
+- Hatfield-Dodds, Zac
+- Hernandez, Danny
+- Jones, Andy
+- Kernion, Jackson
+- Lovitt, Liane
+- Ndousse, Kamal
+- Amodei, Dario
+- Brown, Tom
+- Clark, Jack
+- Kaplan, Jared
+- McCandlish, Sam
+- Olah, Chris
+year: '2021'
+venue: Transformer Circuits Thread
+url: https://transformer-circuits.pub/2021/framework/index.html
+attributed_claims:
+- claim: 'Three results emerge from benchmarking discovery methods against this ground truth: enumerate
+    \item Weight geometry predicts nothing. OV composition, QK composition, and layer distance --- the
+    standard weight-space features from [CITE] --- carry no cross-validated predictive power for pairwise
+    interaction coefficients (Section~sec:weight-geometry).'
+  locator: sec_introduction.tex:52
+- claim: If epistasis were a weight-level property, OV composition scores~[CITE] would predict pairwise
+    Walsh coefficients, and coalition sweeps would be an expensive way to recover structure already present
+    in the weight matrices.
+  locator: sec_weight_geometry.tex:18
+- claim: 'Features and evaluation. Four predictors were computed from the LayerNorm-folded effective weights
+    of GPT-2 small: OV subspace overlap (Frobenius cosine similarity of W_OV matrices), Q-composition
+    and K-composition scores~[CITE], and layer distance.'
+  locator: sec_weight_geometry.tex:23
+- claim: If epistasis were a weight-level property, OV composition scores~[CITE] would predict pairwise
+    Walsh coefficients, and coalition sweeps would be an expensive way to recover structure already present
+    in the weight matrices.
+  locator: sec_weight_geometry_v1.tex:18
+- claim: 'Features and evaluation. Four predictors were computed from the LayerNorm-folded effective weights
+    of GPT-2 small: OV subspace overlap (Frobenius cosine similarity of W_OV matrices), Q-composition
+    and K-composition scores~[CITE], and layer distance.'
+  locator: sec_weight_geometry_v1.tex:23

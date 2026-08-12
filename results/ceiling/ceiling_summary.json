@@ -1,0 +1,15 @@
+{
+ "n_comparisons": 8,
+ "ceiling_linear_r2": {
+  "median": 0.21001574081338692,
+  "min": 0.005522403619107944,
+  "max": 0.8262756764907
+ },
+ "sign_agreement": {
+  "median": 0.7119047619047618,
+  "min": 0.580952380952381,
+  "max": 1.0
+ },
+ "p4_threshold": 0.3,
+ "n_comparisons_with_ceiling_below_p4_threshold": 5
+}

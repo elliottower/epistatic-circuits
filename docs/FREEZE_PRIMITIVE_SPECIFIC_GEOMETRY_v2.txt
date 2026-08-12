@@ -1,0 +1,18 @@
+# FREEZE v2 — primitive-specific geometry, after amendments A1-A3
+
+The v1 run completed and was deleted unread. Amendments recorded before any
+result was inspected. FREEZE v1 retained below as the superseded record.
+
+## SHA-256 (v2)
+
+f52f78383129e430eed2ee649f34efc0312657a5a0e8cb1b48a202c0c8cba14a  docs/PREREG_PRIMITIVE_SPECIFIC_GEOMETRY.md
+    was: 2b7e6e38cdf457b6292130520431c09b575c3b6881bb84d7aabc9229aa6bb1cb
+8323c4b6a596a61b4a4e2fb288c4f49135726034db83a0401186feeeb443e124  scripts/modal_primitive_specific_geometry.py
+    was: c4329ab79d3512239c6894b9e6488b7ae94b6818d58b23af40433cab66ae558e
+
+git HEAD: 98199221c4c6894b4fd3cb46e39a2098c7c46556
+frozen (UTC): 2026-08-07T11:55:15Z
+
+A1 leave-both-heads-out replaces first-head GroupKFold (leak measured at ~0.04 R2)
+A2 cluster bootstrap keeps pairs only when both endpoints survive resampling
+A3 value_key and n_prompts recorded; arms disagreeing on either are excluded from P1

@@ -1,0 +1,2042 @@
+[
+ {
+  "task": "gt",
+  "circuit_heads": [
+   [
+    5,
+    5
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    9,
+    1
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    0,
+    10
+   ],
+   [
+    8,
+    5
+   ],
+   [
+    10,
+    2
+   ]
+  ],
+  "primitive": "zero",
+  "n_heads": 7,
+  "n_pairs": 21,
+  "n_evaluable_pairs": 21,
+  "value_key": "prob_diff",
+  "n_prompts": 1000,
+  "confirmatory": false,
+  "selection_bias_arm": false,
+  "prompt_matched": true,
+  "insample_r2_full": 0.0122,
+  "insample_r2_layer_dist_only": 0.0004,
+  "cv_r2_full": -0.6596,
+  "cv_r2_layer_dist_only": -0.1269,
+  "geometry_increment": -0.5328,
+  "jk_ci95_lo": null,
+  "jk_ci95_hi": null,
+  "spearman_ov_abs_w": -0.0935,
+  "split_half_reliability": 0.9998,
+  "filename": "gt_c5_walsh_zero_coalition_values.npz"
+ },
+ {
+  "task": "gt",
+  "circuit_heads": [
+   [
+    5,
+    5
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    9,
+    1
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    0,
+    10
+   ],
+   [
+    8,
+    5
+   ],
+   [
+    10,
+    2
+   ]
+  ],
+  "primitive": "mean",
+  "n_heads": 7,
+  "n_pairs": 21,
+  "n_evaluable_pairs": 21,
+  "value_key": "prob_diff",
+  "n_prompts": 1000,
+  "confirmatory": false,
+  "selection_bias_arm": false,
+  "prompt_matched": true,
+  "insample_r2_full": 0.1191,
+  "insample_r2_layer_dist_only": 0.027,
+  "cv_r2_full": -1.3581,
+  "cv_r2_layer_dist_only": -0.8182,
+  "geometry_increment": -0.5399,
+  "jk_ci95_lo": null,
+  "jk_ci95_hi": null,
+  "spearman_ov_abs_w": 0.0442,
+  "split_half_reliability": 0.9997,
+  "filename": "gt_c5_walsh_mean_coalition_values.npz"
+ },
+ {
+  "task": "gt",
+  "circuit_heads": [
+   [
+    5,
+    5
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    9,
+    1
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    0,
+    10
+   ],
+   [
+    8,
+    5
+   ],
+   [
+    10,
+    2
+   ]
+  ],
+  "primitive": "resample",
+  "n_heads": 7,
+  "n_pairs": 21,
+  "n_evaluable_pairs": 21,
+  "value_key": "prob_diff",
+  "n_prompts": 1000,
+  "confirmatory": false,
+  "selection_bias_arm": false,
+  "prompt_matched": true,
+  "insample_r2_full": 0.3195,
+  "insample_r2_layer_dist_only": 0.1469,
+  "cv_r2_full": -2.4241,
+  "cv_r2_layer_dist_only": -1.1916,
+  "geometry_increment": -1.2325,
+  "jk_ci95_lo": null,
+  "jk_ci95_hi": null,
+  "spearman_ov_abs_w": 0.4623,
+  "split_half_reliability": 0.9999,
+  "filename": "gt_c5_walsh_resample_coalition_values.npz"
+ },
+ {
+  "task": "gt",
+  "circuit_heads": [
+   [
+    5,
+    5
+   ],
+   [
+    0,
+    10
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    9,
+    1
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    6,
+    9
+   ]
+  ],
+  "primitive": "zero",
+  "n_heads": 7,
+  "n_pairs": 21,
+  "n_evaluable_pairs": 21,
+  "value_key": "prob_diff",
+  "n_prompts": 1000,
+  "confirmatory": false,
+  "selection_bias_arm": false,
+  "prompt_matched": true,
+  "insample_r2_full": 0.3347,
+  "insample_r2_layer_dist_only": 0.0048,
+  "cv_r2_full": -1.0377,
+  "cv_r2_layer_dist_only": -0.48,
+  "geometry_increment": -0.5578,
+  "jk_ci95_lo": null,
+  "jk_ci95_hi": null,
+  "spearman_ov_abs_w": 0.3961,
+  "split_half_reliability": 0.9997,
+  "filename": "gt_c6_epistatic_zero_coalition_values.npz"
+ },
+ {
+  "task": "gt",
+  "circuit_heads": [
+   [
+    5,
+    5
+   ],
+   [
+    0,
+    10
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    9,
+    1
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    6,
+    9
+   ]
+  ],
+  "primitive": "mean",
+  "n_heads": 7,
+  "n_pairs": 21,
+  "n_evaluable_pairs": 21,
+  "value_key": "prob_diff",
+  "n_prompts": 1000,
+  "confirmatory": false,
+  "selection_bias_arm": false,
+  "prompt_matched": true,
+  "insample_r2_full": 0.4176,
+  "insample_r2_layer_dist_only": 0.132,
+  "cv_r2_full": -3.7252,
+  "cv_r2_layer_dist_only": -0.1352,
+  "geometry_increment": -3.59,
+  "jk_ci95_lo": null,
+  "jk_ci95_hi": null,
+  "spearman_ov_abs_w": 0.4351,
+  "split_half_reliability": 0.9997,
+  "filename": "gt_c6_epistatic_mean_coalition_values.npz"
+ },
+ {
+  "task": "gt",
+  "circuit_heads": [
+   [
+    5,
+    5
+   ],
+   [
+    0,
+    10
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    9,
+    1
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    6,
+    9
+   ]
+  ],
+  "primitive": "resample",
+  "n_heads": 7,
+  "n_pairs": 21,
+  "n_evaluable_pairs": 21,
+  "value_key": "prob_diff",
+  "n_prompts": 1000,
+  "confirmatory": false,
+  "selection_bias_arm": false,
+  "prompt_matched": true,
+  "insample_r2_full": 0.633,
+  "insample_r2_layer_dist_only": 0.1861,
+  "cv_r2_full": -8.5061,
+  "cv_r2_layer_dist_only": -0.7129,
+  "geometry_increment": -7.7931,
+  "jk_ci95_lo": null,
+  "jk_ci95_hi": null,
+  "spearman_ov_abs_w": 0.1312,
+  "split_half_reliability": 1.0,
+  "filename": "gt_c6_epistatic_resample_coalition_values.npz"
+ },
+ {
+  "task": "gt",
+  "circuit_heads": [
+   [
+    5,
+    1
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    8,
+    8
+   ],
+   [
+    8,
+    11
+   ],
+   [
+    9,
+    1
+   ]
+  ],
+  "primitive": "zero",
+  "n_heads": 7,
+  "n_pairs": 21,
+  "n_evaluable_pairs": 21,
+  "value_key": "prob_diff",
+  "n_prompts": 1000,
+  "confirmatory": false,
+  "selection_bias_arm": false,
+  "prompt_matched": true,
+  "insample_r2_full": 0.3495,
+  "insample_r2_layer_dist_only": 0.0688,
+  "cv_r2_full": -1.96,
+  "cv_r2_layer_dist_only": -0.5199,
+  "geometry_increment": -1.4402,
+  "jk_ci95_lo": null,
+  "jk_ci95_hi": null,
+  "spearman_ov_abs_w": 0.3675,
+  "split_half_reliability": 0.9995,
+  "filename": "gt_known_zero_coalition_values.npz"
+ },
+ {
+  "task": "gt",
+  "circuit_heads": [
+   [
+    5,
+    1
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    8,
+    8
+   ],
+   [
+    8,
+    11
+   ],
+   [
+    9,
+    1
+   ]
+  ],
+  "primitive": "mean",
+  "n_heads": 7,
+  "n_pairs": 21,
+  "n_evaluable_pairs": 21,
+  "value_key": "prob_diff",
+  "n_prompts": 1000,
+  "confirmatory": false,
+  "selection_bias_arm": false,
+  "prompt_matched": true,
+  "insample_r2_full": 0.3753,
+  "insample_r2_layer_dist_only": 0.1971,
+  "cv_r2_full": -2.2704,
+  "cv_r2_layer_dist_only": -0.8423,
+  "geometry_increment": -1.4281,
+  "jk_ci95_lo": null,
+  "jk_ci95_hi": null,
+  "spearman_ov_abs_w": 0.3831,
+  "split_half_reliability": 0.9997,
+  "filename": "gt_known_mean_coalition_values.npz"
+ },
+ {
+  "task": "gt",
+  "circuit_heads": [
+   [
+    5,
+    1
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    8,
+    8
+   ],
+   [
+    8,
+    11
+   ],
+   [
+    9,
+    1
+   ]
+  ],
+  "primitive": "resample",
+  "n_heads": 7,
+  "n_pairs": 21,
+  "n_evaluable_pairs": 21,
+  "value_key": "prob_diff",
+  "n_prompts": 1000,
+  "confirmatory": false,
+  "selection_bias_arm": false,
+  "prompt_matched": true,
+  "insample_r2_full": 0.4193,
+  "insample_r2_layer_dist_only": 0.0018,
+  "cv_r2_full": -1.2586,
+  "cv_r2_layer_dist_only": -0.6691,
+  "geometry_increment": -0.5895,
+  "jk_ci95_lo": null,
+  "jk_ci95_hi": null,
+  "spearman_ov_abs_w": 0.6234,
+  "split_half_reliability": 0.9952,
+  "filename": "gt_known_resample_coalition_values.npz"
+ },
+ {
+  "task": "gt",
+  "circuit_heads": [
+   [
+    0,
+    6
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    2,
+    11
+   ],
+   [
+    4,
+    9
+   ],
+   [
+    5,
+    2
+   ],
+   [
+    5,
+    10
+   ]
+  ],
+  "primitive": "zero",
+  "n_heads": 7,
+  "n_pairs": 21,
+  "n_evaluable_pairs": 21,
+  "value_key": "prob_diff",
+  "n_prompts": 1000,
+  "confirmatory": false,
+  "selection_bias_arm": false,
+  "prompt_matched": true,
+  "insample_r2_full": 0.4406,
+  "insample_r2_layer_dist_only": 0.1012,
+  "cv_r2_full": -4.0756,
+  "cv_r2_layer_dist_only": -0.7679,
+  "geometry_increment": -3.3077,
+  "jk_ci95_lo": null,
+  "jk_ci95_hi": null,
+  "spearman_ov_abs_w": -0.0273,
+  "split_half_reliability": 0.9964,
+  "filename": "gt_random_zero_coalition_values.npz"
+ },
+ {
+  "task": "gt",
+  "circuit_heads": [
+   [
+    0,
+    6
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    2,
+    11
+   ],
+   [
+    4,
+    9
+   ],
+   [
+    5,
+    2
+   ],
+   [
+    5,
+    10
+   ]
+  ],
+  "primitive": "mean",
+  "n_heads": 7,
+  "n_pairs": 21,
+  "n_evaluable_pairs": 21,
+  "value_key": "prob_diff",
+  "n_prompts": 1000,
+  "confirmatory": false,
+  "selection_bias_arm": false,
+  "prompt_matched": true,
+  "insample_r2_full": 0.3388,
+  "insample_r2_layer_dist_only": 0.1104,
+  "cv_r2_full": -4.344,
+  "cv_r2_layer_dist_only": -0.4967,
+  "geometry_increment": -3.8472,
+  "jk_ci95_lo": null,
+  "jk_ci95_hi": null,
+  "spearman_ov_abs_w": 0.2013,
+  "split_half_reliability": 0.9962,
+  "filename": "gt_random_mean_coalition_values.npz"
+ },
+ {
+  "task": "gt",
+  "circuit_heads": [
+   [
+    0,
+    6
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    2,
+    11
+   ],
+   [
+    4,
+    9
+   ],
+   [
+    5,
+    2
+   ],
+   [
+    5,
+    10
+   ]
+  ],
+  "primitive": "resample",
+  "n_heads": 7,
+  "n_pairs": 21,
+  "n_evaluable_pairs": 21,
+  "value_key": "prob_diff",
+  "n_prompts": 1000,
+  "confirmatory": false,
+  "selection_bias_arm": false,
+  "prompt_matched": true,
+  "insample_r2_full": 0.1281,
+  "insample_r2_layer_dist_only": 0.0335,
+  "cv_r2_full": -4.8639,
+  "cv_r2_layer_dist_only": -0.7981,
+  "geometry_increment": -4.0658,
+  "jk_ci95_lo": null,
+  "jk_ci95_hi": null,
+  "spearman_ov_abs_w": 0.1701,
+  "split_half_reliability": 0.9952,
+  "filename": "gt_random_resample_coalition_values.npz"
+ },
+ {
+  "task": "gt",
+  "circuit_heads": [
+   [
+    0,
+    10
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    5,
+    8
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    8,
+    5
+   ],
+   [
+    9,
+    1
+   ]
+  ],
+  "primitive": "zero",
+  "n_heads": 7,
+  "n_pairs": 21,
+  "n_evaluable_pairs": 21,
+  "value_key": "prob_diff",
+  "n_prompts": 1000,
+  "confirmatory": false,
+  "selection_bias_arm": false,
+  "prompt_matched": true,
+  "insample_r2_full": 0.0622,
+  "insample_r2_layer_dist_only": 0.0103,
+  "cv_r2_full": -0.3445,
+  "cv_r2_layer_dist_only": -0.2846,
+  "geometry_increment": -0.0599,
+  "jk_ci95_lo": null,
+  "jk_ci95_hi": null,
+  "spearman_ov_abs_w": 0.2351,
+  "split_half_reliability": 0.9999,
+  "filename": "gt_ablation_discovered_zero_coalition_values.npz"
+ },
+ {
+  "task": "gt",
+  "circuit_heads": [
+   [
+    0,
+    10
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    5,
+    8
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    8,
+    5
+   ],
+   [
+    9,
+    1
+   ]
+  ],
+  "primitive": "mean",
+  "n_heads": 7,
+  "n_pairs": 21,
+  "n_evaluable_pairs": 21,
+  "value_key": "prob_diff",
+  "n_prompts": 1000,
+  "confirmatory": false,
+  "selection_bias_arm": false,
+  "prompt_matched": true,
+  "insample_r2_full": 0.1306,
+  "insample_r2_layer_dist_only": 0.0162,
+  "cv_r2_full": -0.6809,
+  "cv_r2_layer_dist_only": -0.1767,
+  "geometry_increment": -0.5041,
+  "jk_ci95_lo": null,
+  "jk_ci95_hi": null,
+  "spearman_ov_abs_w": 0.287,
+  "split_half_reliability": 0.9996,
+  "filename": "gt_ablation_discovered_mean_coalition_values.npz"
+ },
+ {
+  "task": "gt",
+  "circuit_heads": [
+   [
+    0,
+    10
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    5,
+    8
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    8,
+    5
+   ],
+   [
+    9,
+    1
+   ]
+  ],
+  "primitive": "resample",
+  "n_heads": 7,
+  "n_pairs": 21,
+  "n_evaluable_pairs": 21,
+  "value_key": "prob_diff",
+  "n_prompts": 1000,
+  "confirmatory": false,
+  "selection_bias_arm": false,
+  "prompt_matched": true,
+  "insample_r2_full": 0.3644,
+  "insample_r2_layer_dist_only": 0.1297,
+  "cv_r2_full": -1.881,
+  "cv_r2_layer_dist_only": -1.1297,
+  "geometry_increment": -0.7513,
+  "jk_ci95_lo": null,
+  "jk_ci95_hi": null,
+  "spearman_ov_abs_w": 0.4143,
+  "split_half_reliability": 1.0,
+  "filename": "gt_greedy_sufficiency_resample_coalition_values.npz"
+ },
+ {
+  "task": "ioi",
+  "circuit_heads": [
+   [
+    5,
+    5
+   ],
+   [
+    8,
+    6
+   ],
+   [
+    11,
+    10
+   ],
+   [
+    10,
+    7
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    0,
+    10
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    10,
+    0
+   ],
+   [
+    5,
+    9
+   ],
+   [
+    8,
+    10
+   ],
+   [
+    11,
+    2
+   ],
+   [
+    9,
+    9
+   ],
+   [
+    0,
+    9
+   ],
+   [
+    7,
+    9
+   ],
+   [
+    4,
+    0
+   ]
+  ],
+  "primitive": "zero",
+  "n_heads": 15,
+  "n_pairs": 105,
+  "n_evaluable_pairs": 105,
+  "value_key": "target_minus_foil",
+  "n_prompts": 512,
+  "confirmatory": true,
+  "selection_bias_arm": false,
+  "prompt_matched": true,
+  "insample_r2_full": 0.2348,
+  "insample_r2_layer_dist_only": 0.0138,
+  "cv_r2_full": -0.3564,
+  "cv_r2_layer_dist_only": -0.0548,
+  "geometry_increment": -0.3016,
+  "jk_ci95_lo": -1.3208,
+  "jk_ci95_hi": 0.4582,
+  "spearman_ov_abs_w": 0.2256,
+  "split_half_reliability": 0.9856,
+  "filename": "c6_zero_v2_coalition_values.npz"
+ },
+ {
+  "task": "ioi",
+  "circuit_heads": [
+   [
+    5,
+    5
+   ],
+   [
+    8,
+    6
+   ],
+   [
+    11,
+    10
+   ],
+   [
+    10,
+    7
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    0,
+    10
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    10,
+    0
+   ],
+   [
+    5,
+    9
+   ],
+   [
+    8,
+    10
+   ],
+   [
+    11,
+    2
+   ],
+   [
+    9,
+    9
+   ],
+   [
+    0,
+    9
+   ],
+   [
+    7,
+    9
+   ],
+   [
+    4,
+    0
+   ]
+  ],
+  "primitive": "mean",
+  "n_heads": 15,
+  "n_pairs": 105,
+  "n_evaluable_pairs": 105,
+  "value_key": "target_minus_foil",
+  "n_prompts": 512,
+  "confirmatory": true,
+  "selection_bias_arm": true,
+  "prompt_matched": true,
+  "insample_r2_full": 0.1191,
+  "insample_r2_layer_dist_only": 0.0126,
+  "cv_r2_full": -0.0007,
+  "cv_r2_layer_dist_only": -0.051,
+  "geometry_increment": 0.0503,
+  "jk_ci95_lo": 0.0819,
+  "jk_ci95_hi": 0.6666,
+  "spearman_ov_abs_w": 0.2375,
+  "split_half_reliability": 0.964,
+  "filename": "c6_mean_v2_coalition_values.npz"
+ },
+ {
+  "task": "ioi",
+  "circuit_heads": [
+   [
+    5,
+    5
+   ],
+   [
+    8,
+    6
+   ],
+   [
+    11,
+    10
+   ],
+   [
+    10,
+    7
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    0,
+    10
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    10,
+    0
+   ],
+   [
+    5,
+    9
+   ],
+   [
+    8,
+    10
+   ],
+   [
+    11,
+    2
+   ],
+   [
+    9,
+    9
+   ],
+   [
+    0,
+    9
+   ],
+   [
+    7,
+    9
+   ],
+   [
+    4,
+    0
+   ]
+  ],
+  "primitive": "resample",
+  "n_heads": 15,
+  "n_pairs": 105,
+  "n_evaluable_pairs": 105,
+  "value_key": "logit_diff",
+  "n_prompts": 512,
+  "confirmatory": true,
+  "selection_bias_arm": false,
+  "prompt_matched": true,
+  "insample_r2_full": 0.1581,
+  "insample_r2_layer_dist_only": 0.0075,
+  "cv_r2_full": -0.1343,
+  "cv_r2_layer_dist_only": -0.0384,
+  "geometry_increment": -0.096,
+  "jk_ci95_lo": 0.055,
+  "jk_ci95_hi": 1.1358,
+  "spearman_ov_abs_w": 0.1949,
+  "split_half_reliability": 0.9661,
+  "filename": "ioi_C6_epistatic_resample_coalition_values.npz"
+ },
+ {
+  "task": "rti",
+  "circuit_heads": [
+   [
+    0,
+    9
+   ],
+   [
+    11,
+    2
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    10,
+    6
+   ],
+   [
+    7,
+    9
+   ],
+   [
+    10,
+    7
+   ],
+   [
+    9,
+    9
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    2,
+    11
+   ],
+   [
+    8,
+    7
+   ],
+   [
+    1,
+    5
+   ],
+   [
+    11,
+    10
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    6,
+    11
+   ]
+  ],
+  "primitive": "zero",
+  "n_heads": 15,
+  "n_pairs": 105,
+  "n_evaluable_pairs": 105,
+  "value_key": "logit_diff",
+  "n_prompts": 302,
+  "confirmatory": true,
+  "selection_bias_arm": false,
+  "prompt_matched": false,
+  "insample_r2_full": 0.1014,
+  "insample_r2_layer_dist_only": 0.0236,
+  "cv_r2_full": -0.0628,
+  "cv_r2_layer_dist_only": -0.0823,
+  "geometry_increment": 0.0195,
+  "jk_ci95_lo": -0.1753,
+  "jk_ci95_hi": 1.0399,
+  "spearman_ov_abs_w": 0.1861,
+  "split_half_reliability": 0.9261,
+  "filename": "rti_c5_walsh_zero_coalition_values.npz"
+ },
+ {
+  "task": "rti",
+  "circuit_heads": [
+   [
+    0,
+    9
+   ],
+   [
+    11,
+    2
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    10,
+    6
+   ],
+   [
+    7,
+    9
+   ],
+   [
+    10,
+    7
+   ],
+   [
+    9,
+    9
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    2,
+    11
+   ],
+   [
+    8,
+    7
+   ],
+   [
+    1,
+    5
+   ],
+   [
+    11,
+    10
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    6,
+    11
+   ]
+  ],
+  "primitive": "mean",
+  "n_heads": 15,
+  "n_pairs": 105,
+  "n_evaluable_pairs": 105,
+  "value_key": "logit_diff",
+  "n_prompts": 302,
+  "confirmatory": true,
+  "selection_bias_arm": false,
+  "prompt_matched": false,
+  "insample_r2_full": 0.0598,
+  "insample_r2_layer_dist_only": 0.0001,
+  "cv_r2_full": -0.0006,
+  "cv_r2_layer_dist_only": -0.0194,
+  "geometry_increment": 0.0188,
+  "jk_ci95_lo": 0.0353,
+  "jk_ci95_hi": 1.4721,
+  "spearman_ov_abs_w": 0.2989,
+  "split_half_reliability": 0.9802,
+  "filename": "rti_c5_walsh_mean_coalition_values.npz"
+ },
+ {
+  "task": "rti",
+  "circuit_heads": [
+   [
+    0,
+    9
+   ],
+   [
+    11,
+    2
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    10,
+    6
+   ],
+   [
+    7,
+    9
+   ],
+   [
+    10,
+    7
+   ],
+   [
+    9,
+    9
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    2,
+    11
+   ],
+   [
+    8,
+    7
+   ],
+   [
+    1,
+    5
+   ],
+   [
+    11,
+    10
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    6,
+    11
+   ]
+  ],
+  "primitive": "resample",
+  "n_heads": 15,
+  "n_pairs": 105,
+  "n_evaluable_pairs": 105,
+  "value_key": "logit_diff",
+  "n_prompts": 512,
+  "confirmatory": true,
+  "selection_bias_arm": false,
+  "prompt_matched": false,
+  "insample_r2_full": 0.1336,
+  "insample_r2_layer_dist_only": 0.0046,
+  "cv_r2_full": -0.2026,
+  "cv_r2_layer_dist_only": -0.021,
+  "geometry_increment": -0.1816,
+  "jk_ci95_lo": -0.5422,
+  "jk_ci95_hi": 1.739,
+  "spearman_ov_abs_w": 0.1724,
+  "split_half_reliability": 0.9709,
+  "filename": "rti_C5_walsh_resample_coalition_values.npz"
+ },
+ {
+  "task": "rti",
+  "circuit_heads": [
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    10
+   ],
+   [
+    5,
+    9
+   ],
+   [
+    0,
+    8
+   ],
+   [
+    0,
+    6
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    10
+   ],
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    4,
+    7
+   ],
+   [
+    2,
+    0
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    2,
+    8
+   ]
+  ],
+  "primitive": "zero",
+  "n_heads": 15,
+  "n_pairs": 105,
+  "n_evaluable_pairs": 105,
+  "value_key": "target_minus_foil",
+  "n_prompts": 302,
+  "confirmatory": true,
+  "selection_bias_arm": false,
+  "prompt_matched": false,
+  "insample_r2_full": 0.0332,
+  "insample_r2_layer_dist_only": 0.0005,
+  "cv_r2_full": -0.2586,
+  "cv_r2_layer_dist_only": -0.0416,
+  "geometry_increment": -0.2171,
+  "jk_ci95_lo": -0.8216,
+  "jk_ci95_hi": 0.6418,
+  "spearman_ov_abs_w": 0.3956,
+  "split_half_reliability": 0.9702,
+  "filename": "EAP_rti_zero_rti_v5_coalition_values.npz"
+ },
+ {
+  "task": "rti",
+  "circuit_heads": [
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    10
+   ],
+   [
+    5,
+    9
+   ],
+   [
+    0,
+    8
+   ],
+   [
+    0,
+    6
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    10
+   ],
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    4,
+    7
+   ],
+   [
+    2,
+    0
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    2,
+    8
+   ]
+  ],
+  "primitive": "mean",
+  "n_heads": 15,
+  "n_pairs": 105,
+  "n_evaluable_pairs": 105,
+  "value_key": "target_minus_foil",
+  "n_prompts": 302,
+  "confirmatory": true,
+  "selection_bias_arm": false,
+  "prompt_matched": false,
+  "insample_r2_full": 0.0533,
+  "insample_r2_layer_dist_only": 0.0184,
+  "cv_r2_full": -0.202,
+  "cv_r2_layer_dist_only": -0.089,
+  "geometry_increment": -0.113,
+  "jk_ci95_lo": -0.1535,
+  "jk_ci95_hi": 1.3362,
+  "spearman_ov_abs_w": 0.1246,
+  "split_half_reliability": 0.9833,
+  "filename": "EAP_rti_mean_rti_v5_coalition_values.npz"
+ },
+ {
+  "task": "rti",
+  "circuit_heads": [
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    10
+   ],
+   [
+    5,
+    9
+   ],
+   [
+    0,
+    8
+   ],
+   [
+    0,
+    6
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    10
+   ],
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    4,
+    7
+   ],
+   [
+    2,
+    0
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    2,
+    8
+   ]
+  ],
+  "primitive": "resample",
+  "n_heads": 15,
+  "n_pairs": 105,
+  "n_evaluable_pairs": 105,
+  "value_key": "logit_diff",
+  "n_prompts": 512,
+  "confirmatory": true,
+  "selection_bias_arm": false,
+  "prompt_matched": false,
+  "insample_r2_full": 0.0634,
+  "insample_r2_layer_dist_only": 0.0342,
+  "cv_r2_full": -0.1998,
+  "cv_r2_layer_dist_only": -0.0982,
+  "geometry_increment": -0.1016,
+  "jk_ci95_lo": -0.2496,
+  "jk_ci95_hi": 1.3795,
+  "spearman_ov_abs_w": 0.1169,
+  "split_half_reliability": 0.9168,
+  "filename": "rti_EAP_resample_coalition_values.npz"
+ },
+ {
+  "task": "rti",
+  "circuit_heads": [
+   [
+    0,
+    8
+   ],
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    11
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    5,
+    7
+   ],
+   [
+    7,
+    0
+   ],
+   [
+    8,
+    4
+   ],
+   [
+    8,
+    7
+   ],
+   [
+    9,
+    3
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    11,
+    9
+   ],
+   [
+    11,
+    11
+   ]
+  ],
+  "primitive": "zero",
+  "n_heads": 15,
+  "n_pairs": 105,
+  "n_evaluable_pairs": 105,
+  "value_key": "target_minus_foil",
+  "n_prompts": 302,
+  "confirmatory": true,
+  "selection_bias_arm": false,
+  "prompt_matched": false,
+  "insample_r2_full": 0.0035,
+  "insample_r2_layer_dist_only": 0.0002,
+  "cv_r2_full": -0.1202,
+  "cv_r2_layer_dist_only": 0.0089,
+  "geometry_increment": -0.129,
+  "jk_ci95_lo": -0.5877,
+  "jk_ci95_hi": 1.7313,
+  "spearman_ov_abs_w": 0.2127,
+  "split_half_reliability": 0.8901,
+  "filename": "RTI_zero_rti_v5_coalition_values.npz"
+ },
+ {
+  "task": "rti",
+  "circuit_heads": [
+   [
+    0,
+    8
+   ],
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    11
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    5,
+    7
+   ],
+   [
+    7,
+    0
+   ],
+   [
+    8,
+    4
+   ],
+   [
+    8,
+    7
+   ],
+   [
+    9,
+    3
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    11,
+    9
+   ],
+   [
+    11,
+    11
+   ]
+  ],
+  "primitive": "mean",
+  "n_heads": 15,
+  "n_pairs": 105,
+  "n_evaluable_pairs": 105,
+  "value_key": "target_minus_foil",
+  "n_prompts": 302,
+  "confirmatory": true,
+  "selection_bias_arm": false,
+  "prompt_matched": false,
+  "insample_r2_full": 0.1325,
+  "insample_r2_layer_dist_only": 0.0389,
+  "cv_r2_full": -0.5054,
+  "cv_r2_layer_dist_only": -0.0265,
+  "geometry_increment": -0.4789,
+  "jk_ci95_lo": -1.6849,
+  "jk_ci95_hi": 2.5586,
+  "spearman_ov_abs_w": 0.3244,
+  "split_half_reliability": 0.9567,
+  "filename": "RTI_mean_rti_v5_coalition_values.npz"
+ },
+ {
+  "task": "rti",
+  "circuit_heads": [
+   [
+    0,
+    8
+   ],
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    11
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    5,
+    7
+   ],
+   [
+    7,
+    0
+   ],
+   [
+    8,
+    4
+   ],
+   [
+    8,
+    7
+   ],
+   [
+    9,
+    3
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    11,
+    9
+   ],
+   [
+    11,
+    11
+   ]
+  ],
+  "primitive": "resample",
+  "n_heads": 15,
+  "n_pairs": 105,
+  "n_evaluable_pairs": 105,
+  "value_key": "logit_diff",
+  "n_prompts": 512,
+  "confirmatory": true,
+  "selection_bias_arm": false,
+  "prompt_matched": false,
+  "insample_r2_full": 0.1282,
+  "insample_r2_layer_dist_only": 0.0362,
+  "cv_r2_full": -0.5108,
+  "cv_r2_layer_dist_only": -0.0331,
+  "geometry_increment": -0.4777,
+  "jk_ci95_lo": -2.6226,
+  "jk_ci95_hi": 3.7083,
+  "spearman_ov_abs_w": 0.2771,
+  "split_half_reliability": 0.9669,
+  "filename": "rti_known_resample_coalition_values.npz"
+ },
+ {
+  "task": "rti",
+  "circuit_heads": [
+   [
+    0,
+    3
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    3,
+    8
+   ],
+   [
+    3,
+    9
+   ],
+   [
+    3,
+    10
+   ],
+   [
+    4,
+    8
+   ],
+   [
+    6,
+    5
+   ],
+   [
+    6,
+    10
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    8,
+    1
+   ],
+   [
+    8,
+    8
+   ],
+   [
+    8,
+    11
+   ],
+   [
+    9,
+    4
+   ],
+   [
+    10,
+    8
+   ]
+  ],
+  "primitive": "zero",
+  "n_heads": 15,
+  "n_pairs": 105,
+  "n_evaluable_pairs": 105,
+  "value_key": "target_minus_foil",
+  "n_prompts": 302,
+  "confirmatory": true,
+  "selection_bias_arm": false,
+  "prompt_matched": false,
+  "insample_r2_full": 0.0733,
+  "insample_r2_layer_dist_only": 0.0259,
+  "cv_r2_full": -0.1413,
+  "cv_r2_layer_dist_only": -0.0476,
+  "geometry_increment": -0.0938,
+  "jk_ci95_lo": -0.4426,
+  "jk_ci95_hi": 0.5273,
+  "spearman_ov_abs_w": 0.2014,
+  "split_half_reliability": 0.947,
+  "filename": "C4_random_zero_rti_v5_coalition_values.npz"
+ },
+ {
+  "task": "rti",
+  "circuit_heads": [
+   [
+    0,
+    3
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    3,
+    8
+   ],
+   [
+    3,
+    9
+   ],
+   [
+    3,
+    10
+   ],
+   [
+    4,
+    8
+   ],
+   [
+    6,
+    5
+   ],
+   [
+    6,
+    10
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    8,
+    1
+   ],
+   [
+    8,
+    8
+   ],
+   [
+    8,
+    11
+   ],
+   [
+    9,
+    4
+   ],
+   [
+    10,
+    8
+   ]
+  ],
+  "primitive": "mean",
+  "n_heads": 15,
+  "n_pairs": 105,
+  "n_evaluable_pairs": 105,
+  "value_key": "target_minus_foil",
+  "n_prompts": 302,
+  "confirmatory": true,
+  "selection_bias_arm": false,
+  "prompt_matched": false,
+  "insample_r2_full": 0.0217,
+  "insample_r2_layer_dist_only": 0.0001,
+  "cv_r2_full": -0.0871,
+  "cv_r2_layer_dist_only": -0.0505,
+  "geometry_increment": -0.0366,
+  "jk_ci95_lo": -0.0104,
+  "jk_ci95_hi": 0.6028,
+  "spearman_ov_abs_w": 0.2067,
+  "split_half_reliability": 0.951,
+  "filename": "C4_random_mean_rti_v5_coalition_values.npz"
+ },
+ {
+  "task": "rti",
+  "circuit_heads": [
+   [
+    0,
+    3
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    3,
+    8
+   ],
+   [
+    3,
+    9
+   ],
+   [
+    3,
+    10
+   ],
+   [
+    4,
+    8
+   ],
+   [
+    6,
+    5
+   ],
+   [
+    6,
+    10
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    8,
+    1
+   ],
+   [
+    8,
+    8
+   ],
+   [
+    8,
+    11
+   ],
+   [
+    9,
+    4
+   ],
+   [
+    10,
+    8
+   ]
+  ],
+  "primitive": "resample",
+  "n_heads": 15,
+  "n_pairs": 105,
+  "n_evaluable_pairs": 105,
+  "value_key": "logit_diff",
+  "n_prompts": 512,
+  "confirmatory": true,
+  "selection_bias_arm": false,
+  "prompt_matched": false,
+  "insample_r2_full": 0.0304,
+  "insample_r2_layer_dist_only": 0.0073,
+  "cv_r2_full": -0.0261,
+  "cv_r2_layer_dist_only": -0.0235,
+  "geometry_increment": -0.0026,
+  "jk_ci95_lo": 0.0528,
+  "jk_ci95_hi": 0.3143,
+  "spearman_ov_abs_w": 0.1394,
+  "split_half_reliability": 0.6694,
+  "filename": "rti_random_resample_coalition_values.npz"
+ }
+]

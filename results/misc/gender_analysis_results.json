@@ -1,0 +1,284 @@
+{
+  "known_zero": {
+    "circuit": "known",
+    "ablation": "zero",
+    "task": "gendered_pronoun",
+    "n_players": 5,
+    "n_prompts": 986,
+    "heads": [
+      "L0H10",
+      "L3H0",
+      "L5H8",
+      "L6H6",
+      "L8H6"
+    ],
+    "intact_logit_diff": 0.880921,
+    "empty_logit_diff": 0.675767,
+    "faithfulness": 0.205154,
+    "wht_energy_spectrum": [
+      0.994991,
+      0.004956,
+      5.3e-05,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "wht_energy_nc_frac": [
+      0.989399,
+      0.010524,
+      7.7e-05,
+      1e-06,
+      0.0
+    ],
+    "order1_frac": 0.9894,
+    "order2_frac": 0.0105,
+    "order3plus_frac": 0.0001,
+    "per_head_energy": {
+      "L0H10": 0.00265,
+      "L3H0": 0.000802,
+      "L5H8": 0.001427,
+      "L6H6": 0.000181,
+      "L8H6": 1e-06
+    },
+    "epistasis_point": 0.213,
+    "epistasis_ci_lo": 0.1737,
+    "epistasis_ci_hi": 0.2527,
+    "group_effect": 0.205154,
+    "loo_sum": 0.161454
+  },
+  "known_mean": {
+    "circuit": "known",
+    "ablation": "mean",
+    "task": "gendered_pronoun",
+    "n_players": 5,
+    "n_prompts": 986,
+    "heads": [
+      "L0H10",
+      "L3H0",
+      "L5H8",
+      "L6H6",
+      "L8H6"
+    ],
+    "intact_logit_diff": 0.880921,
+    "empty_logit_diff": 0.906323,
+    "faithfulness": -0.025402,
+    "wht_energy_spectrum": [
+      0.999812,
+      0.000188,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "wht_energy_nc_frac": [
+      0.99941,
+      0.00059,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "order1_frac": 0.9994,
+    "order2_frac": 0.0006,
+    "order3plus_frac": 0.0,
+    "per_head_energy": {
+      "L0H10": 7.8e-05,
+      "L3H0": 2.8e-05,
+      "L5H8": 1e-06,
+      "L6H6": 8.1e-05,
+      "L8H6": 0.0
+    },
+    "epistasis_point": -0.0749,
+    "epistasis_ci_lo": -0.107,
+    "epistasis_ci_hi": -0.0534,
+    "group_effect": -0.025402,
+    "loo_sum": -0.027304
+  },
+  "ablation_discovered_zero": {
+    "circuit": "ablation_discovered",
+    "ablation": "zero",
+    "task": "gendered_pronoun",
+    "n_players": 5,
+    "n_prompts": 986,
+    "heads": [
+      "L4H3",
+      "L6H0",
+      "L7H3",
+      "L9H7",
+      "L10H9"
+    ],
+    "intact_logit_diff": 0.880921,
+    "empty_logit_diff": 0.350364,
+    "faithfulness": 0.530558,
+    "wht_energy_spectrum": [
+      0.92362,
+      0.073835,
+      0.002517,
+      2.7e-05,
+      0.0,
+      0.0
+    ],
+    "wht_energy_nc_frac": [
+      0.966689,
+      0.032959,
+      0.00035,
+      2e-06,
+      0.0
+    ],
+    "order1_frac": 0.9667,
+    "order2_frac": 0.033,
+    "order3plus_frac": 0.0004,
+    "per_head_energy": {
+      "L4H3": 0.004914,
+      "L6H0": 0.003811,
+      "L7H3": 0.003049,
+      "L9H7": 0.023941,
+      "L10H9": 0.043236
+    },
+    "epistasis_point": 0.0507,
+    "epistasis_ci_lo": 0.0282,
+    "epistasis_ci_hi": 0.073,
+    "group_effect": 0.530558,
+    "loo_sum": 0.503671
+  },
+  "ablation_discovered_mean": {
+    "circuit": "ablation_discovered",
+    "ablation": "mean",
+    "task": "gendered_pronoun",
+    "n_players": 5,
+    "n_prompts": 986,
+    "heads": [
+      "L4H3",
+      "L6H0",
+      "L7H3",
+      "L9H7",
+      "L10H9"
+    ],
+    "intact_logit_diff": 0.880921,
+    "empty_logit_diff": 0.271083,
+    "faithfulness": 0.609838,
+    "wht_energy_spectrum": [
+      0.892627,
+      0.105527,
+      0.001833,
+      1.2e-05,
+      0.0,
+      0.0
+    ],
+    "wht_energy_nc_frac": [
+      0.982813,
+      0.017073,
+      0.000114,
+      0.0,
+      0.0
+    ],
+    "order1_frac": 0.9828,
+    "order2_frac": 0.0171,
+    "order3plus_frac": 0.0001,
+    "per_head_energy": {
+      "L4H3": 0.008175,
+      "L6H0": 0.003914,
+      "L7H3": 0.001847,
+      "L9H7": 0.031071,
+      "L10H9": 0.064224
+    },
+    "epistasis_point": -0.1221,
+    "epistasis_ci_lo": -0.1422,
+    "epistasis_ci_hi": -0.1021,
+    "group_effect": 0.609838,
+    "loo_sum": 0.684304
+  },
+  "random_zero": {
+    "circuit": "random",
+    "ablation": "zero",
+    "task": "gendered_pronoun",
+    "n_players": 5,
+    "n_prompts": 986,
+    "heads": [
+      "L0H6",
+      "L2H4",
+      "L4H9",
+      "L5H2",
+      "L5H10"
+    ],
+    "intact_logit_diff": 0.880921,
+    "empty_logit_diff": 0.89926,
+    "faithfulness": -0.018338,
+    "wht_energy_spectrum": [
+      0.999721,
+      0.000271,
+      8e-06,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "wht_energy_nc_frac": [
+      0.97095,
+      0.028893,
+      0.000153,
+      5e-06,
+      0.0
+    ],
+    "order1_frac": 0.9709,
+    "order2_frac": 0.0289,
+    "order3plus_frac": 0.0002,
+    "per_head_energy": {
+      "L0H6": 0.000201,
+      "L2H4": 3.2e-05,
+      "L4H9": 3.6e-05,
+      "L5H2": 2e-06,
+      "L5H10": 1.6e-05
+    },
+    "epistasis_point": 0.7477,
+    "epistasis_ci_lo": -3.2028,
+    "epistasis_ci_hi": 5.1803,
+    "group_effect": -0.018338,
+    "loo_sum": -0.004627
+  },
+  "random_mean": {
+    "circuit": "random",
+    "ablation": "mean",
+    "task": "gendered_pronoun",
+    "n_players": 5,
+    "n_prompts": 986,
+    "heads": [
+      "L0H6",
+      "L2H4",
+      "L4H9",
+      "L5H2",
+      "L5H10"
+    ],
+    "intact_logit_diff": 0.880921,
+    "empty_logit_diff": 0.831497,
+    "faithfulness": 0.049425,
+    "wht_energy_spectrum": [
+      0.999639,
+      0.00036,
+      1e-06,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "wht_energy_nc_frac": [
+      0.997164,
+      0.002761,
+      7.5e-05,
+      0.0,
+      0.0
+    ],
+    "order1_frac": 0.9972,
+    "order2_frac": 0.0028,
+    "order3plus_frac": 0.0001,
+    "per_head_energy": {
+      "L0H6": 0.0,
+      "L2H4": 1.7e-05,
+      "L4H9": 4e-06,
+      "L5H2": 2.6e-05,
+      "L5H10": 0.000315
+    },
+    "epistasis_point": 0.0829,
+    "epistasis_ci_lo": 0.0344,
+    "epistasis_ci_hi": 0.1406,
+    "group_effect": 0.049425,
+    "loo_sum": 0.045325
+  }
+}

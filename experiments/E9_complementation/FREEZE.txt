@@ -1,0 +1,17 @@
+PREREG v13 FREEZE
+frozen_at_utc: 2026-08-06T06:15:08Z
+prereg_sha256: 1f915bbc275249e44562fdca68925ca03002973a9d9208f17ef6223b21220582
+repo_head: 612f9b1d1bf65c703c43c7e6ac39fae2b24ee905
+repo_dirty: 41 files
+data_sha256: 861c1799d19af5419a1f57eeff348407a3e6606e66bf9d7348875f58903b9558
+data_bytes: 268844928
+role_labels_sha256: 09a9fa4c4040b2c427f475e3b67208216e641d32037c1a18eed663c18beedf7b
+
+Attestation: no order-2 Walsh coefficient from the above NPZ has been
+computed or inspected prior to this timestamp. Only array shapes and
+metadata key names were read.
+
+AMENDED 2026-08-06T06:28:52Z
+amended_prereg_sha256: e258d59291f4763eec2d50aad368c5d934f10744397ce11a52aed390e30c1eab
+fresh_data_sha256: e6bc023e54b11e2b4a0b6c550dc839309ef233708f92a417a176ea4ce9f005e6
+Attestation: amendments A1-A3 recorded before any Walsh coefficient computed.

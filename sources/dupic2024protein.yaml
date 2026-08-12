@@ -1,0 +1,15 @@
+citation: dupic2024protein
+depth: cited
+title: 'Protein Sequence Landscapes Are Not So Simple: On Reference-Free Versus Reference-Based Inference'
+authors:
+- Dupic, Thomas
+- Phillips, Angela M.
+- Desai, Michael M.
+year: '2024'
+venue: bioRxiv
+doi: 10.1101/2024.01.29.577800
+attributed_claims:
+- claim: 'Quantitative genetics faces the same problem when measuring interactions between mutations:
+    different loss-of-function assays yield different interaction estimates, and an active dispute over
+    whether reference-free methods reduce or merely relabel higher-order structure remains unresolved~[CITE].'
+  locator: sec_weight_geometry.tex:0

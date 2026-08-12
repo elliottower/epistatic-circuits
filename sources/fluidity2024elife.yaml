@@ -1,0 +1,17 @@
+citation: fluidity2024elife
+depth: cited
+title: Fluidity and Predictability of Epistasis on an Intragenic Fitness Landscape
+authors:
+- Baheti, Sarvesh
+- Raj, Namratha
+- Saini, Supreet
+year: '2024'
+venue: eLife
+doi: 10.7554/eLife.104848
+attributed_claims:
+- claim: This parallels the situation in quantitative genetics, where different loss-of-function assays
+    yield different interaction estimates~[CITE].
+  locator: sec_discussion.tex:76
+- claim: Our 39\% sign-flip rate is comparable to rates observed in protein fitness landscapes, where
+    \sim35\% of mutation pairs change interaction type depending on the measurement method~[CITE].
+  locator: sec_weight_geometry.tex:0

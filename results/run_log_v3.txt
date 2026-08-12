@@ -1,0 +1,54 @@
+[0s] Loading GPT-2 with fold_ln=True
+[16s] Weight matrices extracted for 12L x 12H
+[17s] Scanning volumes for NPZ files
+  SKIP rti_c6_epistatic_mean_coalition_values.npz: incomplete 2048/32768
+[33s] Found 35 valid NPZ files
+[34s] 16 unique (task, headset) groups
+  PROMPT-MISMATCH rti/15h ['mean', 'resample', 'zero']: prompts [302, 512] — included with flag
+  PROMPT-MISMATCH rti/15h ['mean', 'resample', 'zero']: prompts [302, 512] — included with flag
+  PROMPT-MISMATCH rti/15h ['mean', 'resample', 'zero']: prompts [302, 512] — included with flag
+  PROMPT-MISMATCH rti/15h ['mean', 'resample', 'zero']: prompts [302, 512] — included with flag
+[43s] 10 comparable groups with >= 2 arms
+  gt 7h ['mean', 'resample', 'zero'] @ 1000 prompts
+  gt 7h ['mean', 'resample', 'zero'] @ 1000 prompts
+  gt 7h ['mean', 'resample', 'zero'] @ 1000 prompts
+  gt 7h ['mean', 'resample', 'zero'] @ 1000 prompts
+  ioi 15h ['mean', 'resample', 'zero'] @ 512 prompts
+  rti 15h ['mean', 'resample', 'zero'] @ 512 prompts
+  rti 15h ['mean', 'resample', 'zero'] @ 512 prompts
+  rti 15h ['mean', 'resample', 'zero'] @ 512 prompts
+  rti 15h ['mean', 'resample', 'zero'] @ 512 prompts
+  gt 7h ['mean', 'zero'] @ 1000 prompts
+
+[61s] === FITTING REGRESSIONS ===
+
+[63s] Circuit: gt 7h (21 pairs)
+  zero      in=0.012 cv=-0.66 ld_only=-0.127 JK=[None,None] rho_ov=-0.094 rel=1.0
+  mean      in=0.119 cv=-1.358 ld_only=-0.818 JK=[None,None] rho_ov=+0.044 rel=1.0
+  resample  in=0.319 cv=-2.424 ld_only=-1.192 JK=[None,None] rho_ov=+0.462 rel=1.0
+
+[71s] Circuit: gt 7h (21 pairs)
+  zero      in=0.335 cv=-1.038 ld_only=-0.48 JK=[None,None] rho_ov=+0.396 rel=1.0
+  mean      in=0.418 cv=-3.725 ld_only=-0.135 JK=[None,None] rho_ov=+0.435 rel=1.0
+  resample  in=0.633 cv=-8.506 ld_only=-0.713 JK=[None,None] rho_ov=+0.131 rel=1.0
+
+[80s] Circuit: gt 7h (21 pairs)
+  zero      in=0.350 cv=-1.96 ld_only=-0.52 JK=[None,None] rho_ov=+0.368 rel=1.0
+  mean      in=0.375 cv=-2.27 ld_only=-0.842 JK=[None,None] rho_ov=+0.383 rel=1.0
+  resample  in=0.419 cv=-1.259 ld_only=-0.669 JK=[None,None] rho_ov=+0.623 rel=0.995
+
+[88s] Circuit: gt 7h (21 pairs)
+  zero      in=0.441 cv=-4.076 ld_only=-0.768 JK=[None,None] rho_ov=-0.027 rel=0.996
+  mean      in=0.339 cv=-4.344 ld_only=-0.497 JK=[None,None] rho_ov=+0.201 rel=0.996
+  resample  in=0.128 cv=-4.864 ld_only=-0.798 JK=[None,None] rho_ov=+0.170 rel=0.995
+
+[97s] Circuit: gt 7h (21 pairs)
+  zero      in=0.062 cv=-0.345 ld_only=-0.285 JK=[None,None] rho_ov=+0.235 rel=1.0
+  mean      in=0.131 cv=-0.681 ld_only=-0.177 JK=[None,None] rho_ov=+0.287 rel=1.0
+
+[105s] Circuit: ioi 15h (105 pairs)
+  zero      in=0.235 cv=-0.356 ld_only=-0.055 JK=[-1.321,0.458] rho_ov=+0.226 rel=0.986
+  mean      in=0.119 cv=-0.001 ld_only=-0.051 JK=[0.082,0.667] rho_ov=+0.238 rel=0.964
+  resample  in=0.158 cv=-0.134 ld_only=-0.038 JK=[0.055,1.136] rho_ov=+0.195 rel=0.966
+
+[118s] Circuit: rti 15h (105 pairs) [PROMPT MISMATCH]

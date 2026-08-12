@@ -1,0 +1,32 @@
+[
+  {
+    "task": "IOI",
+    "circuit": "ACDC",
+    "ablation": "resample",
+    "n_heads": 15,
+    "faithfulness": 0.93,
+    "WIF": 0.014,
+    "order1_pct": 98.6,
+    "order2_pct": 1.3,
+    "order3plus_pct": 0.2,
+    "LOO_epistasis": -0.515,
+    "LOO_stable": true,
+    "TSII": 0.56,
+    "metric_source": "logit_diff"
+  },
+  {
+    "task": "RTI",
+    "circuit": "ACDC",
+    "ablation": "resample",
+    "n_heads": 15,
+    "faithfulness": 1.27,
+    "WIF": 0.007,
+    "order1_pct": 99.3,
+    "order2_pct": 0.6,
+    "order3plus_pct": 0.0,
+    "LOO_epistasis": -0.263,
+    "LOO_stable": true,
+    "TSII": 0.57,
+    "metric_source": "logit_diff"
+  }
+]

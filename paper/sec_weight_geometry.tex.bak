@@ -1,0 +1,104 @@
+% =====================================================================
+% Draft section — weight geometry does not predict head-pair epistasis.
+%
+% Argument: OV composition, QK composition, and layer distance —
+% the standard weight-space features from Elhage et al. 2021 —
+% carry no cross-validated predictive power for pairwise Walsh
+% interaction coefficients, under any ablation primitive.
+%
+% Status: v2, updated with RTI data (v4 analysis). Compiles standalone.
+% Requires: booktabs, amsmath, natbib (\citet/\citep).
+% =====================================================================
+
+\subsection{Weight geometry does not predict head-pair epistasis}
+\label{sec:weight-geometry}
+
+All inter-head communication in a transformer passes through the residual
+stream, so heads that share writing and reading subspaces have a geometric
+reason to interact. If epistasis were a weight-level property, OV composition
+scores~\citep{elhage2021mathematical} would predict pairwise Walsh
+coefficients, and coalition sweeps would be an expensive way to recover
+structure already present in the weight matrices. We tested the prediction directly.
+
+\paragraph{Features and evaluation.}
+
+Four predictors were computed from the LayerNorm-folded effective
+weights of GPT-2 small: OV subspace overlap (Frobenius cosine similarity
+of $W_{OV}$ matrices), Q-composition and K-composition
+scores~\citep{elhage2021mathematical}, and layer distance. The target is
+the signed order-2 Walsh coefficient $w_{ij}$ for each head pair, averaged
+over prompts. Because head pairs are dyadic --- 105 pairs from 15 heads
+share endpoints and are therefore dependent --- we cross-validated with a
+leave-both-heads-out procedure: for each test pair $(i,j)$, the model
+trains only on pairs $(a,b)$ with $a,b \notin \{i,j\}$. Standard
+$k$-fold cross-validation leaks through shared heads and inflates
+$R^2$. Uncertainty intervals use a delete-one-head jackknife.
+
+\paragraph{Result.}
+
+Across ten circuit--primitive combinations from three tasks (IOI, RTI,
+greater-than), all 30 cross-validated $R^2$ values are negative:
+
+\medskip
+
+\begin{tabular}{llccc}
+\toprule
+ & & zero & mean & resample \\
+\midrule
+IOI (15\,h, 512\,p)
+ & in-sample $R^2$ & $0.24$ & $0.12$ & $0.16$ \\
+ & CV $R^2$ & $-0.36$ & $-0.00$ & $-0.13$ \\
+ & split-half reliability & $0.99$ & $0.96$ & $0.97$ \\
+\midrule
+RTI median (15\,h, 4 circuits)
+ & in-sample $R^2$ & $0.05$ & $0.06$ & $0.10$ \\
+ & CV $R^2$ & $-0.13$ & $-0.14$ & $-0.20$ \\
+ & split-half reliability & $0.94$ & $0.97$ & $0.94$ \\
+\bottomrule
+\end{tabular}
+
+\medskip
+
+\noindent The in-sample values reflect overfitting: 105 pairs from 15 heads
+give roughly 43 effective observations for 4 predictors. A
+layer-distance-only baseline is equally uninformative (CV~$R^2 < 0$ under
+all primitives for both tasks). Five greater-than circuits (7~heads,
+21~pairs each, 1000~prompts) confirm the pattern: every CV~$R^2$ is
+negative (range $-0.34$ to $-8.51$), and their in-sample values (up to
+$0.63$) sit within the null distribution at that sample size.%
+\footnote{RTI arms use 302 or 512 prompts depending on the ablation
+primitive; results are flagged but qualitatively identical.}
+
+\paragraph{Interpretation.}
+
+The failure is not a measurement problem. Split-half reliability of the Walsh
+coefficients exceeds $0.89$ in 29 of 30 arms (the exception is one RTI random
+circuit under resample ablation, $r = 0.67$), so the target is precisely
+measured. Across ablation primitives on the same circuit, $32\%$ of head pairs
+change the sign of their interaction between zero and mean ablation --- precise
+measurement of quantities that systematically
+disagree~\citep{housden2017comparison}.
+The cross-primitive disagreement is not an artifact of our decomposition.
+The Walsh--Hadamard transform already averages interaction coefficients over
+all $2^n$ head coalitions rather than anchoring to a single reference
+state~\citep{poelwijk2016context,poelwijk2019learning} --- the standard
+approach for removing dependence on an arbitrary baseline. Quantitative
+genetics faces the same problem when measuring interactions between mutations:
+different loss-of-function assays yield different interaction estimates, and an
+active dispute over whether reference-free methods reduce or merely relabel
+higher-order structure remains
+unresolved~\citep{park2024simplicity,dupic2024protein,buda2024higher}. Our
+32\% sign-flip rate is comparable to rates observed in protein fitness
+landscapes, where ${\sim}35\%$ of mutation pairs change interaction type
+depending on the measurement
+method~\citep{fluidity2024elife,housden2017comparison}. Correlating each
+pair's Walsh coefficient across primitives~\citep{ferretti2016measuring} gives
+$\gamma = 0.14$ between zero and mean or resample ablation, and $\gamma = 0.43$
+between mean and resample. Mean and resample ablation, which both substitute
+realistic activations, agree moderately with each other; zero ablation, which
+removes the head's contribution entirely, agrees with neither.
+
+Weight geometry predicts interaction under no primitive. Head-pair epistasis is
+a property of the forward pass, shaped by data-dependent LayerNorm
+normalization and attention routing, that static weight matrices do not
+capture. The coalition sweep measures something the weights do not contain.

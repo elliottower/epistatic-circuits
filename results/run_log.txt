@@ -1,0 +1,390 @@
+[0s] Loading GPT-2 with fold_ln=True
+[19s] Weight matrices extracted for 12L x 12H
+[20s] Scanning volumes for NPZ files
+  SKIP rti_c6_epistatic_mean_coalition_values.npz: incomplete 2048/32768
+[24s] Found 35 valid NPZ files
+[25s] 16 unique (task, headset) groups
+  PROMPT-MISMATCH rti/15h ['mean', 'resample', 'zero']: prompts [302, 512] — included with flag
+  PROMPT-MISMATCH rti/15h ['mean', 'resample', 'zero']: prompts [302, 512] — included with flag
+  PROMPT-MISMATCH rti/15h ['mean', 'resample', 'zero']: prompts [302, 512] — included with flag
+  PROMPT-MISMATCH rti/15h ['mean', 'resample', 'zero']: prompts [302, 512] — included with flag
+[30s] 10 comparable groups with >= 2 arms
+  gt 7h ['mean', 'resample', 'zero'] @ 1000 prompts
+  gt 7h ['mean', 'resample', 'zero'] @ 1000 prompts
+  gt 7h ['mean', 'resample', 'zero'] @ 1000 prompts
+  gt 7h ['mean', 'resample', 'zero'] @ 1000 prompts
+  ioi 15h ['mean', 'resample', 'zero'] @ 512 prompts
+  rti 15h ['mean', 'resample', 'zero'] @ 512 prompts
+  rti 15h ['mean', 'resample', 'zero'] @ 512 prompts
+  rti 15h ['mean', 'resample', 'zero'] @ 512 prompts
+  rti 15h ['mean', 'resample', 'zero'] @ 512 prompts
+  gt 7h ['mean', 'zero'] @ 1000 prompts
+
+[41s] === FITTING REGRESSIONS ===
+
+[42s] Circuit: gt 7h (21 pairs)
+    loading zero: gt_c5_walsh_zero_coalition_values.npz (vkey=prob_diff, prompts=1000)
+    WHT done for zero: 21 pairs, n=7
+  zero      in=0.012 cv=-0.66 ld_only=-0.127 JK=[None,None] rho_ov=-0.094 rel=1.0
+    loading mean: gt_c5_walsh_mean_coalition_values.npz (vkey=prob_diff, prompts=1000)
+    WHT done for mean: 21 pairs, n=7
+  mean      in=0.119 cv=-1.358 ld_only=-0.818 JK=[None,None] rho_ov=+0.044 rel=1.0
+    loading resample: gt_c5_walsh_resample_coalition_values.npz (vkey=prob_diff, prompts=1000)
+    WHT done for resample: 21 pairs, n=7
+  resample  in=0.319 cv=-2.424 ld_only=-1.192 JK=[None,None] rho_ov=+0.462 rel=1.0
+
+[50s] Circuit: gt 7h (21 pairs)
+    loading zero: gt_c6_epistatic_zero_coalition_values.npz (vkey=prob_diff, prompts=1000)
+    WHT done for zero: 21 pairs, n=7
+  zero      in=0.335 cv=-1.038 ld_only=-0.48 JK=[None,None] rho_ov=+0.396 rel=1.0
+    loading mean: gt_c6_epistatic_mean_coalition_values.npz (vkey=prob_diff, prompts=1000)
+    WHT done for mean: 21 pairs, n=7
+  mean      in=0.418 cv=-3.725 ld_only=-0.135 JK=[None,None] rho_ov=+0.435 rel=1.0
+    loading resample: gt_c6_epistatic_resample_coalition_values.npz (vkey=prob_diff, prompts=1000)
+    WHT done for resample: 21 pairs, n=7
+  resample  in=0.633 cv=-8.506 ld_only=-0.713 JK=[None,None] rho_ov=+0.131 rel=1.0
+
+[59s] Circuit: gt 7h (21 pairs)
+    loading zero: gt_known_zero_coalition_values.npz (vkey=prob_diff, prompts=1000)
+    WHT done for zero: 21 pairs, n=7
+  zero      in=0.350 cv=-1.96 ld_only=-0.52 JK=[None,None] rho_ov=+0.368 rel=1.0
+    loading mean: gt_known_mean_coalition_values.npz (vkey=prob_diff, prompts=1000)
+    WHT done for mean: 21 pairs, n=7
+  mean      in=0.375 cv=-2.27 ld_only=-0.842 JK=[None,None] rho_ov=+0.383 rel=1.0
+    loading resample: gt_known_resample_coalition_values.npz (vkey=prob_diff, prompts=1000)
+    WHT done for resample: 21 pairs, n=7
+  resample  in=0.419 cv=-1.259 ld_only=-0.669 JK=[None,None] rho_ov=+0.623 rel=0.995
+
+[68s] Circuit: gt 7h (21 pairs)
+    loading zero: gt_random_zero_coalition_values.npz (vkey=prob_diff, prompts=1000)
+    WHT done for zero: 21 pairs, n=7
+  zero      in=0.441 cv=-4.076 ld_only=-0.768 JK=[None,None] rho_ov=-0.027 rel=0.996
+    loading mean: gt_random_mean_coalition_values.npz (vkey=prob_diff, prompts=1000)
+    WHT done for mean: 21 pairs, n=7
+  mean      in=0.339 cv=-4.344 ld_only=-0.497 JK=[None,None] rho_ov=+0.201 rel=0.996
+    loading resample: gt_random_resample_coalition_values.npz (vkey=prob_diff, prompts=1000)
+    WHT done for resample: 21 pairs, n=7
+  resample  in=0.128 cv=-4.864 ld_only=-0.798 JK=[None,None] rho_ov=+0.170 rel=0.995
+
+[76s] Circuit: gt 7h (21 pairs)
+    loading zero: gt_ablation_discovered_zero_coalition_values.npz (vkey=prob_diff, prompts=1000)
+    WHT done for zero: 21 pairs, n=7
+  zero      in=0.062 cv=-0.345 ld_only=-0.285 JK=[None,None] rho_ov=+0.235 rel=1.0
+    loading mean: gt_ablation_discovered_mean_coalition_values.npz (vkey=prob_diff, prompts=1000)
+    WHT done for mean: 21 pairs, n=7
+  mean      in=0.131 cv=-0.681 ld_only=-0.177 JK=[None,None] rho_ov=+0.287 rel=1.0
+
+[84s] Circuit: ioi 15h (105 pairs)
+    loading zero: c6_zero_v2_coalition_values.npz (vkey=target_minus_foil, prompts=512)
+    WHT done for zero: 105 pairs, n=15
+  zero      in=0.235 cv=-0.356 ld_only=-0.055 JK=[-1.321,0.458] rho_ov=+0.226 rel=0.986
+    loading mean: c6_mean_v2_coalition_values.npz (vkey=target_minus_foil, prompts=512)
+    WHT done for mean: 105 pairs, n=15
+  mean      in=0.119 cv=-0.001 ld_only=-0.051 JK=[0.082,0.667] rho_ov=+0.238 rel=0.964
+    loading resample: ioi_C6_epistatic_resample_coalition_values.npz (vkey=logit_diff, prompts=512)
+    WHT done for resample: 105 pairs, n=15
+  resample  in=0.158 cv=-0.134 ld_only=-0.038 JK=[0.055,1.136] rho_ov=+0.195 rel=0.966
+
+[98s] Circuit: rti 15h (105 pairs) [PROMPT MISMATCH]
+    loading zero: rti_c5_walsh_zero_coalition_values.npz (vkey=logit_diff, prompts=302)
+    WHT done for zero: 105 pairs, n=15
+  zero      in=0.101 cv=-0.063 ld_only=-0.082 JK=[-0.175,1.04] rho_ov=+0.186 rel=0.926
+    loading mean: rti_c5_walsh_mean_coalition_values.npz (vkey=logit_diff, prompts=302)
+    WHT done for mean: 105 pairs, n=15
+  mean      in=0.060 cv=-0.001 ld_only=-0.019 JK=[0.035,1.472] rho_ov=+0.299 rel=0.98
+    loading resample: rti_C5_walsh_resample_coalition_values.npz (vkey=logit_diff, prompts=512)
+    WHT done for resample: 105 pairs, n=15
+  resample  in=0.134 cv=-0.203 ld_only=-0.021 JK=[-0.542,1.739] rho_ov=+0.172 rel=0.971
+
+[114s] Circuit: rti 15h (105 pairs) [PROMPT MISMATCH]
+    loading zero: EAP_rti_zero_rti_v5_coalition_values.npz (vkey=target_minus_foil, prompts=302)
+    WHT done for zero: 105 pairs, n=15
+  zero      in=0.033 cv=-0.259 ld_only=-0.042 JK=[-0.822,0.642] rho_ov=+0.396 rel=0.97
+    loading mean: EAP_rti_mean_rti_v5_coalition_values.npz (vkey=target_minus_foil, prompts=302)
+    WHT done for mean: 105 pairs, n=15
+  mean      in=0.053 cv=-0.202 ld_only=-0.089 JK=[-0.154,1.336] rho_ov=+0.125 rel=0.983
+    loading resample: rti_EAP_resample_coalition_values.npz (vkey=logit_diff, prompts=512)
+    WHT done for resample: 105 pairs, n=15
+  resample  in=0.063 cv=-0.2 ld_only=-0.098 JK=[-0.25,1.379] rho_ov=+0.117 rel=0.917
+
+[128s] Circuit: rti 15h (105 pairs) [PROMPT MISMATCH]
+    loading zero: RTI_zero_rti_v5_coalition_values.npz (vkey=target_minus_foil, prompts=302)
+    WHT done for zero: 105 pairs, n=15
+  zero      in=0.003 cv=-0.12 ld_only=0.009 JK=[-0.588,1.731] rho_ov=+0.213 rel=0.89
+    loading mean: RTI_mean_rti_v5_coalition_values.npz (vkey=target_minus_foil, prompts=302)
+    WHT done for mean: 105 pairs, n=15
+  mean      in=0.132 cv=-0.505 ld_only=-0.027 JK=[-1.685,2.559] rho_ov=+0.324 rel=0.957
+    loading resample: rti_known_resample_coalition_values.npz (vkey=logit_diff, prompts=512)
+    WHT done for resample: 105 pairs, n=15
+  resample  in=0.128 cv=-0.511 ld_only=-0.033 JK=[-2.623,3.708] rho_ov=+0.277 rel=0.967
+
+[146s] Circuit: rti 15h (105 pairs) [PROMPT MISMATCH]
+    loading zero: C4_random_zero_rti_v5_coalition_values.npz (vkey=target_minus_foil, prompts=302)
+    WHT done for zero: 105 pairs, n=15
+  zero      in=0.073 cv=-0.141 ld_only=-0.048 JK=[-0.443,0.527] rho_ov=+0.201 rel=0.947
+    loading mean: C4_random_mean_rti_v5_coalition_values.npz (vkey=target_minus_foil, prompts=302)
+    WHT done for mean: 105 pairs, n=15
+  mean      in=0.022 cv=-0.087 ld_only=-0.051 JK=[-0.01,0.603] rho_ov=+0.207 rel=0.951
+    loading resample: rti_random_resample_coalition_values.npz (vkey=logit_diff, prompts=512)
+    WHT done for resample: 105 pairs, n=15
+  resample  in=0.030 cv=-0.026 ld_only=-0.024 JK=[0.053,0.314] rho_ov=+0.139 rel=0.669
+
+[162s] Saving 1869 per-pair records
+
+[163s] === P1 SCORING ===
+  DESCRIPTIVE: gt 7h (below 15h threshold)
+  DESCRIPTIVE: gt 7h (below 15h threshold)
+  DESCRIPTIVE: gt 7h (below 15h threshold)
+  DESCRIPTIVE: gt 7h (below 15h threshold)
+  DESCRIPTIVE: gt 7h (below 15h threshold)
+  ioi 15h: mean - zero = +0.3557 (PASS 0.10 threshold)
+  ioi 15h: resample - zero = +0.2221 (PASS 0.10 threshold)
+  rti 15h: mean - zero = +0.0622 (FAIL 0.10 threshold)
+  rti 15h: resample - zero = -0.1398 (FAIL 0.10 threshold)
+  rti 15h: mean - zero = +0.0566 (FAIL 0.10 threshold)
+  rti 15h: resample - zero = +0.0588 (FAIL 0.10 threshold)
+  rti 15h: mean - zero = -0.3852 (FAIL 0.10 threshold)
+  rti 15h: resample - zero = -0.3906 (FAIL 0.10 threshold)
+  rti 15h: mean - zero = +0.0542 (FAIL 0.10 threshold)
+  rti 15h: resample - zero = +0.1152 (PASS 0.10 threshold)
+
+  P1 verdict: FAIL (3/10)
+
+[177s] === P2/P3/P4 SCORING ===
+  P2 mean: median CV-R^2 = -0.5931 (PASS < 0.20)
+  P2 resample: median CV-R^2 = -0.5108 (PASS < 0.20)
+  P2 zero: median CV-R^2 = -0.3504 (PASS < 0.20)
+  P2 overall: PASS (all arms below 0.20)
+
+  P3: close-layer vs far-layer split
+    zero: close rho=0.259 (n=272) far rho=0.060 (n=283) close > far
+    mean: close rho=0.285 (n=272) far rho=0.025 (n=283) close > far
+    resample: close rho=0.333 (n=262) far rho=-0.014 (n=275) close > far
+  P4 gt: in-sample=0.0122 cv=-0.6596 diff=0.6718 (PASS >= 0.03)
+  P4 gt: in-sample=0.3347 cv=-1.0377 diff=1.3724 (PASS >= 0.03)
+  P4 gt: in-sample=0.3495 cv=-1.9600 diff=2.3095 (PASS >= 0.03)
+  P4 gt: in-sample=0.4406 cv=-4.0756 diff=4.5162 (PASS >= 0.03)
+  P4 gt: in-sample=0.0622 cv=-0.3445 diff=0.4067 (PASS >= 0.03)
+  P4 ioi: in-sample=0.2348 cv=-0.3564 diff=0.5912 (PASS >= 0.03)
+  P4 rti: in-sample=0.1014 cv=-0.0628 diff=0.1642 (PASS >= 0.03)
+  P4 rti: in-sample=0.0332 cv=-0.2586 diff=0.2918 (PASS >= 0.03)
+  P4 rti: in-sample=0.0035 cv=-0.1202 diff=0.1237 (PASS >= 0.03)
+  P4 rti: in-sample=0.0733 cv=-0.1413 diff=0.2146 (PASS >= 0.03)
+
+[192s] === FINAL SUMMARY ===
+{
+  "n_comparable_groups": 10,
+  "n_rows": 29,
+  "n_pair_records": 1869,
+  "P1": {
+    "verdict": "FAIL",
+    "n_eligible_passes": 3,
+    "n_total_comparisons": 10,
+    "threshold": "at least half of eligible 15-head circuits by >= 0.10",
+    "note": null,
+    "comparisons": [
+      {
+        "task": "ioi",
+        "n_heads": 15,
+        "comparison": "mean - zero",
+        "diff": 0.3557,
+        "passes_0.10": true,
+        "zero_cv_r2": -0.3564,
+        "mean_cv_r2": -0.0007,
+        "selection_bias_note": "mean arm has selection bias"
+      },
+      {
+        "task": "ioi",
+        "n_heads": 15,
+        "comparison": "resample - zero",
+        "diff": 0.2221,
+        "passes_0.10": true,
+        "zero_cv_r2": -0.3564,
+        "resample_cv_r2": -0.1343,
+        "selection_bias_note": null
+      },
+      {
+        "task": "rti",
+        "n_heads": 15,
+        "comparison": "mean - zero",
+        "diff": 0.0622,
+        "passes_0.10": false,
+        "zero_cv_r2": -0.0628,
+        "mean_cv_r2": -0.0006,
+        "selection_bias_note": null
+      },
+      {
+        "task": "rti",
+        "n_heads": 15,
+        "comparison": "resample - zero",
+        "diff": -0.1398,
+        "passes_0.10": false,
+        "zero_cv_r2": -0.0628,
+        "resample_cv_r2": -0.2026,
+        "selection_bias_note": null
+      },
+      {
+        "task": "rti",
+        "n_heads": 15,
+        "comparison": "mean - zero",
+        "diff": 0.0566,
+        "passes_0.10": false,
+        "zero_cv_r2": -0.2586,
+        "mean_cv_r2": -0.202,
+        "selection_bias_note": null
+      },
+      {
+        "task": "rti",
+        "n_heads": 15,
+        "comparison": "resample - zero",
+        "diff": 0.0588,
+        "passes_0.10": false,
+        "zero_cv_r2": -0.2586,
+        "resample_cv_r2": -0.1998,
+        "selection_bias_note": null
+      },
+      {
+        "task": "rti",
+        "n_heads": 15,
+        "comparison": "mean - zero",
+        "diff": -0.3852,
+        "passes_0.10": false,
+        "zero_cv_r2": -0.1202,
+        "mean_cv_r2": -0.5054,
+        "selection_bias_note": null
+      },
+      {
+        "task": "rti",
+        "n_heads": 15,
+        "comparison": "resample - zero",
+        "diff": -0.3906,
+        "passes_0.10": false,
+        "zero_cv_r2": -0.1202,
+        "resample_cv_r2": -0.5108,
+        "selection_bias_note": null
+      },
+      {
+        "task": "rti",
+        "n_heads": 15,
+        "comparison": "mean - zero",
+        "diff": 0.0542,
+        "passes_0.10": false,
+        "zero_cv_r2": -0.1413,
+        "mean_cv_r2": -0.0871,
+        "selection_bias_note": null
+      },
+      {
+        "task": "rti",
+        "n_heads": 15,
+        "comparison": "resample - zero",
+        "diff": 0.1152,
+        "passes_0.10": true,
+        "zero_cv_r2": -0.1413,
+        "resample_cv_r2": -0.0261,
+        "selection_bias_note": null
+      }
+    ]
+  },
+  "P2": {
+    "by_primitive": {
+      "mean": {
+        "median_cv_r2": -0.5931,
+        "n": 10,
+        "below_0.20": true
+      },
+      "resample": {
+        "median_cv_r2": -0.5108,
+        "n": 9,
+        "below_0.20": true
+      },
+      "zero": {
+        "median_cv_r2": -0.3504,
+        "n": 10,
+        "below_0.20": true
+      }
+    },
+    "all_below_0.20": true
+  },
+  "P3": {
+    "zero": {
+      "rho_close": 0.2586,
+      "rho_far": 0.0605,
+      "close_n": 272,
+      "far_n": 283,
+      "close_exceeds_far": true
+    },
+    "mean": {
+      "rho_close": 0.2849,
+      "rho_far": 0.025,
+      "close_n": 272,
+      "far_n": 283,
+      "close_exceeds_far": true
+    },
+    "resample": {
+      "rho_close": 0.3328,
+      "rho_far": -0.0142,
+      "close_n": 262,
+      "far_n": 275,
+      "close_exceeds_far": true
+    }
+  },
+  "P4": {
+    "insample": 0.0733,
+    "cv": -0.1413,
+    "diff": 0.2146,
+    "passes_0.03": true,
+    "task": "rti"
+  },
+  "cv_r2_by_primitive": {
+    "mean": {
+      "median": -0.5931,
+      "values": [
+        -1.3581,
+        -3.7252,
+        -2.2704,
+        -4.344,
+        -0.6809,
+        -0.0007,
+        -0.0006,
+        -0.202,
+        -0.5054,
+        -0.0871
+      ],
+      "n": 10
+    },
+    "resample": {
+      "median": -0.5108,
+      "values": [
+        -2.4241,
+        -8.5061,
+        -1.2586,
+        -4.8639,
+        -0.1343,
+        -0.2026,
+        -0.1998,
+        -0.5108,
+        -0.0261
+      ],
+      "n": 9
+    },
+    "zero": {
+      "median": -0.3504,
+      "values": [
+        -0.6596,
+        -1.0377,
+        -1.96,
+        -4.0756,
+        -0.3445,
+        -0.3564,
+        -0.0628,
+        -0.2586,
+        -0.1202,
+        -0.1413
+      ],
+      "n": 10
+    }
+  },
+  "blocker_1_resolved": "C6 discovered under MEAN ablation (modal_walsh_discovery.py). Mean arm has selection effect. Zero and resample are clean."
+}
+
+[194s] Done. All results saved to /out/

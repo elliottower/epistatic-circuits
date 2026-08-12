@@ -1,0 +1,17 @@
+citation: leemann2024slalom
+depth: cited
+title: 'Attention Mechanisms Don''t Learn Additive Models: Rethinking Feature Importance for Transformers'
+authors:
+- Leemann, Tobias
+- Fastowski, Alina
+- Pfeiffer, Felix
+- Kasneci, Gjergji
+year: '2024'
+venue: Transactions on Machine Learning Research
+url: https://arxiv.org/abs/2405.13536
+arxiv: '2405.13536'
+attributed_claims:
+- claim: '[CITE] prove that transformers with attention mechanisms structurally cannot represent additive
+    models over sequences of more than one token: the softmax normalization forces every head''s output
+    to depend on every other head in the same layer.'
+  locator: sec_introduction.tex:25

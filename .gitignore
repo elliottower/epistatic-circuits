@@ -1,0 +1,63 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+*.egg-info/
+dist/
+build/
+.pixi/
+
+# Data files (tracked via DVC or downloaded)
+*.npz
+*.pt
+*.pkl
+
+# Reference material — third-party papers and figure extractions. Downloaded
+# locally for verification, never redistributed from this repo.
+data/*.pdf
+data/wang_2022_ioi*.txt
+data/ioi_fig2_*.png
+data/ioi_p4-*.png
+
+# LaTeX build artifacts
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.log
+paper/*.out
+paper/*.synctex.gz
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Secrets
+.env
+
+# Reference material — third-party papers, downloaded for verification.
+# Not redistributed from this repo.
+reference/
+sources/.pdfs/
+test_sparse_walsh.*
+
+# submission bundles: venue correspondence and compiled artifacts, never public
+submissions/
+paper/main.pdf
+
+# build artifacts anywhere, not just paper/
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.synctex.gz
+
+# the citations tool's local library: its own store, not this paper's source
+.citations/

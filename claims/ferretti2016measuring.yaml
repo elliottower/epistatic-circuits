@@ -1,0 +1,18 @@
+source:
+  citation: ferretti2016measuring
+  local: reference/ferretti_2016_measuring_epistasis.pdf
+  sha256: null
+  extract_cmd: pdftotext -layout
+
+claims:
+  gamma-definition:
+    statement: 'gamma is the correlation of fitness effects of the same mutation across genetic backgrounds.'
+    verified: true
+    quotes:
+      - exact: 'is simply the correlation of fitness effects of the same'
+        prefix: 'denoted by'
+        section: 'Section 2'
+    notes: >
+      The tex file cites gamma = 0.14 and 0.43 — these are OUR computed values
+      using Ferretti's gamma metric on Walsh coefficients across ablation
+      primitives. The citation is for the method, not the numbers.

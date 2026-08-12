@@ -1,0 +1,15 @@
+citation: park2024simplicity
+depth: cited
+title: The Simplicity of Protein Sequence-Function Relationships
+authors:
+- Park, Yeonwoo
+- Metzger, Brian P. H.
+- Thornton, Joseph W.
+year: '2024'
+venue: Nature Communications
+doi: 10.1038/s41467-024-51895-5
+attributed_claims:
+- claim: 'Quantitative genetics faces the same problem when measuring interactions between mutations:
+    different loss-of-function assays yield different interaction estimates, and an active dispute over
+    whether reference-free methods reduce or merely relabel higher-order structure remains unresolved~[CITE].'
+  locator: sec_weight_geometry.tex:0

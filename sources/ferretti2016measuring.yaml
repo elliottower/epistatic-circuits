@@ -1,0 +1,18 @@
+citation: ferretti2016measuring
+depth: cited
+title: 'Measuring Epistasis in Fitness Landscapes: The Correlation of Fitness Effects of Mutations'
+authors:
+- Ferretti, Luca
+- Schmiegelt, Benjamin
+- Weinreich, Daniel
+- Yamauchi, Atsushi
+- Kobayashi, Yutaka
+- Tajima, Fumio
+- Achaz, Guillaume
+year: '2016'
+venue: Journal of Theoretical Biology
+doi: 10.1016/j.jtbi.2016.01.037
+attributed_claims:
+- claim: Correlating each pair's Walsh coefficient across primitives~[CITE] gives \gamma = 0.14 between
+    zero and mean or resample ablation, and \gamma = 0.43 between mean and resample.
+  locator: sec_weight_geometry.tex:0

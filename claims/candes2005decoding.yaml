@@ -1,0 +1,14 @@
+source:
+  citation: candes2005decoding
+  local: reference/candes_2005_decoding_rip.pdf
+  sha256: null
+  extract_cmd: pdftotext -layout
+
+claims:
+  rip-definition:
+    statement: 'Introduces the restricted isometry property for sparse signal recovery.'
+    verified: true
+    quotes:
+      - exact: 'S-restricted isometry constants'
+        prefix: 'Definition 1.1 (Restricted isometry constants)'
+        section: 'Section 1'

@@ -1,0 +1,14 @@
+citation: blasiok2019sparse
+depth: cited
+title: An Improved Lower Bound for Sparse Reconstruction from Subsampled Hadamard Matrices
+authors:
+- Blasiok, Jaroslaw
+- Lopatto, Patrick
+- Luh, Kyle
+- Marcinek, Jake
+- Rao, Shravas
+year: '2019'
+venue: Proceedings of the 60th IEEE Symposium on Foundations of Computer Science (FOCS)
+doi: 10.1109/FOCS.2019.00095
+arxiv: '1903.12135'
+url: https://arxiv.org/abs/1903.12135

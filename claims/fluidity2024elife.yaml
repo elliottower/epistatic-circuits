@@ -1,0 +1,19 @@
+source:
+  citation: fluidity2024elife
+  local: reference/baheti_2024_fluidity_epistasis.pdf
+  sha256: null
+  extract_cmd: pdftotext -layout
+
+claims:
+  sign-change-35-percent:
+    statement: '~35% of mutation pairs change interaction type depending on the genetic background.'
+    verified: true
+    quotes:
+      - exact: 'interaction type in more than 35% of cases (Figure 2B)'
+        section: 'Results'
+    notes: >
+      The paper says 35% of pairs switch interaction type when a single background
+      mutation is added, in functional backgrounds. The paper tex cite uses this
+      to support the claim that different measurement methods yield different
+      interaction estimates. The mechanism is slightly different (background
+      vs method), but the 35% number is real.

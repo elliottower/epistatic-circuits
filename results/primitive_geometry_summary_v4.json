@@ -1,0 +1,215 @@
+{
+  "n_comparable_groups": 10,
+  "n_rows": 30,
+  "n_pair_records": 1869,
+  "P1": {
+    "verdict": "FAIL",
+    "n_eligible_passes": 3,
+    "n_total_comparisons": 10,
+    "threshold": "at least half of eligible 15-head circuits by >= 0.10",
+    "note": null,
+    "comparisons": [
+      {
+        "task": "ioi",
+        "n_heads": 15,
+        "comparison": "mean - zero",
+        "diff": 0.3557,
+        "passes_0.10": true,
+        "zero_cv_r2": -0.3564,
+        "mean_cv_r2": -0.0007,
+        "selection_bias_note": "mean arm has selection bias"
+      },
+      {
+        "task": "ioi",
+        "n_heads": 15,
+        "comparison": "resample - zero",
+        "diff": 0.2221,
+        "passes_0.10": true,
+        "zero_cv_r2": -0.3564,
+        "resample_cv_r2": -0.1343,
+        "selection_bias_note": null
+      },
+      {
+        "task": "rti",
+        "n_heads": 15,
+        "comparison": "mean - zero",
+        "diff": 0.0622,
+        "passes_0.10": false,
+        "zero_cv_r2": -0.0628,
+        "mean_cv_r2": -0.0006,
+        "selection_bias_note": null
+      },
+      {
+        "task": "rti",
+        "n_heads": 15,
+        "comparison": "resample - zero",
+        "diff": -0.1398,
+        "passes_0.10": false,
+        "zero_cv_r2": -0.0628,
+        "resample_cv_r2": -0.2026,
+        "selection_bias_note": null
+      },
+      {
+        "task": "rti",
+        "n_heads": 15,
+        "comparison": "mean - zero",
+        "diff": 0.0566,
+        "passes_0.10": false,
+        "zero_cv_r2": -0.2586,
+        "mean_cv_r2": -0.202,
+        "selection_bias_note": null
+      },
+      {
+        "task": "rti",
+        "n_heads": 15,
+        "comparison": "resample - zero",
+        "diff": 0.0588,
+        "passes_0.10": false,
+        "zero_cv_r2": -0.2586,
+        "resample_cv_r2": -0.1998,
+        "selection_bias_note": null
+      },
+      {
+        "task": "rti",
+        "n_heads": 15,
+        "comparison": "mean - zero",
+        "diff": -0.3852,
+        "passes_0.10": false,
+        "zero_cv_r2": -0.1202,
+        "mean_cv_r2": -0.5054,
+        "selection_bias_note": null
+      },
+      {
+        "task": "rti",
+        "n_heads": 15,
+        "comparison": "resample - zero",
+        "diff": -0.3906,
+        "passes_0.10": false,
+        "zero_cv_r2": -0.1202,
+        "resample_cv_r2": -0.5108,
+        "selection_bias_note": null
+      },
+      {
+        "task": "rti",
+        "n_heads": 15,
+        "comparison": "mean - zero",
+        "diff": 0.0542,
+        "passes_0.10": false,
+        "zero_cv_r2": -0.1413,
+        "mean_cv_r2": -0.0871,
+        "selection_bias_note": null
+      },
+      {
+        "task": "rti",
+        "n_heads": 15,
+        "comparison": "resample - zero",
+        "diff": 0.1152,
+        "passes_0.10": true,
+        "zero_cv_r2": -0.1413,
+        "resample_cv_r2": -0.0261,
+        "selection_bias_note": null
+      }
+    ]
+  },
+  "P2": {
+    "by_primitive": {
+      "mean": {
+        "median_cv_r2": -0.5931,
+        "n": 10,
+        "below_0.20": true
+      },
+      "resample": {
+        "median_cv_r2": -0.8847,
+        "n": 10,
+        "below_0.20": true
+      },
+      "zero": {
+        "median_cv_r2": -0.3504,
+        "n": 10,
+        "below_0.20": true
+      }
+    },
+    "all_below_0.20": true
+  },
+  "P3": {
+    "zero": {
+      "rho_close": 0.2586,
+      "rho_far": 0.0605,
+      "close_n": 272,
+      "far_n": 283,
+      "close_exceeds_far": true
+    },
+    "mean": {
+      "rho_close": 0.2849,
+      "rho_far": 0.025,
+      "close_n": 272,
+      "far_n": 283,
+      "close_exceeds_far": true
+    },
+    "resample": {
+      "rho_close": 0.3328,
+      "rho_far": -0.0142,
+      "close_n": 262,
+      "far_n": 275,
+      "close_exceeds_far": true
+    }
+  },
+  "P4": {
+    "insample": 0.0733,
+    "cv": -0.1413,
+    "diff": 0.2146,
+    "passes_0.03": true,
+    "task": "rti"
+  },
+  "cv_r2_by_primitive": {
+    "mean": {
+      "median": -0.5931,
+      "values": [
+        -1.3581,
+        -3.7252,
+        -2.2704,
+        -4.344,
+        -0.6809,
+        -0.0007,
+        -0.0006,
+        -0.202,
+        -0.5054,
+        -0.0871
+      ],
+      "n": 10
+    },
+    "resample": {
+      "median": -0.8847,
+      "values": [
+        -2.4241,
+        -8.5061,
+        -1.2586,
+        -4.8639,
+        -1.881,
+        -0.1343,
+        -0.2026,
+        -0.1998,
+        -0.5108,
+        -0.0261
+      ],
+      "n": 10
+    },
+    "zero": {
+      "median": -0.3504,
+      "values": [
+        -0.6596,
+        -1.0377,
+        -1.96,
+        -4.0756,
+        -0.3445,
+        -0.3564,
+        -0.0628,
+        -0.2586,
+        -0.1202,
+        -0.1413
+      ],
+      "n": 10
+    }
+  },
+  "blocker_1_resolved": "C6 discovered under MEAN ablation (modal_walsh_discovery.py). Mean arm has selection effect. Zero and resample are clean."
+}

@@ -1,0 +1,55 @@
+{
+ "DTH~IND": [
+  false,
+  false
+ ],
+ "DTH~NM": [
+  false,
+  false
+ ],
+ "DTH~NegNM": [
+  true,
+  false
+ ],
+ "DTH~S-Inh": [
+  true,
+  false
+ ],
+ "IND~NM": [
+  false,
+  false
+ ],
+ "IND~NegNM": [
+  false,
+  false,
+  false
+ ],
+ "IND~S-Inh": [
+  false,
+  false,
+  false
+ ],
+ "NM~NegNM": [
+  false,
+  false
+ ],
+ "NM~S-Inh": [
+  false,
+  false
+ ],
+ "NegNM~S-Inh": [
+  true,
+  true,
+  true,
+  true
+ ],
+ "Backup~IND": [
+  false
+ ],
+ "Backup~NegNM": [
+  false
+ ],
+ "Backup~S-Inh": [
+  false
+ ]
+}

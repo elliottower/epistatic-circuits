@@ -1,0 +1,15 @@
+citation: buda2024higher
+depth: cited
+title: Higher-Order Epistasis Creates Idiosyncrasy, Confounding Predictions from Lower-Order Fitness Landscapes
+authors:
+- Buda, Krist'of
+- Miton, Charlotte M.
+- Tokuriki, Nobuhiko
+year: '2024'
+venue: Nature Communications
+doi: 10.1038/s41467-024-52997-y
+attributed_claims:
+- claim: 'Quantitative genetics faces the same problem when measuring interactions between mutations:
+    different loss-of-function assays yield different interaction estimates, and an active dispute over
+    whether reference-free methods reduce or merely relabel higher-order structure remains unresolved~[CITE].'
+  locator: sec_weight_geometry.tex:0

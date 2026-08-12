@@ -1,0 +1,83 @@
+discovered 72 sweeps across 40 (task, circuit) groups
+  /vol/ioi_resample: 5 npz; unparsed: []
+  /vol/rti_resample: 5 npz; unparsed: []
+  /vol/gt_resample: 5 npz; unparsed: []
+  /vol/acdc_resample: 2 npz; unparsed: []
+  /vol/c6: 2 npz; unparsed: []
+  /vol/gt: 14 npz; unparsed: []
+  /vol/rti_walsh: 3 npz; unparsed: []
+  /vol/induction: 10 npz; unparsed: []
+  /vol/rti_v5: 6 npz; unparsed: []
+  /vol/rti_multi: 0 npz; unparsed: []
+  /vol/sva: 10 npz; unparsed: []
+  /vol/gender: 10 npz; unparsed: []
+  group gender/ablation_discovered: ['mean', 'zero']
+  group gender/acdc: ['mean', 'zero']
+  group gender/greedy_sufficiency: ['mean', 'zero']
+  group gender/known: ['mean', 'zero']
+  group gender/random: ['mean', 'zero']
+  group gt/ablation_discovered: ['mean', 'zero']
+  group gt/acdc: ['mean', 'resample', 'zero']
+  group gt/c5_walsh: ['mean', 'resample', 'zero']
+  group gt/c6_epistatic: ['mean', 'resample', 'zero']
+  group gt/greedy_sufficiency: ['mean', 'zero']
+  group gt/known: ['mean', 'resample', 'zero']
+  group gt/random: ['mean', 'resample', 'zero']
+  group induction/ablation_discovered: ['mean', 'zero']
+  group induction/acdc: ['mean', 'zero']
+  group induction/greedy_sufficiency: ['mean', 'zero']
+  group induction/known: ['mean', 'zero']
+  group induction/random: ['mean', 'zero']
+  group ioi/C2_eap: ['resample']
+  group ioi/C3_canonical: ['resample']
+  group ioi/C4_random: ['resample']
+  group ioi/C5_walsh: ['resample']
+  group ioi/C6_epistatic: ['resample']
+  group ioi/acdc: ['resample']
+  group ioi/c6: ['mean', 'zero']
+  group rti/C4_random_rti_v5: ['mean', 'zero']
+  group rti/C5_walsh: ['resample']
+  group rti/C6_epistatic: ['resample']
+  group rti/EAP: ['resample']
+  group rti/EAP_rti_rti_v5: ['mean', 'zero']
+  group rti/RTI_rti_v5: ['mean', 'zero']
+  group rti/acdc: ['resample']
+  group rti/c5_walsh: ['mean', 'zero']
+  group rti/c6_epistatic: ['mean']
+  group rti/known: ['resample']
+  group rti/random: ['resample']
+  group sva/ablation_discovered: ['mean', 'zero']
+  group sva/acdc: ['mean', 'zero']
+  group sva/greedy_sufficiency: ['mean', 'zero']
+  group sva/known: ['mean', 'zero']
+  group sva/random: ['mean', 'zero']
+  SKIP gender/acdc mean~zero: unreadable/incomplete
+  SKIP gender/greedy_sufficiency mean~zero: unreadable/incomplete
+  SKIP gt/ablation_discovered mean~zero: unreadable/incomplete
+  SKIP gt/acdc mean~resample: unreadable/incomplete
+  SKIP gt/acdc mean~zero: unreadable/incomplete
+  SKIP gt/acdc resample~zero: unreadable/incomplete
+  SKIP gt/c5_walsh mean~resample: unreadable/incomplete
+  SKIP gt/c5_walsh mean~zero: unreadable/incomplete
+  SKIP gt/c5_walsh resample~zero: unreadable/incomplete
+  SKIP gt/c6_epistatic mean~resample: unreadable/incomplete
+  SKIP gt/c6_epistatic mean~zero: unreadable/incomplete
+  SKIP gt/c6_epistatic resample~zero: unreadable/incomplete
+  SKIP gt/greedy_sufficiency mean~zero: unreadable/incomplete
+  SKIP gt/known mean~resample: unreadable/incomplete
+  SKIP gt/known mean~zero: unreadable/incomplete
+  SKIP gt/known resample~zero: unreadable/incomplete
+  SKIP gt/random mean~resample: unreadable/incomplete
+  SKIP gt/random mean~zero: unreadable/incomplete
+  SKIP gt/random resample~zero: unreadable/incomplete
+  SKIP induction/ablation_discovered mean~zero: unreadable/incomplete
+  SKIP induction/acdc mean~zero: unreadable/incomplete
+  SKIP induction/greedy_sufficiency mean~zero: unreadable/incomplete
+  SKIP induction/known mean~zero: unreadable/incomplete
+  SKIP induction/random mean~zero: unreadable/incomplete
+  SKIP ioi/C2_eap: only ['resample']
+  SKIP ioi/C3_canonical: only ['resample']
+  SKIP ioi/C4_random: only ['resample']
+  SKIP ioi/C5_walsh: only ['resample']
+  SKIP ioi/C6_epistatic: only ['resample']
+  SKIP ioi/acdc: only ['resample']

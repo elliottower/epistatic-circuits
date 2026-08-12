@@ -1,0 +1,59 @@
+citation: wang2022ioi
+depth: quoted
+title: 'Interpretability in the Wild: A Circuit for Indirect Object Identification in GPT-2 Small'
+authors:
+- Wang, Kevin
+- Variengien, Alexandre
+- Conmy, Arthur
+- Shlegeris, Buck
+- Steinhardt, Jacob
+year: '2023'
+venue: Proceedings of the Eleventh International Conference on Learning Representations (ICLR)
+url: https://arxiv.org/abs/2211.00593
+arxiv: '2211.00593'
+quotes:
+- text: share all the same properties as Name Mover Heads except they (1) write in the opposite direction
+    of names they attend to and (2) have a large negative copy score.
+  locator: sec_what_epistasis_contains.tex:99
+  verified: false
+- text: the Negative Name Mover Heads have a less negative effect on logit difference, and 10.7 even has
+    a positive effect on the logit difference after the knockout,
+  locator: sec_what_epistasis_contains.tex:151
+  verified: false
+- text: '[b]oth the reason and the mechanism of this compensation effect are still unclear.'
+  locator: sec_what_epistasis_contains.tex:153
+  verified: false
+attributed_claims:
+- claim: Activation patching by mean ablation on hook\_z is the standard protocol~[CITE].
+  locator: sec_background.tex:0
+- claim: Path patching. Path patching isolates the direct causal edge from sender S to receiver R by corrupting
+    S, freezing all intermediate components to their clean values, and letting R compute naturally from
+    the modified residual stream~[CITE].
+  locator: sec_background.tex:96
+- claim: The dominant methods --- activation patching~[CITE], Edge Attribution Patching (EAP)~[CITE],
+    and Automatic Circuit DisCovery (ACDC)~[CITE] --- rank components by individual importance and assemble
+    circuits by thresholding those scores.
+  locator: sec_introduction.tex:15
+- claim: \item The interaction structure carries mechanism. Applying a complementation test from genetics
+    to the Walsh interaction matrix rediscovers that negative name movers invert their contribution sign
+    when their upstream S-inhibition heads are removed --- a dependency that [CITE] observed as unexplained
+    (Section~sec:what-epistasis-contains).
+  locator: sec_introduction.tex:72
+- claim: Reading the canonical indirect object identification circuit of [CITE] against its own taxonomy
+    recovers a dependency between two of its head classes that the published account records as unexplained.
+  locator: sec_what_epistasis_contains.tex:20
+- claim: The merge is asymmetric, and the asymmetry is the result Figure 2 of [CITE] places name movers,
+    negative name movers, and backup name movers inside one group, with S-inhibition writing the queries
+    of all three.
+  locator: sec_what_epistasis_contains.tex:77
+- claim: 'The data merge one member and separate the other: center tabularlc \toprule class pair & merged
+    in \\ \midrule S-inhibition \sim negative name mover & 4 / 4 conditions \\ S-inhibition \sim name
+    mover & 0 / 2 conditions \\ name mover \sim negative name mover & 0 / 2 conditions \\ \bottomrule
+    tabular center [CITE] state the only difference between the two classes: the negative heads ``share
+    all the same properties as Name Mover Heads except they (1) write in the opposite direction of names
+    they attend to and (2) have a large negative copy score.'''' Same query source, same key and value
+    input, same output edge, opposite OV sign.'
+  locator: sec_what_epistasis_contains.tex:84
+- claim: 'Bootstrap sign-flip rates: both negative name movers flip in 1000/1000 draws. fig:conditional-marginal
+    figure [CITE] observed a fragment of this effect under a different conditioning set.'
+  locator: sec_what_epistasis_contains.tex:0

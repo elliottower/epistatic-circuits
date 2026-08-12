@@ -1,0 +1,17 @@
+citation: candes2005decoding
+depth: cited
+title: Decoding by Linear Programming
+authors:
+- Cand`es, Emmanuel J.
+- Tao, Terence
+year: '2005'
+venue: IEEE Transactions on Information Theory
+doi: 10.1109/TIT.2005.858979
+attributed_claims:
+- claim: 'Compressed sensing~[CITE] offers an alternative: sample M \ll 2^n random coalitions, build the
+    corresponding rows of the Walsh basis matrix \Phi_mc = (-1)^popcount(c \,\&\, s), and solve a sparse
+    regression for the k = n + n2 order-1 and order-2 coefficients.'
+  locator: sec_sparse_walsh_recovery.tex:0
+- claim: The generic RIP bound for Gaussian or Bernoulli measurement matrices gives M = O(k \log(N/k))~[CITE];
+    for k=210 and N = 2^20, this is M \approx 1400.
+  locator: sec_sparse_walsh_recovery.tex:0

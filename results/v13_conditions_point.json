@@ -1,0 +1,194 @@
+{
+ "c6 zero  [primary]": {
+  "n_elig": 12,
+  "n_si": 3,
+  "n_nn": 2,
+  "k": 7,
+  "ari": 0.17687074829931973,
+  "merged": true,
+  "clusters": {
+   "L5H5": 2,
+   "L8H6": 4,
+   "L11H10": 3,
+   "L10H7": 1,
+   "L6H9": 2,
+   "L0H10": 4,
+   "L0H1": 3,
+   "L10H0": 5,
+   "L5H9": 7,
+   "L8H10": 1,
+   "L9H9": 6,
+   "L7H9": 1
+  },
+  "labels": {
+   "L5H5": "IND",
+   "L8H6": "S-Inh",
+   "L11H10": "NegNM",
+   "L10H7": "NegNM",
+   "L6H9": "IND",
+   "L0H10": "DTH",
+   "L0H1": "DTH",
+   "L10H0": "NM",
+   "L5H9": "IND",
+   "L8H10": "S-Inh",
+   "L9H9": "NM",
+   "L7H9": "S-Inh"
+  }
+ },
+ "c6 mean  [M6 invariance]": {
+  "n_elig": 12,
+  "n_si": 3,
+  "n_nn": 2,
+  "k": 9,
+  "ari": 0.10569105691056911,
+  "merged": true,
+  "clusters": {
+   "L5H5": 1,
+   "L8H6": 5,
+   "L11H10": 3,
+   "L10H7": 5,
+   "L6H9": 1,
+   "L0H10": 2,
+   "L0H1": 6,
+   "L10H0": 7,
+   "L5H9": 9,
+   "L8H10": 3,
+   "L9H9": 8,
+   "L7H9": 4
+  },
+  "labels": {
+   "L5H5": "IND",
+   "L8H6": "S-Inh",
+   "L11H10": "NegNM",
+   "L10H7": "NegNM",
+   "L6H9": "IND",
+   "L0H10": "DTH",
+   "L0H1": "DTH",
+   "L10H0": "NM",
+   "L5H9": "IND",
+   "L8H10": "S-Inh",
+   "L9H9": "NM",
+   "L7H9": "S-Inh"
+  }
+ },
+ "c2 EAP-IG zero  [C3]": {
+  "n_elig": 5,
+  "n_si": 3,
+  "n_nn": 2,
+  "k": 3,
+  "ari": -0.36363636363636365,
+  "merged": true,
+  "clusters": {
+   "L7H9": 3,
+   "L8H6": 1,
+   "L8H10": 2,
+   "L10H7": 1,
+   "L11H10": 2
+  },
+  "labels": {
+   "L7H9": "S-Inh",
+   "L8H6": "S-Inh",
+   "L8H10": "S-Inh",
+   "L10H7": "NegNM",
+   "L11H10": "NegNM"
+  }
+ },
+ "c5 Walsh-o1 zero [C3]": {
+  "n_elig": 7,
+  "n_si": 3,
+  "n_nn": 2,
+  "k": 3,
+  "ari": 0.2125,
+  "merged": true,
+  "clusters": {
+   "L5H5": 1,
+   "L10H7": 2,
+   "L8H6": 2,
+   "L8H10": 3,
+   "L7H9": 3,
+   "L6H9": 1,
+   "L11H10": 3
+  },
+  "labels": {
+   "L5H5": "IND",
+   "L10H7": "NegNM",
+   "L8H6": "S-Inh",
+   "L8H10": "S-Inh",
+   "L7H9": "S-Inh",
+   "L6H9": "IND",
+   "L11H10": "NegNM"
+  }
+ },
+ "c6 zero complete-linkage": {
+  "n_elig": 12,
+  "n_si": 3,
+  "n_nn": 2,
+  "k": 6,
+  "ari": 0.17687074829931973,
+  "merged": true,
+  "clusters": {
+   "L5H5": 5,
+   "L8H6": 1,
+   "L11H10": 6,
+   "L10H7": 3,
+   "L6H9": 5,
+   "L0H10": 1,
+   "L0H1": 6,
+   "L10H0": 4,
+   "L5H9": 2,
+   "L8H10": 2,
+   "L9H9": 4,
+   "L7H9": 3
+  },
+  "labels": {
+   "L5H5": "IND",
+   "L8H6": "S-Inh",
+   "L11H10": "NegNM",
+   "L10H7": "NegNM",
+   "L6H9": "IND",
+   "L0H10": "DTH",
+   "L0H1": "DTH",
+   "L10H0": "NM",
+   "L5H9": "IND",
+   "L8H10": "S-Inh",
+   "L9H9": "NM",
+   "L7H9": "S-Inh"
+  }
+ },
+ "c6 zero ward-linkage": {
+  "n_elig": 12,
+  "n_si": 3,
+  "n_nn": 2,
+  "k": 6,
+  "ari": 0.2903225806451613,
+  "merged": true,
+  "clusters": {
+   "L5H5": 1,
+   "L8H6": 5,
+   "L11H10": 2,
+   "L10H7": 6,
+   "L6H9": 1,
+   "L0H10": 5,
+   "L0H1": 2,
+   "L10H0": 3,
+   "L5H9": 4,
+   "L8H10": 6,
+   "L9H9": 3,
+   "L7H9": 6
+  },
+  "labels": {
+   "L5H5": "IND",
+   "L8H6": "S-Inh",
+   "L11H10": "NegNM",
+   "L10H7": "NegNM",
+   "L6H9": "IND",
+   "L0H10": "DTH",
+   "L0H1": "DTH",
+   "L10H0": "NM",
+   "L5H9": "IND",
+   "L8H10": "S-Inh",
+   "L9H9": "NM",
+   "L7H9": "S-Inh"
+  }
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "c6 zero  [primary]": {
+  "n_elig": 12,
+  "n_sinh": 3,
+  "n_negnm": 2,
+  "k": 7,
+  "ari": 0.17687074829931973,
+  "merged_point": true,
+  "merge_rate": 0.814,
+  "ari_ci": [
+   0.0064516129032258064,
+   0.17687074829931973
+  ]
+ },
+ "c6 mean  [M6 invariance]": {
+  "n_elig": 12,
+  "n_sinh": 3,
+  "n_negnm": 2,
+  "k": 9,
+  "ari": 0.10569105691056911,
+  "merged_point": true,
+  "merge_rate": 1.0,
+  "ari_ci": [
+   0.10569105691056911,
+   0.32653061224489793
+  ]
+ },
+ "c2 EAP-IG zero  [C3]": {
+  "n_elig": 5,
+  "n_sinh": 3,
+  "n_negnm": 2,
+  "k": 3,
+  "ari": -0.36363636363636365,
+  "merged_point": true,
+  "merge_rate": 1.0,
+  "ari_ci": [
+   -0.36363636363636365,
+   -0.36363636363636365
+  ]
+ },
+ "c5 Walsh-o1 zero [C3]": {
+  "n_elig": 7,
+  "n_sinh": 3,
+  "n_negnm": 2,
+  "k": 3,
+  "ari": 0.2125,
+  "merged_point": true,
+  "merge_rate": 1.0,
+  "ari_ci": [
+   0.08695652173913043,
+   0.2125
+  ]
+ },
+ "c6 zero, complete linkage": {
+  "n_elig": 12,
+  "n_sinh": 3,
+  "n_negnm": 2,
+  "k": 6,
+  "ari": 0.17687074829931973,
+  "merged_point": true,
+  "merge_rate": 0.826,
+  "ari_ci": [
+   0.0064516129032258064,
+   0.2903225806451613
+  ]
+ },
+ "c6 zero, ward linkage": {
+  "n_elig": 12,
+  "n_sinh": 3,
+  "n_negnm": 2,
+  "k": 6,
+  "ari": 0.2903225806451613,
+  "merged_point": true,
+  "merge_rate": 0.86,
+  "ari_ci": [
+   0.0064516129032258064,
+   0.2903225806451613
+  ]
+ }
+}

@@ -1,0 +1,14 @@
+citation: chughtai2024faithfulness
+depth: cited
+title: Transformer Circuit Faithfulness Metrics Are Not Robust
+authors:
+- Chughtai, Bilal
+- Cooney, Alan
+- Nanda, Neel
+year: '2024'
+venue: Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (ACL)
+url: https://arxiv.org/abs/2407.08734
+attributed_claims:
+- claim: '[CITE] show that faithfulness metrics are not robust to the choice of ablation primitive or
+    metric.'
+  locator: sec_discussion.tex:85

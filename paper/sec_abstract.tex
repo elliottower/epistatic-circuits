@@ -1,0 +1,30 @@
+% =====================================================================
+% Abstract.
+% Status: v1 draft.
+% =====================================================================
+
+Circuit discovery methods in mechanistic interpretability identify
+subgraphs of a neural network that explain a behavior, yet no existing
+method provides the exact nonlinear interaction structure between
+components. We show that the pairwise Walsh--Hadamard spectrum of a
+transformer circuit --- the complete set of deviations from additivity
+for every pair of attention heads --- can be recovered from as few as
+$M \approx k$ random coalition evaluations via compressed sensing, where
+$k$ is the number of coefficients and $2^n$ is the brute-force cost.
+For a 20-head circuit in GPT-2 small, LASSO recovery reaches
+correlation $r > 0.95$ at $M = 140$ ($7{,}490\times$ compression over
+exact enumeration). Using this exact ground truth, we audit three
+families of circuit discovery proxies. Weight geometry (composition
+scores, subspace overlap) carries no cross-validated predictive power
+for pairwise interaction under any ablation primitive. EAP edge
+attribution agrees moderately with Walsh coefficients (Spearman
+$\rho = 0.58$), capturing the linear component of interaction while
+missing nonlinear routing effects. Path patching, which isolates direct
+causal edges, is nearly orthogonal to Walsh interaction (signed Pearson
+$r = 0.07$): the two methods measure categorically different quantities
+--- functional coupling versus information flow. Finally, reading the
+interaction spectrum against the documented IOI circuit taxonomy recovers
+a sign-inversion dependency between S-inhibition and negative name-mover
+heads that the original analysis recorded as unexplained. The pairwise
+interaction structure is measurable, compressible, and carries mechanism
+that additive circuit summaries discard.

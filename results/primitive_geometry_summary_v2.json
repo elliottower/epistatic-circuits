@@ -1,0 +1,122 @@
+{
+  "n_comparable_groups": 6,
+  "n_rows": 17,
+  "n_pair_records": 609,
+  "P1": {
+    "verdict": "PASS",
+    "n_eligible_passes": 2,
+    "n_total_comparisons": 2,
+    "threshold": "at least half of eligible 15-head circuits by >= 0.10",
+    "note": "P1 as registered is dead: only 1 eligible 15-head circuit (need half). This is descriptive.",
+    "comparisons": [
+      {
+        "task": "ioi",
+        "n_heads": 15,
+        "comparison": "mean - zero",
+        "diff": 0.3557,
+        "passes_0.10": true,
+        "zero_cv_r2": -0.3564,
+        "mean_cv_r2": -0.0007,
+        "selection_bias_note": "mean arm has selection bias"
+      },
+      {
+        "task": "ioi",
+        "n_heads": 15,
+        "comparison": "resample - zero",
+        "diff": 0.2221,
+        "passes_0.10": true,
+        "zero_cv_r2": -0.3564,
+        "resample_cv_r2": -0.1343,
+        "selection_bias_note": null
+      }
+    ]
+  },
+  "P2": {
+    "by_primitive": {
+      "mean": {
+        "median_cv_r2": -1.8142,
+        "n": 6,
+        "below_0.20": true
+      },
+      "resample": {
+        "median_cv_r2": -2.4241,
+        "n": 5,
+        "below_0.20": true
+      },
+      "zero": {
+        "median_cv_r2": -0.8487,
+        "n": 6,
+        "below_0.20": true
+      }
+    },
+    "all_below_0.20": true
+  },
+  "P3": {
+    "zero": {
+      "rho_close": 0.2363,
+      "rho_far": 0.314,
+      "close_n": 86,
+      "far_n": 93,
+      "close_exceeds_far": false
+    },
+    "mean": {
+      "rho_close": 0.3239,
+      "rho_far": 0.1517,
+      "close_n": 86,
+      "far_n": 93,
+      "close_exceeds_far": true
+    },
+    "resample": {
+      "rho_close": 0.3968,
+      "rho_far": -0.193,
+      "close_n": 76,
+      "far_n": 85,
+      "close_exceeds_far": true
+    }
+  },
+  "P4": {
+    "insample": 0.2348,
+    "cv": -0.3564,
+    "diff": 0.5912,
+    "passes_0.03": true,
+    "task": "ioi"
+  },
+  "cv_r2_by_primitive": {
+    "mean": {
+      "median": -1.8142,
+      "values": [
+        -1.3581,
+        -3.7252,
+        -2.2704,
+        -4.344,
+        -0.6809,
+        -0.0007
+      ],
+      "n": 6
+    },
+    "resample": {
+      "median": -2.4241,
+      "values": [
+        -2.4241,
+        -8.5061,
+        -1.2586,
+        -4.8639,
+        -0.1343
+      ],
+      "n": 5
+    },
+    "zero": {
+      "median": -0.8487,
+      "values": [
+        -0.6596,
+        -1.0377,
+        -1.96,
+        -4.0756,
+        -0.3445,
+        -0.3564
+      ],
+      "n": 6
+    }
+  },
+  "blocker_1_resolved": "C6 discovered under MEAN ablation (modal_walsh_discovery.py). Mean arm has selection effect. Zero and resample are clean."
+}

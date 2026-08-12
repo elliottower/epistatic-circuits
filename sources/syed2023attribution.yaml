@@ -1,0 +1,17 @@
+citation: syed2023attribution
+depth: cited
+title: Attribution Patching Outperforms Automated Circuit Discovery
+authors:
+- Syed, Aaquib
+- Rager, Can
+- Conmy, Arthur
+year: '2023'
+venue: NeurIPS Workshop on Attributing Model Behavior at Scale
+url: https://arxiv.org/abs/2310.10348
+arxiv: '2310.10348'
+attributed_claims:
+- claim: Edge Attribution Patching (EAP). [CITE] approximate the effect of ablating each edge (sender--receiver
+    pair) by backpropagating through the clean forward pass and multiplying gradients by activation differences.
+  locator: sec_background.tex:86
+- claim: EAP edge scores~[CITE] measure linearized gradient flow between heads.
+  locator: sec_sparse_walsh_recovery.tex:124

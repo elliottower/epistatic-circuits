@@ -1,0 +1,17 @@
+source:
+  citation: bourgain2014
+  local: reference/blasiok_2019_walsh_rip_lower_bound.pdf
+  sha256: null
+  extract_cmd: pdftotext -layout
+
+claims:
+  bourgain-bound-cited-by-blasiok:
+    statement: 'Bourgain established O(K log K log^2 N) bound for subsampled Fourier RIP.'
+    verified: true
+    quotes:
+      - exact: 'Bourgain established the bound O(K'
+        section: 'Introduction'
+    notes: >
+      Bourgain's 2014 Springer paper is paywalled. This quote is from the
+      Blasiok et al. (2019) paper which cites the Bourgain result directly.
+      The actual Bourgain PDF was not downloadable.

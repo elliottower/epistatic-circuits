@@ -1,0 +1,16 @@
+source:
+  citation: poelwijk2016context
+  local: reference/poelwijk_2016_context_dependence.pdf
+  sha256: null
+  extract_cmd: pdftotext -layout
+
+claims:
+  walsh-background-averaged:
+    statement: 'Background-averaged epistasis uses the Walsh-Hadamard transform, averaging over all genotypic backgrounds.'
+    verified: true
+    quotes:
+      - exact: 'averaging the epistatic effects of mutations over the ensemble of all possible'
+        section: 'Results'
+      - exact: 'the weighted Walsh-Hadamard transform'
+        prefix: 'mathematical formalism'
+        section: 'Abstract'

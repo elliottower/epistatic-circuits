@@ -1,0 +1,1649 @@
+[
+ {
+  "n_heads": 15,
+  "primitives": [
+   "mean",
+   "resample",
+   "zero"
+  ],
+  "n_primitives": 3,
+  "tasks": [
+   "ioi",
+   "rti"
+  ],
+  "mixes_tasks": true,
+  "n_prompts": [
+   302,
+   512
+  ],
+  "value_keys": [
+   "logit_diff",
+   "other"
+  ],
+  "all_complete": true,
+  "files": {
+   "resample": [
+    "ioi_C4_random_resample_coalition_values.npz",
+    "rti_random_resample_coalition_values.npz"
+   ],
+   "mean": [
+    "C4_random_mean_rti_v5_coalition_values.npz"
+   ],
+   "zero": [
+    "C4_random_zero_rti_v5_coalition_values.npz"
+   ]
+  },
+  "heads": [
+   [
+    0,
+    3
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    3,
+    8
+   ],
+   [
+    3,
+    9
+   ],
+   [
+    3,
+    10
+   ],
+   [
+    4,
+    8
+   ],
+   [
+    6,
+    5
+   ],
+   [
+    6,
+    10
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    8,
+    1
+   ],
+   [
+    8,
+    8
+   ],
+   [
+    8,
+    11
+   ],
+   [
+    9,
+    4
+   ],
+   [
+    10,
+    8
+   ]
+  ]
+ },
+ {
+  "n_heads": 15,
+  "primitives": [
+   "mean",
+   "resample",
+   "zero"
+  ],
+  "n_primitives": 3,
+  "tasks": [
+   "ioi"
+  ],
+  "mixes_tasks": false,
+  "n_prompts": [
+   512
+  ],
+  "value_keys": [
+   "logit_diff",
+   "other"
+  ],
+  "all_complete": true,
+  "files": {
+   "resample": [
+    "ioi_C6_epistatic_resample_coalition_values.npz"
+   ],
+   "mean": [
+    "c6_mean_v2_coalition_values.npz"
+   ],
+   "zero": [
+    "c6_zero_v2_coalition_values.npz"
+   ]
+  },
+  "heads": [
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    10
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    5,
+    9
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    7,
+    9
+   ],
+   [
+    8,
+    6
+   ],
+   [
+    8,
+    10
+   ],
+   [
+    9,
+    9
+   ],
+   [
+    10,
+    0
+   ],
+   [
+    10,
+    7
+   ],
+   [
+    11,
+    2
+   ],
+   [
+    11,
+    10
+   ]
+  ]
+ },
+ {
+  "n_heads": 15,
+  "primitives": [
+   "mean",
+   "resample",
+   "zero"
+  ],
+  "n_primitives": 3,
+  "tasks": [
+   "rti"
+  ],
+  "mixes_tasks": false,
+  "n_prompts": [
+   302,
+   512
+  ],
+  "value_keys": [
+   "logit_diff"
+  ],
+  "all_complete": true,
+  "files": {
+   "resample": [
+    "rti_C5_walsh_resample_coalition_values.npz"
+   ],
+   "mean": [
+    "rti_c5_walsh_mean_coalition_values.npz"
+   ],
+   "zero": [
+    "rti_c5_walsh_zero_coalition_values.npz"
+   ]
+  },
+  "heads": [
+   [
+    0,
+    9
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    1,
+    5
+   ],
+   [
+    2,
+    11
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    6,
+    11
+   ],
+   [
+    7,
+    9
+   ],
+   [
+    8,
+    7
+   ],
+   [
+    9,
+    9
+   ],
+   [
+    10,
+    6
+   ],
+   [
+    10,
+    7
+   ],
+   [
+    11,
+    2
+   ],
+   [
+    11,
+    10
+   ]
+  ]
+ },
+ {
+  "n_heads": 15,
+  "primitives": [
+   "mean",
+   "resample",
+   "zero"
+  ],
+  "n_primitives": 3,
+  "tasks": [
+   "rti"
+  ],
+  "mixes_tasks": false,
+  "n_prompts": [
+   302,
+   512
+  ],
+  "value_keys": [
+   "logit_diff",
+   "other"
+  ],
+  "all_complete": true,
+  "files": {
+   "resample": [
+    "rti_EAP_resample_coalition_values.npz"
+   ],
+   "mean": [
+    "EAP_rti_mean_rti_v5_coalition_values.npz"
+   ],
+   "zero": [
+    "EAP_rti_zero_rti_v5_coalition_values.npz"
+   ]
+  },
+  "heads": [
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    0,
+    6
+   ],
+   [
+    0,
+    8
+   ],
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    10
+   ],
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    0
+   ],
+   [
+    2,
+    8
+   ],
+   [
+    2,
+    10
+   ],
+   [
+    4,
+    7
+   ],
+   [
+    5,
+    9
+   ]
+  ]
+ },
+ {
+  "n_heads": 15,
+  "primitives": [
+   "mean",
+   "resample",
+   "zero"
+  ],
+  "n_primitives": 3,
+  "tasks": [
+   "rti"
+  ],
+  "mixes_tasks": false,
+  "n_prompts": [
+   302,
+   512
+  ],
+  "value_keys": [
+   "logit_diff",
+   "other"
+  ],
+  "all_complete": false,
+  "files": {
+   "resample": [
+    "rti_known_resample_coalition_values.npz"
+   ],
+   "mean": [
+    "RTI_mean_rti_v5_coalition_values.npz",
+    "rti_mean_v3_coalition_values.npz",
+    "rti_mean_v2_coalition_values.npz"
+   ],
+   "zero": [
+    "RTI_zero_rti_v5_coalition_values.npz",
+    "rti_zero_v3_coalition_values.npz",
+    "rti_zero_v2_coalition_values.npz"
+   ]
+  },
+  "heads": [
+   [
+    0,
+    8
+   ],
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    11
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    5,
+    7
+   ],
+   [
+    7,
+    0
+   ],
+   [
+    8,
+    4
+   ],
+   [
+    8,
+    7
+   ],
+   [
+    9,
+    3
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    10,
+    11
+   ],
+   [
+    11,
+    9
+   ],
+   [
+    11,
+    11
+   ]
+  ]
+ },
+ {
+  "n_heads": 7,
+  "primitives": [
+   "mean",
+   "resample",
+   "zero"
+  ],
+  "n_primitives": 3,
+  "tasks": [
+   "gt"
+  ],
+  "mixes_tasks": false,
+  "n_prompts": [
+   1000
+  ],
+  "value_keys": [
+   "other",
+   "prob_diff"
+  ],
+  "all_complete": true,
+  "files": {
+   "resample": [
+    "gt_acdc_resample_coalition_values.npz"
+   ],
+   "mean": [
+    "gt_acdc_mean_coalition_values.npz"
+   ],
+   "zero": [
+    "gt_acdc_zero_coalition_values.npz"
+   ]
+  },
+  "heads": [
+   [
+    0,
+    7
+   ],
+   [
+    3,
+    6
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    8,
+    10
+   ],
+   [
+    9,
+    1
+   ]
+  ]
+ },
+ {
+  "n_heads": 7,
+  "primitives": [
+   "mean",
+   "resample",
+   "zero"
+  ],
+  "n_primitives": 3,
+  "tasks": [
+   "gt"
+  ],
+  "mixes_tasks": false,
+  "n_prompts": [
+   1000
+  ],
+  "value_keys": [
+   "prob_diff"
+  ],
+  "all_complete": true,
+  "files": {
+   "resample": [
+    "gt_c5_walsh_resample_coalition_values.npz"
+   ],
+   "mean": [
+    "gt_c5_walsh_mean_coalition_values.npz"
+   ],
+   "zero": [
+    "gt_c5_walsh_zero_coalition_values.npz"
+   ]
+  },
+  "heads": [
+   [
+    0,
+    10
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    8,
+    5
+   ],
+   [
+    9,
+    1
+   ],
+   [
+    10,
+    2
+   ]
+  ]
+ },
+ {
+  "n_heads": 7,
+  "primitives": [
+   "mean",
+   "resample",
+   "zero"
+  ],
+  "n_primitives": 3,
+  "tasks": [
+   "gt"
+  ],
+  "mixes_tasks": false,
+  "n_prompts": [
+   1000
+  ],
+  "value_keys": [
+   "prob_diff"
+  ],
+  "all_complete": true,
+  "files": {
+   "resample": [
+    "gt_c6_epistatic_resample_coalition_values.npz"
+   ],
+   "mean": [
+    "gt_c6_epistatic_mean_coalition_values.npz"
+   ],
+   "zero": [
+    "gt_c6_epistatic_zero_coalition_values.npz"
+   ]
+  },
+  "heads": [
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    10
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    9,
+    1
+   ]
+  ]
+ },
+ {
+  "n_heads": 7,
+  "primitives": [
+   "mean",
+   "resample",
+   "zero"
+  ],
+  "n_primitives": 3,
+  "tasks": [
+   "gt"
+  ],
+  "mixes_tasks": false,
+  "n_prompts": [
+   1000
+  ],
+  "value_keys": [
+   "prob_diff"
+  ],
+  "all_complete": true,
+  "files": {
+   "resample": [
+    "gt_known_resample_coalition_values.npz"
+   ],
+   "mean": [
+    "gt_known_mean_coalition_values.npz"
+   ],
+   "zero": [
+    "gt_known_zero_coalition_values.npz"
+   ]
+  },
+  "heads": [
+   [
+    5,
+    1
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    8,
+    8
+   ],
+   [
+    8,
+    11
+   ],
+   [
+    9,
+    1
+   ]
+  ]
+ },
+ {
+  "n_heads": 7,
+  "primitives": [
+   "mean",
+   "resample",
+   "zero"
+  ],
+  "n_primitives": 3,
+  "tasks": [
+   "gt",
+   "induction"
+  ],
+  "mixes_tasks": true,
+  "n_prompts": [
+   500,
+   1000
+  ],
+  "value_keys": [
+   "other",
+   "prob_diff"
+  ],
+  "all_complete": true,
+  "files": {
+   "resample": [
+    "gt_random_resample_coalition_values.npz"
+   ],
+   "mean": [
+    "gt_random_mean_coalition_values.npz",
+    "induction_random_mean_coalition_values.npz"
+   ],
+   "zero": [
+    "gt_random_zero_coalition_values.npz",
+    "induction_random_zero_coalition_values.npz"
+   ]
+  },
+  "heads": [
+   [
+    0,
+    6
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    2,
+    11
+   ],
+   [
+    4,
+    9
+   ],
+   [
+    5,
+    2
+   ],
+   [
+    5,
+    10
+   ]
+  ]
+ },
+ {
+  "n_heads": 15,
+  "primitives": [
+   "mean",
+   "resample"
+  ],
+  "n_primitives": 2,
+  "tasks": [
+   "rti"
+  ],
+  "mixes_tasks": false,
+  "n_prompts": [
+   302,
+   512
+  ],
+  "value_keys": [
+   "logit_diff"
+  ],
+  "all_complete": true,
+  "files": {
+   "resample": [
+    "rti_C6_epistatic_resample_coalition_values.npz"
+   ],
+   "mean": [
+    "rti_c6_epistatic_mean_coalition_values.npz"
+   ]
+  },
+  "heads": [
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    9
+   ],
+   [
+    0,
+    10
+   ],
+   [
+    1,
+    11
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    2,
+    11
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    9,
+    6
+   ],
+   [
+    9,
+    9
+   ],
+   [
+    10,
+    0
+   ],
+   [
+    10,
+    7
+   ],
+   [
+    11,
+    2
+   ],
+   [
+    11,
+    10
+   ]
+  ]
+ },
+ {
+  "n_heads": 7,
+  "primitives": [
+   "mean",
+   "zero"
+  ],
+  "n_primitives": 2,
+  "tasks": [
+   "gt"
+  ],
+  "mixes_tasks": false,
+  "n_prompts": [
+   1000
+  ],
+  "value_keys": [
+   "prob_diff"
+  ],
+  "all_complete": true,
+  "files": {
+   "mean": [
+    "gt_ablation_discovered_mean_coalition_values.npz"
+   ],
+   "zero": [
+    "gt_ablation_discovered_zero_coalition_values.npz"
+   ]
+  },
+  "heads": [
+   [
+    0,
+    10
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    5,
+    8
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    7,
+    10
+   ],
+   [
+    8,
+    5
+   ],
+   [
+    9,
+    1
+   ]
+  ]
+ },
+ {
+  "n_heads": 7,
+  "primitives": [
+   "mean",
+   "zero"
+  ],
+  "n_primitives": 2,
+  "tasks": [
+   "gt"
+  ],
+  "mixes_tasks": false,
+  "n_prompts": [
+   1000
+  ],
+  "value_keys": [
+   "other"
+  ],
+  "all_complete": true,
+  "files": {
+   "mean": [
+    "gt_greedy_sufficiency_mean_coalition_values.npz"
+   ],
+   "zero": [
+    "gt_greedy_sufficiency_zero_coalition_values.npz"
+   ]
+  },
+  "heads": [
+   [
+    3,
+    3
+   ],
+   [
+    4,
+    8
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    5,
+    7
+   ],
+   [
+    9,
+    1
+   ],
+   [
+    10,
+    2
+   ],
+   [
+    11,
+    8
+   ]
+  ]
+ },
+ {
+  "n_heads": 7,
+  "primitives": [
+   "mean",
+   "zero"
+  ],
+  "n_primitives": 2,
+  "tasks": [
+   "induction"
+  ],
+  "mixes_tasks": false,
+  "n_prompts": [
+   500
+  ],
+  "value_keys": [
+   "other"
+  ],
+  "all_complete": true,
+  "files": {
+   "mean": [
+    "induction_ablation_discovered_mean_coalition_values.npz"
+   ],
+   "zero": [
+    "induction_ablation_discovered_zero_coalition_values.npz"
+   ]
+  },
+  "heads": [
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    10
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    5,
+    9
+   ],
+   [
+    6,
+    9
+   ]
+  ]
+ },
+ {
+  "n_heads": 7,
+  "primitives": [
+   "mean",
+   "zero"
+  ],
+  "n_primitives": 2,
+  "tasks": [
+   "induction"
+  ],
+  "mixes_tasks": false,
+  "n_prompts": [
+   500
+  ],
+  "value_keys": [
+   "other"
+  ],
+  "all_complete": true,
+  "files": {
+   "mean": [
+    "induction_acdc_mean_coalition_values.npz"
+   ],
+   "zero": [
+    "induction_acdc_zero_coalition_values.npz"
+   ]
+  },
+  "heads": [
+   [
+    1,
+    3
+   ],
+   [
+    2,
+    11
+   ],
+   [
+    3,
+    7
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    7,
+    10
+   ]
+  ]
+ },
+ {
+  "n_heads": 7,
+  "primitives": [
+   "mean",
+   "zero"
+  ],
+  "n_primitives": 2,
+  "tasks": [
+   "induction"
+  ],
+  "mixes_tasks": false,
+  "n_prompts": [
+   500
+  ],
+  "value_keys": [
+   "other"
+  ],
+  "all_complete": true,
+  "files": {
+   "mean": [
+    "induction_greedy_sufficiency_mean_coalition_values.npz"
+   ],
+   "zero": [
+    "induction_greedy_sufficiency_zero_coalition_values.npz"
+   ]
+  },
+  "heads": [
+   [
+    0,
+    10
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    10,
+    2
+   ],
+   [
+    11,
+    6
+   ]
+  ]
+ },
+ {
+  "n_heads": 7,
+  "primitives": [
+   "mean",
+   "zero"
+  ],
+  "n_primitives": 2,
+  "tasks": [
+   "induction"
+  ],
+  "mixes_tasks": false,
+  "n_prompts": [
+   500
+  ],
+  "value_keys": [
+   "other"
+  ],
+  "all_complete": true,
+  "files": {
+   "mean": [
+    "induction_known_mean_coalition_values.npz"
+   ],
+   "zero": [
+    "induction_known_zero_coalition_values.npz"
+   ]
+  },
+  "heads": [
+   [
+    2,
+    2
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    5,
+    1
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    7,
+    2
+   ],
+   [
+    7,
+    10
+   ]
+  ]
+ },
+ {
+  "n_heads": 15,
+  "primitives": [
+   "resample"
+  ],
+  "n_primitives": 1,
+  "tasks": [
+   "ioi"
+  ],
+  "mixes_tasks": false,
+  "n_prompts": [
+   512
+  ],
+  "value_keys": [
+   "logit_diff"
+  ],
+  "all_complete": true,
+  "files": {
+   "resample": [
+    "ioi_C2_eap_resample_coalition_values.npz"
+   ]
+  },
+  "heads": [
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    10
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    5,
+    8
+   ],
+   [
+    5,
+    9
+   ],
+   [
+    6,
+    1
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    7,
+    3
+   ],
+   [
+    7,
+    9
+   ],
+   [
+    8,
+    6
+   ],
+   [
+    8,
+    10
+   ],
+   [
+    10,
+    7
+   ],
+   [
+    11,
+    10
+   ]
+  ]
+ },
+ {
+  "n_heads": 15,
+  "primitives": [
+   "resample"
+  ],
+  "n_primitives": 1,
+  "tasks": [
+   "ioi"
+  ],
+  "mixes_tasks": false,
+  "n_prompts": [
+   512
+  ],
+  "value_keys": [
+   "logit_diff"
+  ],
+  "all_complete": true,
+  "files": {
+   "resample": [
+    "ioi_C3_canonical_resample_coalition_values.npz"
+   ]
+  },
+  "heads": [
+   [
+    0,
+    1
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    7,
+    3
+   ],
+   [
+    7,
+    9
+   ],
+   [
+    8,
+    6
+   ],
+   [
+    8,
+    10
+   ],
+   [
+    9,
+    6
+   ],
+   [
+    9,
+    9
+   ],
+   [
+    10,
+    0
+   ],
+   [
+    10,
+    7
+   ],
+   [
+    11,
+    10
+   ]
+  ]
+ },
+ {
+  "n_heads": 15,
+  "primitives": [
+   "resample"
+  ],
+  "n_primitives": 1,
+  "tasks": [
+   "ioi"
+  ],
+  "mixes_tasks": false,
+  "n_prompts": [
+   512
+  ],
+  "value_keys": [
+   "logit_diff"
+  ],
+  "all_complete": true,
+  "files": {
+   "resample": [
+    "ioi_C5_walsh_resample_coalition_values.npz"
+   ]
+  },
+  "heads": [
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    9
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    7,
+    9
+   ],
+   [
+    8,
+    6
+   ],
+   [
+    8,
+    10
+   ],
+   [
+    10,
+    1
+   ],
+   [
+    10,
+    7
+   ],
+   [
+    10,
+    10
+   ],
+   [
+    11,
+    1
+   ],
+   [
+    11,
+    2
+   ],
+   [
+    11,
+    10
+   ]
+  ]
+ },
+ {
+  "n_heads": 15,
+  "primitives": [
+   "resample"
+  ],
+  "n_primitives": 1,
+  "tasks": [
+   "ioi"
+  ],
+  "mixes_tasks": false,
+  "n_prompts": [
+   512
+  ],
+  "value_keys": [
+   "logit_diff"
+  ],
+  "all_complete": true,
+  "files": {
+   "resample": [
+    "ioi_acdc_resample_coalition_values.npz"
+   ]
+  },
+  "heads": [
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    9
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    2,
+    0
+   ],
+   [
+    2,
+    10
+   ],
+   [
+    3,
+    7
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    6,
+    0
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    7,
+    1
+   ],
+   [
+    8,
+    6
+   ],
+   [
+    8,
+    10
+   ],
+   [
+    9,
+    3
+   ]
+  ]
+ },
+ {
+  "n_heads": 15,
+  "primitives": [
+   "resample"
+  ],
+  "n_primitives": 1,
+  "tasks": [
+   "rti"
+  ],
+  "mixes_tasks": false,
+  "n_prompts": [
+   512
+  ],
+  "value_keys": [
+   "logit_diff"
+  ],
+  "all_complete": true,
+  "files": {
+   "resample": [
+    "rti_acdc_resample_coalition_values.npz"
+   ]
+  },
+  "heads": [
+   [
+    0,
+    9
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    2,
+    0
+   ],
+   [
+    2,
+    6
+   ],
+   [
+    2,
+    8
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    6
+   ],
+   [
+    3,
+    7
+   ],
+   [
+    4,
+    6
+   ],
+   [
+    5,
+    4
+   ],
+   [
+    5,
+    7
+   ],
+   [
+    6,
+    9
+   ],
+   [
+    7,
+    9
+   ],
+   [
+    8,
+    6
+   ],
+   [
+    8,
+    10
+   ]
+  ]
+ }
+]

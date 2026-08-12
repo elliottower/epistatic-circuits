@@ -1,0 +1,2076 @@
+{
+ "experiment": "Path patching edge decomposition of Walsh interactions",
+ "prereg_sha": "4607cd9a",
+ "n_heads": 20,
+ "n_prompts": 200,
+ "n_pairs_total": 190,
+ "n_cross_layer": 176,
+ "n_same_layer": 14,
+ "clean_logit_diff": 4.377922058105469,
+ "correlations": {
+  "abs_spearman": 0.2097,
+  "abs_pearson": 0.1333,
+  "signed_pearson": 0.0653
+ },
+ "mediation_fraction": 0.1591,
+ "same_layer_walsh_magnitudes": [
+  0.013319,
+  0.008699,
+  0.0,
+  0.002471,
+  0.017897,
+  0.010694,
+  0.000827,
+  0.001597,
+  0.014421,
+  0.007902,
+  0.004355,
+  0.001412,
+  0.0,
+  0.003648
+ ],
+ "top20_by_direct_effect": [
+  {
+   "sender": "L10H7",
+   "receiver": "L11H1",
+   "direct_effect": -1.960948,
+   "walsh_coeff": -0.00409,
+   "layer_distance": 1
+  },
+  {
+   "sender": "L9H6",
+   "receiver": "L11H1",
+   "direct_effect": 1.760327,
+   "walsh_coeff": 0.0,
+   "layer_distance": 2
+  },
+  {
+   "sender": "L9H6",
+   "receiver": "L11H10",
+   "direct_effect": 1.297141,
+   "walsh_coeff": 0.029361,
+   "layer_distance": 2
+  },
+  {
+   "sender": "L10H7",
+   "receiver": "L11H10",
+   "direct_effect": -1.292194,
+   "walsh_coeff": 0.045204,
+   "layer_distance": 1
+  },
+  {
+   "sender": "L5H5",
+   "receiver": "L7H9",
+   "direct_effect": 1.201459,
+   "walsh_coeff": 0.076165,
+   "layer_distance": 2
+  },
+  {
+   "sender": "L5H5",
+   "receiver": "L6H9",
+   "direct_effect": 1.120982,
+   "walsh_coeff": -0.027649,
+   "layer_distance": 1
+  },
+  {
+   "sender": "L5H5",
+   "receiver": "L7H3",
+   "direct_effect": 1.023527,
+   "walsh_coeff": 0.03026,
+   "layer_distance": 2
+  },
+  {
+   "sender": "L10H0",
+   "receiver": "L11H1",
+   "direct_effect": 1.012893,
+   "walsh_coeff": 0.006127,
+   "layer_distance": 1
+  },
+  {
+   "sender": "L9H6",
+   "receiver": "L10H10",
+   "direct_effect": 0.894386,
+   "walsh_coeff": -0.009625,
+   "layer_distance": 1
+  },
+  {
+   "sender": "L9H6",
+   "receiver": "L10H6",
+   "direct_effect": 0.871585,
+   "walsh_coeff": -0.006231,
+   "layer_distance": 1
+  },
+  {
+   "sender": "L10H0",
+   "receiver": "L11H10",
+   "direct_effect": 0.831697,
+   "walsh_coeff": -0.03846,
+   "layer_distance": 1
+  },
+  {
+   "sender": "L7H9",
+   "receiver": "L8H6",
+   "direct_effect": 0.775406,
+   "walsh_coeff": -0.012734,
+   "layer_distance": 1
+  },
+  {
+   "sender": "L8H6",
+   "receiver": "L9H7",
+   "direct_effect": 0.770705,
+   "walsh_coeff": 0.002618,
+   "layer_distance": 1
+  },
+  {
+   "sender": "L8H10",
+   "receiver": "L9H6",
+   "direct_effect": 0.75635,
+   "walsh_coeff": 0.003113,
+   "layer_distance": 1
+  },
+  {
+   "sender": "L5H5",
+   "receiver": "L8H6",
+   "direct_effect": 0.735609,
+   "walsh_coeff": 0.200323,
+   "layer_distance": 3
+  },
+  {
+   "sender": "L8H6",
+   "receiver": "L9H6",
+   "direct_effect": 0.734717,
+   "walsh_coeff": 0.006222,
+   "layer_distance": 1
+  },
+  {
+   "sender": "L8H10",
+   "receiver": "L9H7",
+   "direct_effect": 0.72685,
+   "walsh_coeff": -0.01117,
+   "layer_distance": 1
+  },
+  {
+   "sender": "L3H0",
+   "receiver": "L5H5",
+   "direct_effect": 0.698985,
+   "walsh_coeff": -0.017565,
+   "layer_distance": 2
+  },
+  {
+   "sender": "L9H6",
+   "receiver": "L10H0",
+   "direct_effect": 0.691388,
+   "walsh_coeff": -0.038998,
+   "layer_distance": 1
+  },
+  {
+   "sender": "L7H9",
+   "receiver": "L8H10",
+   "direct_effect": 0.649596,
+   "walsh_coeff": -0.02557,
+   "layer_distance": 1
+  }
+ ],
+ "all_pairs": [
+  {
+   "pair": "L10H7-L8H6",
+   "sender": "L8H6",
+   "receiver": "L10H7",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": -0.128915,
+   "direct_effect": 0.12863,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H7-L5H5",
+   "sender": "L5H5",
+   "receiver": "L10H7",
+   "same_layer": false,
+   "layer_distance": 5,
+   "walsh_coeff": -0.121559,
+   "direct_effect": 0.003688,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H7-L11H10",
+   "sender": "L10H7",
+   "receiver": "L11H10",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": 0.045204,
+   "direct_effect": -1.292194,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H7-L8H10",
+   "sender": "L8H10",
+   "receiver": "L10H7",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": -0.158797,
+   "direct_effect": 0.365709,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H7-L7H9",
+   "sender": "L7H9",
+   "receiver": "L10H7",
+   "same_layer": false,
+   "layer_distance": 3,
+   "walsh_coeff": -0.096171,
+   "direct_effect": 0.289778,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H7-L10H0",
+   "sender": "L10H7",
+   "receiver": "L10H0",
+   "same_layer": true,
+   "layer_distance": 0,
+   "walsh_coeff": -0.013319,
+   "direct_effect": 0.0,
+   "direction": "same_layer"
+  },
+  {
+   "pair": "L10H7-L11H1",
+   "sender": "L10H7",
+   "receiver": "L11H1",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": -0.00409,
+   "direct_effect": -1.960948,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H7-L9H6",
+   "sender": "L9H6",
+   "receiver": "L10H7",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": -0.163929,
+   "direct_effect": 0.363887,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H7-L6H9",
+   "sender": "L6H9",
+   "receiver": "L10H7",
+   "same_layer": false,
+   "layer_distance": 4,
+   "walsh_coeff": -0.041628,
+   "direct_effect": 0.000552,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H7-L7H3",
+   "sender": "L7H3",
+   "receiver": "L10H7",
+   "same_layer": false,
+   "layer_distance": 3,
+   "walsh_coeff": -0.050276,
+   "direct_effect": 0.10443,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H7-L3H0",
+   "sender": "L3H0",
+   "receiver": "L10H7",
+   "same_layer": false,
+   "layer_distance": 7,
+   "walsh_coeff": -0.03575,
+   "direct_effect": -0.013785,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H7-L4H7",
+   "sender": "L4H7",
+   "receiver": "L10H7",
+   "same_layer": false,
+   "layer_distance": 6,
+   "walsh_coeff": -0.020727,
+   "direct_effect": -0.005548,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H7-L9H7",
+   "sender": "L9H7",
+   "receiver": "L10H7",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": -0.007848,
+   "direct_effect": 0.118583,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H7-L5H10",
+   "sender": "L5H10",
+   "receiver": "L10H7",
+   "same_layer": false,
+   "layer_distance": 5,
+   "walsh_coeff": 0.027708,
+   "direct_effect": -0.001663,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H7-L5H9",
+   "sender": "L5H9",
+   "receiver": "L10H7",
+   "same_layer": false,
+   "layer_distance": 5,
+   "walsh_coeff": -0.026951,
+   "direct_effect": 0.004769,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H7-L0H1",
+   "sender": "L0H1",
+   "receiver": "L10H7",
+   "same_layer": false,
+   "layer_distance": 10,
+   "walsh_coeff": -0.034351,
+   "direct_effect": -0.369554,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H7-L10H10",
+   "sender": "L10H7",
+   "receiver": "L10H10",
+   "same_layer": true,
+   "layer_distance": 0,
+   "walsh_coeff": -0.008699,
+   "direct_effect": 0.0,
+   "direction": "same_layer"
+  },
+  {
+   "pair": "L10H7-L3H3",
+   "sender": "L3H3",
+   "receiver": "L10H7",
+   "same_layer": false,
+   "layer_distance": 7,
+   "walsh_coeff": 0.019106,
+   "direct_effect": 0.007763,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H7-L10H6",
+   "sender": "L10H7",
+   "receiver": "L10H6",
+   "same_layer": true,
+   "layer_distance": 0,
+   "walsh_coeff": -0.0,
+   "direct_effect": 0.0,
+   "direction": "same_layer"
+  },
+  {
+   "pair": "L8H6-L5H5",
+   "sender": "L5H5",
+   "receiver": "L8H6",
+   "same_layer": false,
+   "layer_distance": 3,
+   "walsh_coeff": 0.200323,
+   "direct_effect": 0.735609,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H6-L11H10",
+   "sender": "L8H6",
+   "receiver": "L11H10",
+   "same_layer": false,
+   "layer_distance": 3,
+   "walsh_coeff": -0.080333,
+   "direct_effect": -0.076395,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H6-L8H10",
+   "sender": "L8H6",
+   "receiver": "L8H10",
+   "same_layer": true,
+   "layer_distance": 0,
+   "walsh_coeff": -0.002471,
+   "direct_effect": 0.0,
+   "direction": "same_layer"
+  },
+  {
+   "pair": "L8H6-L7H9",
+   "sender": "L7H9",
+   "receiver": "L8H6",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": -0.012734,
+   "direct_effect": 0.775406,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H6-L10H0",
+   "sender": "L8H6",
+   "receiver": "L10H0",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": 0.012886,
+   "direct_effect": 0.313213,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H6-L11H1",
+   "sender": "L8H6",
+   "receiver": "L11H1",
+   "same_layer": false,
+   "layer_distance": 3,
+   "walsh_coeff": -0.0,
+   "direct_effect": -0.02906,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H6-L9H6",
+   "sender": "L8H6",
+   "receiver": "L9H6",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": 0.006222,
+   "direct_effect": 0.734717,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H6-L6H9",
+   "sender": "L6H9",
+   "receiver": "L8H6",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": 0.088376,
+   "direct_effect": 0.274098,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H6-L7H3",
+   "sender": "L7H3",
+   "receiver": "L8H6",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": -0.003701,
+   "direct_effect": 0.350667,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H6-L3H0",
+   "sender": "L3H0",
+   "receiver": "L8H6",
+   "same_layer": false,
+   "layer_distance": 5,
+   "walsh_coeff": 0.037146,
+   "direct_effect": 0.147069,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H6-L4H7",
+   "sender": "L4H7",
+   "receiver": "L8H6",
+   "same_layer": false,
+   "layer_distance": 4,
+   "walsh_coeff": 0.012798,
+   "direct_effect": 0.030821,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H6-L9H7",
+   "sender": "L8H6",
+   "receiver": "L9H7",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": 0.002618,
+   "direct_effect": 0.770705,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H6-L5H10",
+   "sender": "L5H10",
+   "receiver": "L8H6",
+   "same_layer": false,
+   "layer_distance": 3,
+   "walsh_coeff": -0.006782,
+   "direct_effect": -0.026877,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H6-L5H9",
+   "sender": "L5H9",
+   "receiver": "L8H6",
+   "same_layer": false,
+   "layer_distance": 3,
+   "walsh_coeff": 0.036034,
+   "direct_effect": 0.125586,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H6-L0H1",
+   "sender": "L0H1",
+   "receiver": "L8H6",
+   "same_layer": false,
+   "layer_distance": 8,
+   "walsh_coeff": -0.011984,
+   "direct_effect": -0.367474,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H6-L10H10",
+   "sender": "L8H6",
+   "receiver": "L10H10",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": 0.020316,
+   "direct_effect": 0.289138,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H6-L3H3",
+   "sender": "L3H3",
+   "receiver": "L8H6",
+   "same_layer": false,
+   "layer_distance": 5,
+   "walsh_coeff": -0.010393,
+   "direct_effect": -0.0244,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H6-L10H6",
+   "sender": "L8H6",
+   "receiver": "L10H6",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": 0.026046,
+   "direct_effect": 0.245516,
+   "direction": "forward"
+  },
+  {
+   "pair": "L5H5-L11H10",
+   "sender": "L5H5",
+   "receiver": "L11H10",
+   "same_layer": false,
+   "layer_distance": 6,
+   "walsh_coeff": -0.080384,
+   "direct_effect": -0.002376,
+   "direction": "forward"
+  },
+  {
+   "pair": "L5H5-L8H10",
+   "sender": "L5H5",
+   "receiver": "L8H10",
+   "same_layer": false,
+   "layer_distance": 3,
+   "walsh_coeff": 0.088839,
+   "direct_effect": 0.300025,
+   "direction": "forward"
+  },
+  {
+   "pair": "L5H5-L7H9",
+   "sender": "L5H5",
+   "receiver": "L7H9",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": 0.076165,
+   "direct_effect": 1.201459,
+   "direction": "forward"
+  },
+  {
+   "pair": "L5H5-L10H0",
+   "sender": "L5H5",
+   "receiver": "L10H0",
+   "same_layer": false,
+   "layer_distance": 5,
+   "walsh_coeff": 0.017867,
+   "direct_effect": 0.007698,
+   "direction": "forward"
+  },
+  {
+   "pair": "L5H5-L11H1",
+   "sender": "L5H5",
+   "receiver": "L11H1",
+   "same_layer": false,
+   "layer_distance": 6,
+   "walsh_coeff": -0.000162,
+   "direct_effect": 0.002559,
+   "direction": "forward"
+  },
+  {
+   "pair": "L5H5-L9H6",
+   "sender": "L5H5",
+   "receiver": "L9H6",
+   "same_layer": false,
+   "layer_distance": 4,
+   "walsh_coeff": 0.000208,
+   "direct_effect": 0.025375,
+   "direction": "forward"
+  },
+  {
+   "pair": "L5H5-L6H9",
+   "sender": "L5H5",
+   "receiver": "L6H9",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": -0.027649,
+   "direct_effect": 1.120982,
+   "direction": "forward"
+  },
+  {
+   "pair": "L5H5-L7H3",
+   "sender": "L5H5",
+   "receiver": "L7H3",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": 0.03026,
+   "direct_effect": 1.023527,
+   "direction": "forward"
+  },
+  {
+   "pair": "L5H5-L3H0",
+   "sender": "L3H0",
+   "receiver": "L5H5",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": -0.017565,
+   "direct_effect": 0.698985,
+   "direction": "forward"
+  },
+  {
+   "pair": "L5H5-L4H7",
+   "sender": "L4H7",
+   "receiver": "L5H5",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": 0.01915,
+   "direct_effect": 0.081488,
+   "direction": "forward"
+  },
+  {
+   "pair": "L5H5-L9H7",
+   "sender": "L5H5",
+   "receiver": "L9H7",
+   "same_layer": false,
+   "layer_distance": 4,
+   "walsh_coeff": 0.011224,
+   "direct_effect": 0.071864,
+   "direction": "forward"
+  },
+  {
+   "pair": "L5H5-L5H10",
+   "sender": "L5H5",
+   "receiver": "L5H10",
+   "same_layer": true,
+   "layer_distance": 0,
+   "walsh_coeff": -0.017897,
+   "direct_effect": 0.0,
+   "direction": "same_layer"
+  },
+  {
+   "pair": "L5H5-L5H9",
+   "sender": "L5H5",
+   "receiver": "L5H9",
+   "same_layer": true,
+   "layer_distance": 0,
+   "walsh_coeff": -0.010694,
+   "direct_effect": 0.0,
+   "direction": "same_layer"
+  },
+  {
+   "pair": "L5H5-L0H1",
+   "sender": "L0H1",
+   "receiver": "L5H5",
+   "same_layer": false,
+   "layer_distance": 5,
+   "walsh_coeff": -0.002619,
+   "direct_effect": -0.25536,
+   "direction": "forward"
+  },
+  {
+   "pair": "L5H5-L10H10",
+   "sender": "L5H5",
+   "receiver": "L10H10",
+   "same_layer": false,
+   "layer_distance": 5,
+   "walsh_coeff": 0.024177,
+   "direct_effect": 0.006625,
+   "direction": "forward"
+  },
+  {
+   "pair": "L5H5-L3H3",
+   "sender": "L3H3",
+   "receiver": "L5H5",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": -0.015922,
+   "direct_effect": -0.041108,
+   "direction": "forward"
+  },
+  {
+   "pair": "L5H5-L10H6",
+   "sender": "L5H5",
+   "receiver": "L10H6",
+   "same_layer": false,
+   "layer_distance": 5,
+   "walsh_coeff": 0.020757,
+   "direct_effect": 0.008874,
+   "direction": "forward"
+  },
+  {
+   "pair": "L11H10-L8H10",
+   "sender": "L8H10",
+   "receiver": "L11H10",
+   "same_layer": false,
+   "layer_distance": 3,
+   "walsh_coeff": -0.091868,
+   "direct_effect": 0.167122,
+   "direction": "forward"
+  },
+  {
+   "pair": "L11H10-L7H9",
+   "sender": "L7H9",
+   "receiver": "L11H10",
+   "same_layer": false,
+   "layer_distance": 4,
+   "walsh_coeff": -0.061813,
+   "direct_effect": 0.158401,
+   "direction": "forward"
+  },
+  {
+   "pair": "L11H10-L10H0",
+   "sender": "L10H0",
+   "receiver": "L11H10",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": -0.03846,
+   "direct_effect": 0.831697,
+   "direction": "forward"
+  },
+  {
+   "pair": "L11H10-L11H1",
+   "sender": "L11H10",
+   "receiver": "L11H1",
+   "same_layer": true,
+   "layer_distance": 0,
+   "walsh_coeff": -0.000827,
+   "direct_effect": 0.0,
+   "direction": "same_layer"
+  },
+  {
+   "pair": "L11H10-L9H6",
+   "sender": "L9H6",
+   "receiver": "L11H10",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": 0.029361,
+   "direct_effect": 1.297141,
+   "direction": "forward"
+  },
+  {
+   "pair": "L11H10-L6H9",
+   "sender": "L6H9",
+   "receiver": "L11H10",
+   "same_layer": false,
+   "layer_distance": 5,
+   "walsh_coeff": -0.02016,
+   "direct_effect": -0.00649,
+   "direction": "forward"
+  },
+  {
+   "pair": "L11H10-L7H3",
+   "sender": "L7H3",
+   "receiver": "L11H10",
+   "same_layer": false,
+   "layer_distance": 4,
+   "walsh_coeff": -0.023277,
+   "direct_effect": 0.031374,
+   "direction": "forward"
+  },
+  {
+   "pair": "L11H10-L3H0",
+   "sender": "L3H0",
+   "receiver": "L11H10",
+   "same_layer": false,
+   "layer_distance": 8,
+   "walsh_coeff": -0.017084,
+   "direct_effect": -0.004083,
+   "direction": "forward"
+  },
+  {
+   "pair": "L11H10-L4H7",
+   "sender": "L4H7",
+   "receiver": "L11H10",
+   "same_layer": false,
+   "layer_distance": 7,
+   "walsh_coeff": -0.013255,
+   "direct_effect": 0.000578,
+   "direction": "forward"
+  },
+  {
+   "pair": "L11H10-L9H7",
+   "sender": "L9H7",
+   "receiver": "L11H10",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": -0.011475,
+   "direct_effect": 0.068811,
+   "direction": "forward"
+  },
+  {
+   "pair": "L11H10-L5H10",
+   "sender": "L5H10",
+   "receiver": "L11H10",
+   "same_layer": false,
+   "layer_distance": 6,
+   "walsh_coeff": 0.015985,
+   "direct_effect": 0.006394,
+   "direction": "forward"
+  },
+  {
+   "pair": "L11H10-L5H9",
+   "sender": "L5H9",
+   "receiver": "L11H10",
+   "same_layer": false,
+   "layer_distance": 6,
+   "walsh_coeff": -0.015446,
+   "direct_effect": -0.003594,
+   "direction": "forward"
+  },
+  {
+   "pair": "L11H10-L0H1",
+   "sender": "L0H1",
+   "receiver": "L11H10",
+   "same_layer": false,
+   "layer_distance": 11,
+   "walsh_coeff": -0.017222,
+   "direct_effect": -0.119566,
+   "direction": "forward"
+  },
+  {
+   "pair": "L11H10-L10H10",
+   "sender": "L10H10",
+   "receiver": "L11H10",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": -0.060132,
+   "direct_effect": 0.282514,
+   "direction": "forward"
+  },
+  {
+   "pair": "L11H10-L3H3",
+   "sender": "L3H3",
+   "receiver": "L11H10",
+   "same_layer": false,
+   "layer_distance": 8,
+   "walsh_coeff": 0.015056,
+   "direct_effect": -4.7e-05,
+   "direction": "forward"
+  },
+  {
+   "pair": "L11H10-L10H6",
+   "sender": "L10H6",
+   "receiver": "L11H10",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": 0.015752,
+   "direct_effect": -0.121193,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H10-L7H9",
+   "sender": "L7H9",
+   "receiver": "L8H10",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": -0.02557,
+   "direct_effect": 0.649596,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H10-L10H0",
+   "sender": "L8H10",
+   "receiver": "L10H0",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": 0.021283,
+   "direct_effect": 0.512184,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H10-L11H1",
+   "sender": "L8H10",
+   "receiver": "L11H1",
+   "same_layer": false,
+   "layer_distance": 3,
+   "walsh_coeff": 0.000152,
+   "direct_effect": 0.291855,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H10-L9H6",
+   "sender": "L8H10",
+   "receiver": "L9H6",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": 0.003113,
+   "direct_effect": 0.75635,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H10-L6H9",
+   "sender": "L6H9",
+   "receiver": "L8H10",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": 0.022448,
+   "direct_effect": 0.08329,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H10-L7H3",
+   "sender": "L7H3",
+   "receiver": "L8H10",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": -0.023252,
+   "direct_effect": 0.231272,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H10-L3H0",
+   "sender": "L3H0",
+   "receiver": "L8H10",
+   "same_layer": false,
+   "layer_distance": 5,
+   "walsh_coeff": 0.05591,
+   "direct_effect": 0.130926,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H10-L4H7",
+   "sender": "L4H7",
+   "receiver": "L8H10",
+   "same_layer": false,
+   "layer_distance": 4,
+   "walsh_coeff": 0.011498,
+   "direct_effect": 0.020007,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H10-L9H7",
+   "sender": "L8H10",
+   "receiver": "L9H7",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": -0.01117,
+   "direct_effect": 0.72685,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H10-L5H10",
+   "sender": "L5H10",
+   "receiver": "L8H10",
+   "same_layer": false,
+   "layer_distance": 3,
+   "walsh_coeff": -0.005812,
+   "direct_effect": -0.002563,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H10-L5H9",
+   "sender": "L5H9",
+   "receiver": "L8H10",
+   "same_layer": false,
+   "layer_distance": 3,
+   "walsh_coeff": 0.022624,
+   "direct_effect": 0.067348,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H10-L0H1",
+   "sender": "L0H1",
+   "receiver": "L8H10",
+   "same_layer": false,
+   "layer_distance": 8,
+   "walsh_coeff": -0.01089,
+   "direct_effect": -0.327339,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H10-L10H10",
+   "sender": "L8H10",
+   "receiver": "L10H10",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": 0.015324,
+   "direct_effect": 0.466457,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H10-L3H3",
+   "sender": "L3H3",
+   "receiver": "L8H10",
+   "same_layer": false,
+   "layer_distance": 5,
+   "walsh_coeff": -0.006903,
+   "direct_effect": -0.021434,
+   "direction": "forward"
+  },
+  {
+   "pair": "L8H10-L10H6",
+   "sender": "L8H10",
+   "receiver": "L10H6",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": 0.03227,
+   "direct_effect": 0.492858,
+   "direction": "forward"
+  },
+  {
+   "pair": "L7H9-L10H0",
+   "sender": "L7H9",
+   "receiver": "L10H0",
+   "same_layer": false,
+   "layer_distance": 3,
+   "walsh_coeff": 0.013916,
+   "direct_effect": 0.397398,
+   "direction": "forward"
+  },
+  {
+   "pair": "L7H9-L11H1",
+   "sender": "L7H9",
+   "receiver": "L11H1",
+   "same_layer": false,
+   "layer_distance": 4,
+   "walsh_coeff": 0.0,
+   "direct_effect": 0.224826,
+   "direction": "forward"
+  },
+  {
+   "pair": "L7H9-L9H6",
+   "sender": "L7H9",
+   "receiver": "L9H6",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": 0.00014,
+   "direct_effect": 0.618727,
+   "direction": "forward"
+  },
+  {
+   "pair": "L7H9-L6H9",
+   "sender": "L6H9",
+   "receiver": "L7H9",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": 0.024537,
+   "direct_effect": 0.414302,
+   "direction": "forward"
+  },
+  {
+   "pair": "L7H9-L7H3",
+   "sender": "L7H9",
+   "receiver": "L7H3",
+   "same_layer": true,
+   "layer_distance": 0,
+   "walsh_coeff": -0.001597,
+   "direct_effect": 0.0,
+   "direction": "same_layer"
+  },
+  {
+   "pair": "L7H9-L3H0",
+   "sender": "L3H0",
+   "receiver": "L7H9",
+   "same_layer": false,
+   "layer_distance": 4,
+   "walsh_coeff": 0.03947,
+   "direct_effect": 0.35985,
+   "direction": "forward"
+  },
+  {
+   "pair": "L7H9-L4H7",
+   "sender": "L4H7",
+   "receiver": "L7H9",
+   "same_layer": false,
+   "layer_distance": 3,
+   "walsh_coeff": 0.018957,
+   "direct_effect": 0.046031,
+   "direction": "forward"
+  },
+  {
+   "pair": "L7H9-L9H7",
+   "sender": "L7H9",
+   "receiver": "L9H7",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": -0.000629,
+   "direct_effect": 0.621003,
+   "direction": "forward"
+  },
+  {
+   "pair": "L7H9-L5H10",
+   "sender": "L5H10",
+   "receiver": "L7H9",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": -0.012227,
+   "direct_effect": -0.012077,
+   "direction": "forward"
+  },
+  {
+   "pair": "L7H9-L5H9",
+   "sender": "L5H9",
+   "receiver": "L7H9",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": 0.020343,
+   "direct_effect": 0.198263,
+   "direction": "forward"
+  },
+  {
+   "pair": "L7H9-L0H1",
+   "sender": "L0H1",
+   "receiver": "L7H9",
+   "same_layer": false,
+   "layer_distance": 7,
+   "walsh_coeff": -0.005636,
+   "direct_effect": -0.362345,
+   "direction": "forward"
+  },
+  {
+   "pair": "L7H9-L10H10",
+   "sender": "L7H9",
+   "receiver": "L10H10",
+   "same_layer": false,
+   "layer_distance": 3,
+   "walsh_coeff": 0.009936,
+   "direct_effect": 0.367699,
+   "direction": "forward"
+  },
+  {
+   "pair": "L7H9-L3H3",
+   "sender": "L3H3",
+   "receiver": "L7H9",
+   "same_layer": false,
+   "layer_distance": 4,
+   "walsh_coeff": -0.00932,
+   "direct_effect": -0.03764,
+   "direction": "forward"
+  },
+  {
+   "pair": "L7H9-L10H6",
+   "sender": "L7H9",
+   "receiver": "L10H6",
+   "same_layer": false,
+   "layer_distance": 3,
+   "walsh_coeff": 0.015441,
+   "direct_effect": 0.359756,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H0-L11H1",
+   "sender": "L10H0",
+   "receiver": "L11H1",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": 0.006127,
+   "direct_effect": 1.012893,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H0-L9H6",
+   "sender": "L9H6",
+   "receiver": "L10H0",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": -0.038998,
+   "direct_effect": 0.691388,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H0-L6H9",
+   "sender": "L6H9",
+   "receiver": "L10H0",
+   "same_layer": false,
+   "layer_distance": 4,
+   "walsh_coeff": 0.008176,
+   "direct_effect": 0.004991,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H0-L7H3",
+   "sender": "L7H3",
+   "receiver": "L10H0",
+   "same_layer": false,
+   "layer_distance": 3,
+   "walsh_coeff": 0.002147,
+   "direct_effect": 0.159023,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H0-L3H0",
+   "sender": "L3H0",
+   "receiver": "L10H0",
+   "same_layer": false,
+   "layer_distance": 7,
+   "walsh_coeff": 0.006921,
+   "direct_effect": -0.004543,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H0-L4H7",
+   "sender": "L4H7",
+   "receiver": "L10H0",
+   "same_layer": false,
+   "layer_distance": 6,
+   "walsh_coeff": -0.0,
+   "direct_effect": -0.001769,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H0-L9H7",
+   "sender": "L9H7",
+   "receiver": "L10H0",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": -0.0,
+   "direct_effect": 0.145839,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H0-L5H10",
+   "sender": "L5H10",
+   "receiver": "L10H0",
+   "same_layer": false,
+   "layer_distance": 5,
+   "walsh_coeff": -0.003438,
+   "direct_effect": -0.007796,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H0-L5H9",
+   "sender": "L5H9",
+   "receiver": "L10H0",
+   "same_layer": false,
+   "layer_distance": 5,
+   "walsh_coeff": -0.0,
+   "direct_effect": 0.012379,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H0-L0H1",
+   "sender": "L0H1",
+   "receiver": "L10H0",
+   "same_layer": false,
+   "layer_distance": 10,
+   "walsh_coeff": -0.004148,
+   "direct_effect": -0.199295,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H0-L10H10",
+   "sender": "L10H0",
+   "receiver": "L10H10",
+   "same_layer": true,
+   "layer_distance": 0,
+   "walsh_coeff": 0.014421,
+   "direct_effect": 0.0,
+   "direction": "same_layer"
+  },
+  {
+   "pair": "L10H0-L3H3",
+   "sender": "L3H3",
+   "receiver": "L10H0",
+   "same_layer": false,
+   "layer_distance": 7,
+   "walsh_coeff": 6.8e-05,
+   "direct_effect": 0.002381,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H0-L10H6",
+   "sender": "L10H0",
+   "receiver": "L10H6",
+   "same_layer": true,
+   "layer_distance": 0,
+   "walsh_coeff": 0.007902,
+   "direct_effect": 0.0,
+   "direction": "same_layer"
+  },
+  {
+   "pair": "L11H1-L9H6",
+   "sender": "L9H6",
+   "receiver": "L11H1",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": 0.0,
+   "direct_effect": 1.760327,
+   "direction": "forward"
+  },
+  {
+   "pair": "L11H1-L6H9",
+   "sender": "L6H9",
+   "receiver": "L11H1",
+   "same_layer": false,
+   "layer_distance": 5,
+   "walsh_coeff": -0.001906,
+   "direct_effect": 0.000995,
+   "direction": "forward"
+  },
+  {
+   "pair": "L11H1-L7H3",
+   "sender": "L7H3",
+   "receiver": "L11H1",
+   "same_layer": false,
+   "layer_distance": 4,
+   "walsh_coeff": 0.002855,
+   "direct_effect": 0.075574,
+   "direction": "forward"
+  },
+  {
+   "pair": "L11H1-L3H0",
+   "sender": "L3H0",
+   "receiver": "L11H1",
+   "same_layer": false,
+   "layer_distance": 8,
+   "walsh_coeff": 0.000232,
+   "direct_effect": -0.004239,
+   "direction": "forward"
+  },
+  {
+   "pair": "L11H1-L4H7",
+   "sender": "L4H7",
+   "receiver": "L11H1",
+   "same_layer": false,
+   "layer_distance": 7,
+   "walsh_coeff": 0.001779,
+   "direct_effect": 0.000166,
+   "direction": "forward"
+  },
+  {
+   "pair": "L11H1-L9H7",
+   "sender": "L9H7",
+   "receiver": "L11H1",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": 0.00964,
+   "direct_effect": 0.087965,
+   "direction": "forward"
+  },
+  {
+   "pair": "L11H1-L5H10",
+   "sender": "L5H10",
+   "receiver": "L11H1",
+   "same_layer": false,
+   "layer_distance": 6,
+   "walsh_coeff": -0.0,
+   "direct_effect": 0.006393,
+   "direction": "forward"
+  },
+  {
+   "pair": "L11H1-L5H9",
+   "sender": "L5H9",
+   "receiver": "L11H1",
+   "same_layer": false,
+   "layer_distance": 6,
+   "walsh_coeff": -0.0,
+   "direct_effect": 0.002266,
+   "direction": "forward"
+  },
+  {
+   "pair": "L11H1-L0H1",
+   "sender": "L0H1",
+   "receiver": "L11H1",
+   "same_layer": false,
+   "layer_distance": 11,
+   "walsh_coeff": -0.0,
+   "direct_effect": -0.026984,
+   "direction": "forward"
+  },
+  {
+   "pair": "L11H1-L10H10",
+   "sender": "L10H10",
+   "receiver": "L11H1",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": 0.003079,
+   "direct_effect": 0.582362,
+   "direction": "forward"
+  },
+  {
+   "pair": "L11H1-L3H3",
+   "sender": "L3H3",
+   "receiver": "L11H1",
+   "same_layer": false,
+   "layer_distance": 8,
+   "walsh_coeff": -0.000169,
+   "direct_effect": 0.000609,
+   "direction": "forward"
+  },
+  {
+   "pair": "L11H1-L10H6",
+   "sender": "L10H6",
+   "receiver": "L11H1",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": 0.016196,
+   "direct_effect": -0.076663,
+   "direction": "forward"
+  },
+  {
+   "pair": "L9H6-L6H9",
+   "sender": "L6H9",
+   "receiver": "L9H6",
+   "same_layer": false,
+   "layer_distance": 3,
+   "walsh_coeff": -0.002822,
+   "direct_effect": 0.008608,
+   "direction": "forward"
+  },
+  {
+   "pair": "L9H6-L7H3",
+   "sender": "L7H3",
+   "receiver": "L9H6",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": 0.000886,
+   "direct_effect": 0.262756,
+   "direction": "forward"
+  },
+  {
+   "pair": "L9H6-L3H0",
+   "sender": "L3H0",
+   "receiver": "L9H6",
+   "same_layer": false,
+   "layer_distance": 6,
+   "walsh_coeff": -0.002876,
+   "direct_effect": -0.021851,
+   "direction": "forward"
+  },
+  {
+   "pair": "L9H6-L4H7",
+   "sender": "L4H7",
+   "receiver": "L9H6",
+   "same_layer": false,
+   "layer_distance": 5,
+   "walsh_coeff": 0.000472,
+   "direct_effect": 0.009028,
+   "direction": "forward"
+  },
+  {
+   "pair": "L9H6-L9H7",
+   "sender": "L9H6",
+   "receiver": "L9H7",
+   "same_layer": true,
+   "layer_distance": 0,
+   "walsh_coeff": -0.004355,
+   "direct_effect": 0.0,
+   "direction": "same_layer"
+  },
+  {
+   "pair": "L9H6-L5H10",
+   "sender": "L5H10",
+   "receiver": "L9H6",
+   "same_layer": false,
+   "layer_distance": 4,
+   "walsh_coeff": 0.002845,
+   "direct_effect": -0.00748,
+   "direction": "forward"
+  },
+  {
+   "pair": "L9H6-L5H9",
+   "sender": "L5H9",
+   "receiver": "L9H6",
+   "same_layer": false,
+   "layer_distance": 4,
+   "walsh_coeff": -0.006316,
+   "direct_effect": 0.021973,
+   "direction": "forward"
+  },
+  {
+   "pair": "L9H6-L0H1",
+   "sender": "L0H1",
+   "receiver": "L9H6",
+   "same_layer": false,
+   "layer_distance": 9,
+   "walsh_coeff": -0.003748,
+   "direct_effect": -0.405904,
+   "direction": "forward"
+  },
+  {
+   "pair": "L9H6-L10H10",
+   "sender": "L9H6",
+   "receiver": "L10H10",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": -0.009625,
+   "direct_effect": 0.894386,
+   "direction": "forward"
+  },
+  {
+   "pair": "L9H6-L3H3",
+   "sender": "L3H3",
+   "receiver": "L9H6",
+   "same_layer": false,
+   "layer_distance": 6,
+   "walsh_coeff": 0.000305,
+   "direct_effect": -0.005722,
+   "direction": "forward"
+  },
+  {
+   "pair": "L9H6-L10H6",
+   "sender": "L9H6",
+   "receiver": "L10H6",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": -0.006231,
+   "direct_effect": 0.871585,
+   "direction": "forward"
+  },
+  {
+   "pair": "L6H9-L7H3",
+   "sender": "L6H9",
+   "receiver": "L7H3",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": 0.012286,
+   "direct_effect": 0.355692,
+   "direction": "forward"
+  },
+  {
+   "pair": "L6H9-L3H0",
+   "sender": "L3H0",
+   "receiver": "L6H9",
+   "same_layer": false,
+   "layer_distance": 3,
+   "walsh_coeff": -0.002941,
+   "direct_effect": 0.591261,
+   "direction": "forward"
+  },
+  {
+   "pair": "L6H9-L4H7",
+   "sender": "L4H7",
+   "receiver": "L6H9",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": 0.0,
+   "direct_effect": -0.082549,
+   "direction": "forward"
+  },
+  {
+   "pair": "L6H9-L9H7",
+   "sender": "L6H9",
+   "receiver": "L9H7",
+   "same_layer": false,
+   "layer_distance": 3,
+   "walsh_coeff": 0.004814,
+   "direct_effect": 0.021394,
+   "direction": "forward"
+  },
+  {
+   "pair": "L6H9-L5H10",
+   "sender": "L5H10",
+   "receiver": "L6H9",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": -0.00612,
+   "direct_effect": -0.042547,
+   "direction": "forward"
+  },
+  {
+   "pair": "L6H9-L5H9",
+   "sender": "L5H9",
+   "receiver": "L6H9",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": -0.00503,
+   "direct_effect": 0.202178,
+   "direction": "forward"
+  },
+  {
+   "pair": "L6H9-L0H1",
+   "sender": "L0H1",
+   "receiver": "L6H9",
+   "same_layer": false,
+   "layer_distance": 6,
+   "walsh_coeff": 0.00221,
+   "direct_effect": -0.24354,
+   "direction": "forward"
+  },
+  {
+   "pair": "L6H9-L10H10",
+   "sender": "L6H9",
+   "receiver": "L10H10",
+   "same_layer": false,
+   "layer_distance": 4,
+   "walsh_coeff": 0.009797,
+   "direct_effect": 0.005309,
+   "direction": "forward"
+  },
+  {
+   "pair": "L6H9-L3H3",
+   "sender": "L3H3",
+   "receiver": "L6H9",
+   "same_layer": false,
+   "layer_distance": 3,
+   "walsh_coeff": -0.000414,
+   "direct_effect": 0.06304,
+   "direction": "forward"
+  },
+  {
+   "pair": "L6H9-L10H6",
+   "sender": "L6H9",
+   "receiver": "L10H6",
+   "same_layer": false,
+   "layer_distance": 4,
+   "walsh_coeff": 0.009263,
+   "direct_effect": 0.005635,
+   "direction": "forward"
+  },
+  {
+   "pair": "L7H3-L3H0",
+   "sender": "L3H0",
+   "receiver": "L7H3",
+   "same_layer": false,
+   "layer_distance": 4,
+   "walsh_coeff": 0.032153,
+   "direct_effect": 0.30223,
+   "direction": "forward"
+  },
+  {
+   "pair": "L7H3-L4H7",
+   "sender": "L4H7",
+   "receiver": "L7H3",
+   "same_layer": false,
+   "layer_distance": 3,
+   "walsh_coeff": 0.014182,
+   "direct_effect": 0.040374,
+   "direction": "forward"
+  },
+  {
+   "pair": "L7H3-L9H7",
+   "sender": "L7H3",
+   "receiver": "L9H7",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": -0.005743,
+   "direct_effect": 0.255635,
+   "direction": "forward"
+  },
+  {
+   "pair": "L7H3-L5H10",
+   "sender": "L5H10",
+   "receiver": "L7H3",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": 0.006993,
+   "direct_effect": 6.2e-05,
+   "direction": "forward"
+  },
+  {
+   "pair": "L7H3-L5H9",
+   "sender": "L5H9",
+   "receiver": "L7H3",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": 0.01714,
+   "direct_effect": 0.174819,
+   "direction": "forward"
+  },
+  {
+   "pair": "L7H3-L0H1",
+   "sender": "L0H1",
+   "receiver": "L7H3",
+   "same_layer": false,
+   "layer_distance": 7,
+   "walsh_coeff": 0.0,
+   "direct_effect": -0.366636,
+   "direction": "forward"
+  },
+  {
+   "pair": "L7H3-L10H10",
+   "sender": "L7H3",
+   "receiver": "L10H10",
+   "same_layer": false,
+   "layer_distance": 3,
+   "walsh_coeff": 0.006793,
+   "direct_effect": 0.13697,
+   "direction": "forward"
+  },
+  {
+   "pair": "L7H3-L3H3",
+   "sender": "L3H3",
+   "receiver": "L7H3",
+   "same_layer": false,
+   "layer_distance": 4,
+   "walsh_coeff": -0.0,
+   "direct_effect": -0.037833,
+   "direction": "forward"
+  },
+  {
+   "pair": "L7H3-L10H6",
+   "sender": "L7H3",
+   "receiver": "L10H6",
+   "same_layer": false,
+   "layer_distance": 3,
+   "walsh_coeff": 0.004313,
+   "direct_effect": 0.147207,
+   "direction": "forward"
+  },
+  {
+   "pair": "L3H0-L4H7",
+   "sender": "L3H0",
+   "receiver": "L4H7",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": 0.0,
+   "direct_effect": 0.399482,
+   "direction": "forward"
+  },
+  {
+   "pair": "L3H0-L9H7",
+   "sender": "L3H0",
+   "receiver": "L9H7",
+   "same_layer": false,
+   "layer_distance": 6,
+   "walsh_coeff": 0.003068,
+   "direct_effect": 0.006017,
+   "direction": "forward"
+  },
+  {
+   "pair": "L3H0-L5H10",
+   "sender": "L3H0",
+   "receiver": "L5H10",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": -0.003739,
+   "direct_effect": 0.63937,
+   "direction": "forward"
+  },
+  {
+   "pair": "L3H0-L5H9",
+   "sender": "L3H0",
+   "receiver": "L5H9",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": -0.020237,
+   "direct_effect": 0.46926,
+   "direction": "forward"
+  },
+  {
+   "pair": "L3H0-L0H1",
+   "sender": "L0H1",
+   "receiver": "L3H0",
+   "same_layer": false,
+   "layer_distance": 3,
+   "walsh_coeff": -0.012358,
+   "direct_effect": -0.201232,
+   "direction": "forward"
+  },
+  {
+   "pair": "L3H0-L10H10",
+   "sender": "L3H0",
+   "receiver": "L10H10",
+   "same_layer": false,
+   "layer_distance": 7,
+   "walsh_coeff": 0.006147,
+   "direct_effect": -0.001277,
+   "direction": "forward"
+  },
+  {
+   "pair": "L3H0-L3H3",
+   "sender": "L3H0",
+   "receiver": "L3H3",
+   "same_layer": true,
+   "layer_distance": 0,
+   "walsh_coeff": 0.001412,
+   "direct_effect": 0.0,
+   "direction": "same_layer"
+  },
+  {
+   "pair": "L3H0-L10H6",
+   "sender": "L3H0",
+   "receiver": "L10H6",
+   "same_layer": false,
+   "layer_distance": 7,
+   "walsh_coeff": 0.002878,
+   "direct_effect": -0.004563,
+   "direction": "forward"
+  },
+  {
+   "pair": "L4H7-L9H7",
+   "sender": "L4H7",
+   "receiver": "L9H7",
+   "same_layer": false,
+   "layer_distance": 5,
+   "walsh_coeff": 0.002769,
+   "direct_effect": 0.011049,
+   "direction": "forward"
+  },
+  {
+   "pair": "L4H7-L5H10",
+   "sender": "L4H7",
+   "receiver": "L5H10",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": 0.003938,
+   "direct_effect": 0.146206,
+   "direction": "forward"
+  },
+  {
+   "pair": "L4H7-L5H9",
+   "sender": "L4H7",
+   "receiver": "L5H9",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": 0.003066,
+   "direct_effect": 0.131341,
+   "direction": "forward"
+  },
+  {
+   "pair": "L4H7-L0H1",
+   "sender": "L0H1",
+   "receiver": "L4H7",
+   "same_layer": false,
+   "layer_distance": 4,
+   "walsh_coeff": -0.000912,
+   "direct_effect": -0.338353,
+   "direction": "forward"
+  },
+  {
+   "pair": "L4H7-L10H10",
+   "sender": "L4H7",
+   "receiver": "L10H10",
+   "same_layer": false,
+   "layer_distance": 6,
+   "walsh_coeff": 0.0,
+   "direct_effect": -0.001773,
+   "direction": "forward"
+  },
+  {
+   "pair": "L4H7-L3H3",
+   "sender": "L3H3",
+   "receiver": "L4H7",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": 0.004688,
+   "direct_effect": -0.097912,
+   "direction": "forward"
+  },
+  {
+   "pair": "L4H7-L10H6",
+   "sender": "L4H7",
+   "receiver": "L10H6",
+   "same_layer": false,
+   "layer_distance": 6,
+   "walsh_coeff": 0.0046,
+   "direct_effect": -0.004352,
+   "direction": "forward"
+  },
+  {
+   "pair": "L9H7-L5H10",
+   "sender": "L5H10",
+   "receiver": "L9H7",
+   "same_layer": false,
+   "layer_distance": 4,
+   "walsh_coeff": 0.0,
+   "direct_effect": -0.007032,
+   "direction": "forward"
+  },
+  {
+   "pair": "L9H7-L5H9",
+   "sender": "L5H9",
+   "receiver": "L9H7",
+   "same_layer": false,
+   "layer_distance": 4,
+   "walsh_coeff": 0.000893,
+   "direct_effect": 0.027495,
+   "direction": "forward"
+  },
+  {
+   "pair": "L9H7-L0H1",
+   "sender": "L0H1",
+   "receiver": "L9H7",
+   "same_layer": false,
+   "layer_distance": 9,
+   "walsh_coeff": -0.004327,
+   "direct_effect": -0.383494,
+   "direction": "forward"
+  },
+  {
+   "pair": "L9H7-L10H10",
+   "sender": "L9H7",
+   "receiver": "L10H10",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": 0.006029,
+   "direct_effect": 0.13495,
+   "direction": "forward"
+  },
+  {
+   "pair": "L9H7-L3H3",
+   "sender": "L3H3",
+   "receiver": "L9H7",
+   "same_layer": false,
+   "layer_distance": 6,
+   "walsh_coeff": 0.006973,
+   "direct_effect": -0.00384,
+   "direction": "forward"
+  },
+  {
+   "pair": "L9H7-L10H6",
+   "sender": "L9H7",
+   "receiver": "L10H6",
+   "same_layer": false,
+   "layer_distance": 1,
+   "walsh_coeff": 0.003601,
+   "direct_effect": 0.141464,
+   "direction": "forward"
+  },
+  {
+   "pair": "L5H10-L5H9",
+   "sender": "L5H10",
+   "receiver": "L5H9",
+   "same_layer": true,
+   "layer_distance": 0,
+   "walsh_coeff": 0.0,
+   "direct_effect": 0.0,
+   "direction": "same_layer"
+  },
+  {
+   "pair": "L5H10-L0H1",
+   "sender": "L0H1",
+   "receiver": "L5H10",
+   "same_layer": false,
+   "layer_distance": 5,
+   "walsh_coeff": 0.006583,
+   "direct_effect": -0.288741,
+   "direction": "forward"
+  },
+  {
+   "pair": "L5H10-L10H10",
+   "sender": "L5H10",
+   "receiver": "L10H10",
+   "same_layer": false,
+   "layer_distance": 5,
+   "walsh_coeff": -0.0,
+   "direct_effect": -0.006861,
+   "direction": "forward"
+  },
+  {
+   "pair": "L5H10-L3H3",
+   "sender": "L3H3",
+   "receiver": "L5H10",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": -0.000798,
+   "direct_effect": -0.056934,
+   "direction": "forward"
+  },
+  {
+   "pair": "L5H10-L10H6",
+   "sender": "L5H10",
+   "receiver": "L10H6",
+   "same_layer": false,
+   "layer_distance": 5,
+   "walsh_coeff": 0.002531,
+   "direct_effect": -0.008238,
+   "direction": "forward"
+  },
+  {
+   "pair": "L5H9-L0H1",
+   "sender": "L0H1",
+   "receiver": "L5H9",
+   "same_layer": false,
+   "layer_distance": 5,
+   "walsh_coeff": -0.001762,
+   "direct_effect": -0.290121,
+   "direction": "forward"
+  },
+  {
+   "pair": "L5H9-L10H10",
+   "sender": "L5H9",
+   "receiver": "L10H10",
+   "same_layer": false,
+   "layer_distance": 5,
+   "walsh_coeff": 0.006019,
+   "direct_effect": 0.013008,
+   "direction": "forward"
+  },
+  {
+   "pair": "L5H9-L3H3",
+   "sender": "L3H3",
+   "receiver": "L5H9",
+   "same_layer": false,
+   "layer_distance": 2,
+   "walsh_coeff": 0.0,
+   "direct_effect": -0.046355,
+   "direction": "forward"
+  },
+  {
+   "pair": "L5H9-L10H6",
+   "sender": "L5H9",
+   "receiver": "L10H6",
+   "same_layer": false,
+   "layer_distance": 5,
+   "walsh_coeff": 0.001155,
+   "direct_effect": 0.013026,
+   "direction": "forward"
+  },
+  {
+   "pair": "L0H1-L10H10",
+   "sender": "L0H1",
+   "receiver": "L10H10",
+   "same_layer": false,
+   "layer_distance": 10,
+   "walsh_coeff": 0.0,
+   "direct_effect": -0.188238,
+   "direction": "forward"
+  },
+  {
+   "pair": "L0H1-L3H3",
+   "sender": "L0H1",
+   "receiver": "L3H3",
+   "same_layer": false,
+   "layer_distance": 3,
+   "walsh_coeff": -0.000244,
+   "direct_effect": -0.348715,
+   "direction": "forward"
+  },
+  {
+   "pair": "L0H1-L10H6",
+   "sender": "L0H1",
+   "receiver": "L10H6",
+   "same_layer": false,
+   "layer_distance": 10,
+   "walsh_coeff": -0.001169,
+   "direct_effect": -0.222902,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H10-L3H3",
+   "sender": "L3H3",
+   "receiver": "L10H10",
+   "same_layer": false,
+   "layer_distance": 7,
+   "walsh_coeff": -0.002343,
+   "direct_effect": -0.000189,
+   "direction": "forward"
+  },
+  {
+   "pair": "L10H10-L10H6",
+   "sender": "L10H10",
+   "receiver": "L10H6",
+   "same_layer": true,
+   "layer_distance": 0,
+   "walsh_coeff": 0.003648,
+   "direct_effect": 0.0,
+   "direction": "same_layer"
+  },
+  {
+   "pair": "L3H3-L10H6",
+   "sender": "L3H3",
+   "receiver": "L10H6",
+   "same_layer": false,
+   "layer_distance": 7,
+   "walsh_coeff": -0.0,
+   "direct_effect": 0.001902,
+   "direction": "forward"
+  }
+ ]
+}

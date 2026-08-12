@@ -1,0 +1,89 @@
+% =====================================================================
+% Epistatic Circuits: Exhaustive Interaction Decomposition
+% of Transformer Circuits
+%
+% main.tex — TMLR format.
+% Compile: pdflatex main && bibtex main && pdflatex main && pdflatex main
+% =====================================================================
+\documentclass{article}
+
+\usepackage{tmlr}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+% xcolor loaded by tmlr.sty
+\usepackage{microtype}
+
+\title{Epistatic Circuits: Exhaustive Interaction Decomposition of Transformer Circuits}
+
+\author{
+  Elliot Tower\\
+  Mechanistic Research\\
+  \texttt{elliot@elliottower.ai}
+}
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+
+\def\month{08}
+\def\year{2026}
+
+\hypersetup{pdftitle={Epistatic Circuits: Exhaustive Interaction Decomposition of Transformer Circuits},
+            pdfauthor={Tower, Elliot}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Transformer circuit discovery methods rank components by individual
+importance scores and treat the resulting circuits as additive. Yet
+attention mechanisms are structurally incapable of implementing additive
+models: the softmax normalization forces every head's output to depend
+on every other head in the same layer. We provide the first exact, non-human-curated ground truth for pairwise
+interaction structure in a real trained circuit. The ground truth comes
+from exhaustive Walsh--Hadamard coalition sweeps over 15- and 20-head
+subcircuits of GPT-2 small. We then use
+this ground truth to benchmark three discovery methods. Weight-space
+geometry (OV and QK composition scores) carries no cross-validated
+predictive power for pairwise interaction (CV~$R^2 < 0$ across all
+conditions). Edge Attribution Patching (EAP) agrees moderately with the
+Walsh interaction spectrum (Spearman $\rho = 0.58$). Path patching, which
+isolates direct causal edges, measures a nearly orthogonal quantity
+(Spearman $\rho = 0.21$, signed Pearson $r = 0.07$). Compressed sensing
+makes the ground truth practical to compute: LASSO recovers the full
+pairwise spectrum from 140 random coalitions ($r > 0.95$, $7{,}490\times$
+compression). The recovered interaction structure carries mechanism ---
+a complementation test on the interaction matrix rediscovers that
+negative name movers invert sign when their upstream S-inhibition heads
+are removed, a dependency the original IOI analysis flagged as
+unexplained. Each discovery method imposes a different selective pressure
+on which interactions survive, and the choice of method shapes the
+circuit one finds.
+\end{abstract}
+
+% ------------------------------------------------------------------
+% Each \input file defines its own \section / \subsection headings.
+
+\input{sec_introduction}
+
+\input{sec_background}
+
+\section{Results}
+\label{sec:results}
+
+\input{sec_sparse_walsh_recovery}
+\input{sec_energy_spectrum}
+\input{sec_weight_geometry}
+\input{sec_path_patching}
+\input{sec_mib_benchmark}
+
+\input{sec_what_epistasis_contains}
+
+\input{sec_discussion}
+
+% ------------------------------------------------------------------
+\bibliographystyle{tmlr}
+\bibliography{references}
+
+\end{document}

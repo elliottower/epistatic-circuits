@@ -1,0 +1,27 @@
+citation: housden2017comparison
+depth: cited
+title: 'Loss-of-Function Genetic Tools for Animal Models: Cross-Species and Cross-Platform Differences
+  in Null Allele Technologies'
+authors:
+- Housden, Benjamin E.
+- Muber, Monica
+- Knight, Franklin
+- Bazzi, Michaela
+- Reczko, Martin
+- Perrimon, Norbert
+year: '2017'
+venue: Fly
+doi: 10.1080/19336934.2017.1338551
+attributed_claims:
+- claim: This parallels the situation in quantitative genetics, where different loss-of-function assays
+    yield different interaction estimates~[CITE].
+  locator: sec_discussion.tex:76
+- claim: Across ablation primitives on the same circuit, 38\% of head pairs change the sign of their interaction
+    --- precise measurement of quantities that systematically disagree~[CITE].
+  locator: sec_weight_geometry.tex:76
+- claim: Our 39\% sign-flip rate is comparable to rates observed in protein fitness landscapes, where
+    \sim35\% of mutation pairs change interaction type depending on the measurement method~[CITE].
+  locator: sec_weight_geometry.tex:0
+- claim: Across ablation primitives on the same circuit, 38\% of head pairs change the sign of their interaction~---
+    precise measurement of quantities that systematically disagree~[CITE].
+  locator: sec_weight_geometry_v1.tex:68

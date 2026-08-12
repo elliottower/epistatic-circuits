@@ -1,0 +1,26 @@
+citation: mueller2025mib
+depth: cited
+title: 'MIB: A Mechanistic Interpretability Benchmark'
+authors:
+- Mueller, Aaron
+- Variengien, Alexandre
+- Geiger, Atticus
+- Wu, Zhengxuan
+- Potts, Christopher
+- Nanda, Neel
+- Bau, David
+year: '2025'
+venue: Proceedings of the 42nd International Conference on Machine Learning (ICML)
+url: https://arxiv.org/abs/2504.13151
+attributed_claims:
+- claim: MIB faithfulness metrics sec:mib-metrics The Mechanistic Interpretability Benchmark (MIB)~[CITE]
+    evaluates circuit discovery methods by how faithfully a discovered circuit reproduces the full model's
+    behavior.
+  locator: sec_background.tex:106
+- claim: We evaluated faithfulness using the MIB protocol~[CITE] on all 144 attention heads in GPT-2 small
+    with IOI, measuring logit difference as the target metric and mean ablation of hook\_z for heads outside
+    the circuit.
+  locator: sec_mib_benchmark.tex:18
+- claim: We evaluated this using the MIB protocol~[CITE] on GPT-2 small with IOI, measuring logit difference
+    as the target metric and mean ablation of hook\_z for heads outside the circuit.
+  locator: sec_mib_benchmark_v1.tex:20

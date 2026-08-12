@@ -1,0 +1,19 @@
+citation: poelwijk2016context
+depth: cited
+title: 'The Context-Dependence of Mutations: A Linkage of Formalisms'
+authors:
+- Poelwijk, Frank J.
+- Krishna, Vinod
+- Ranganathan, Rama
+year: '2016'
+venue: PLOS Computational Biology
+doi: 10.1371/journal.pcbi.1004771
+attributed_claims:
+- claim: The 2^n function values admit a unique Walsh--Hadamard decomposition equation v(x) = \sum_S \subseteq
+    [n] w_S \,\chi_S(x), \qquad \chi_S(x) = (-1)^\sum_i \in S x_i, equation where the sum ranges over
+    all 2^n subsets S of [n] = \1, \ldots, n\ and \chi_S is the corresponding Walsh basis function~[CITE].
+  locator: sec_background.tex:17
+- claim: The Walsh--Hadamard transform already averages interaction coefficients over all 2^n head coalitions
+    rather than anchoring to a single reference state~[CITE] --- the standard approach for removing dependence
+    on an arbitrary baseline.
+  locator: sec_weight_geometry.tex:80

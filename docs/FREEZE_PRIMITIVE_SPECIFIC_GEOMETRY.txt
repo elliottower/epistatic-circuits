@@ -1,0 +1,12 @@
+# FREEZE — primitive-specific geometry
+
+Frozen before any mean- or resample-ablation regression was fitted. The zero-arm
+in-sample result (R^2=0.068) was already known and is disclosed in the prereg.
+
+## SHA-256
+
+2b7e6e38cdf457b6292130520431c09b575c3b6881bb84d7aabc9229aa6bb1cb  docs/PREREG_PRIMITIVE_SPECIFIC_GEOMETRY.md
+c4329ab79d3512239c6894b9e6488b7ae94b6818d58b23af40433cab66ae558e  scripts/modal_primitive_specific_geometry.py
+
+git HEAD: cb3702162769800e450f4d28eea830e36a4bbfa5
+frozen (UTC): 2026-08-07T11:42:40Z

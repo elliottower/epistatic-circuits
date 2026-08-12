@@ -1,0 +1,57 @@
+% =====================================================================
+% Draft section stub — Construct validity of epistasis metrics.
+%
+% Argument: multiple operationalizations of "epistasis" converge when
+% faithfulness is healthy, diverge systematically when it is not.
+% The convergence/divergence pattern validates the construct.
+%
+% Status: stub with framing notes. No prose yet.
+% =====================================================================
+
+% FRAMING NOTES (to be turned into prose):
+%
+% Three metrics, each answering a different question:
+%
+% 1. WIF (Walsh Interaction Fraction) = 1 - order1/nonconstant energy.
+%    "What fraction of circuit variance requires head combinations?"
+%    Uses all 2^n coalitions. Equivalent to 1 - R^2 of additive model.
+%    Range [0,1], never blows up. PRIMARY.
+%
+% 2. LOO epistasis = 1 - sum(LOO marginals) / faithfulness.
+%    "Do marginal contributions account for total faithfulness?"
+%    Uses only full-set and (n-1)-subset coalitions.
+%    From the RTI paper (v13_bootstrap.py). LEGACY.
+%    Denominator = faithfulness; blows up when faith ~ 0.
+%
+% 3. TSII (Total Shapley Interaction Index) = sum |SII(i,j)|.
+%    "How much total pairwise synergy/redundancy?"
+%    Uses all 2^n coalitions. Not normalized by circuit size.
+%    Actionable: per-pair SII identifies WHICH heads interact.
+%
+% CONSTRUCT VALIDITY ARGUMENT:
+%
+% When faithfulness is healthy (> 0.3), all three metrics agree
+% directionally: canonical > epistatic > walsh > random. They
+% disagree on magnitude because they measure different aspects.
+%
+% When faithfulness is near zero or negative (resample ablation,
+% circuits that don't survive activation patching), LOO diverges
+% catastrophically while WIF and TSII remain interpretable. This
+% is not a flaw — it reveals that LOO conflates measurement error
+% with interaction. The failure mode is diagnostic.
+%
+% The energy spectrum (order-1, order-2, order-3+) adds a
+% structural finding: order-3+ is almost always < 5%. Interactions
+% in transformer circuits are predominantly pairwise. This constrains
+% the space of possible circuit architectures.
+%
+% REPORTING PLAN:
+%
+% Main table: Faith, WIF, order-1%, order-2%, order-3+%, LOO, TSII
+% Per-circuit rows grouped by task, then by ablation type.
+% LOO flagged as "---" when |faith| < 0.1.
+%
+% Supplement: per-pair SII heatmaps for canonical circuits.
+% Comparison figure: WIF vs LOO scatterplot, colored by faithfulness.
+% The negative-faithfulness points cluster in the upper-left
+% (high |LOO|, modest WIF), showing where LOO breaks.

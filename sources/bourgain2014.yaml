@@ -1,0 +1,13 @@
+citation: bourgain2014
+depth: cited
+title: An Improved Estimate in the Restricted Isometry Problem
+authors:
+- Bourgain, Jean
+year: '2014'
+venue: Geometric Aspects of Functional Analysis
+doi: 10.1007/978-3-319-09477-9_5
+attributed_claims:
+- claim: Our measurement matrix is a subsampled Walsh--Hadamard matrix, where the tighter structured bound
+    M = O(k \log k \log N) applies~[CITE], with a matching lower bound \Omega(k \log k \log(N/k)) from
+    [CITE].
+  locator: sec_sparse_walsh_recovery.tex:33

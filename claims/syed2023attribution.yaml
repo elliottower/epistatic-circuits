@@ -1,0 +1,13 @@
+source:
+  citation: syed2023attribution
+  local: reference/syed_2023_attribution_patching.pdf
+  sha256: null
+  extract_cmd: pdftotext -layout
+
+claims:
+  eap-definition:
+    statement: 'EAP is a technique to identify relevant model components for a task.'
+    verified: true
+    quotes:
+      - exact: 'We present Edge Attribution Patching (EAP) as a technique to identify relevant model components'
+        section: 'Section 3'

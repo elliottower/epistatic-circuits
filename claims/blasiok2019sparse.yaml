@@ -1,0 +1,17 @@
+source:
+  citation: li2019sparse
+  local: reference/blasiok_2019_walsh_rip_lower_bound.pdf
+  sha256: null
+  extract_cmd: pdftotext -layout
+
+claims:
+  lower-bound-walsh:
+    statement: 'Subsampled Walsh matrices require Omega(K log K log(N/K)) rows for RIP.'
+    verified: true
+    quotes:
+      - exact: 'K-sparse vector in the kernel, unless the number of subsampled rows is'
+        suffix: '(K log K log(N/K))'
+        section: 'Abstract'
+    notes: >
+      The citation key li2019sparse is a MISNOMER. The actual authors are
+      Blasiok, Lopatto, Luh, Marcinek, and Rao. arXiv:1903.12135.

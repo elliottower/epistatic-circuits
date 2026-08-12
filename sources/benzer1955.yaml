@@ -1,0 +1,12 @@
+citation: benzer1955
+depth: cited
+title: Fine Structure of a Genetic Region in Bacteriophage
+authors:
+- Benzer, Seymour
+year: '1955'
+venue: Proceedings of the National Academy of Sciences
+doi: 10.1073/pnas.41.6.344
+attributed_claims:
+- claim: Two recessive mutations are placed in trans, and the phenotype of the double heterozygote decides
+    one locus or two [CITE].
+  locator: sec_what_epistasis_contains.tex:27
