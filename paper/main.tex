@@ -7,12 +7,13 @@
 % =====================================================================
 \documentclass{article}
 
-% Two builds come out of this file, and they differ only in the line below.
-%   \usepackage[preprint]{tmlr}             anonymous -- what TMLR's portal takes
-%   \usepackage[preprint]{tmlr}   named     -- what Zenodo and arXiv take
-% submissions/tmlr/ holds the first, submissions/zenodo/ the second. Rebuilding one
-% without switching the flag back overwrites the other with the wrong author block.
-\usepackage[preprint]{tmlr}
+% Two builds come out of this file, differing only in the \usepackage line below.
+%   no option  -> anonymous authors, which is what TMLR's portal takes
+%   [preprint] -> named authors, which is what Zenodo and arXiv take
+% Toggle line 15 itself. A sed for the package name matches these comment lines
+% first, which is how both bundles once came out named.
+% submissions/tmlr/ holds the anonymous build, submissions/zenodo/ the named one.
+\usepackage{tmlr}
 \usepackage{amsmath,amssymb}
 \usepackage{booktabs}
 \usepackage{graphicx}
@@ -41,12 +42,16 @@
 \maketitle
 
 \begin{abstract}
-Transformer circuit discovery methods rank components by individual importance scores
-and treat the resulting circuits as additive. The architecture gives reason to doubt
-that. \citet{leemann2024slalom} prove that transformers structurally cannot represent
-additive models over input tokens, because softmax normalization introduces
-dependencies across the whole sequence; whether the same holds between a circuit's
-\emph{components} is an empirical question, and this paper answers it. Exhaustive
+A circuit is a claim that several components produce a behavior together, yet no
+discovery method reports how their effects interact. This is structurally equivalent
+to epistasis in genetics: combinatorial perturbations decomposed into individual
+effects, pairwise interactions, and higher-order terms. Across five 15-head IOI
+circuits under mean ablation, randomly chosen head sets carry 2\% of their coalition
+energy at order 2, while circuits selected for functional relevance carry 17--19\% ---
+and an additive summary discards all of it. \citet{leemann2024slalom} prove that transformers structurally cannot
+represent additive models over input \emph{tokens}; whether additivity fails between a
+circuit's \emph{components} is a separate, empirical question, and this paper answers
+it. Exhaustive
 Walsh--Hadamard coalition sweeps over subcircuits of GPT-2 small give the exact
 pairwise interaction spectrum --- every deviation from additivity for every pair of
 attention heads --- for fourteen 15-head circuits spanning indirect object
@@ -65,9 +70,9 @@ the interaction matrix rediscovers that negative name movers invert sign when th
 upstream S-inhibition heads are removed --- a dependency the original IOI analysis
 flagged as unexplained, and one no additive summary of the same circuit can express.
 Exhaustive sweeps do not scale, and need not: because the spectrum is sparse, LASSO
-recovers it from fewer coalitions than there are coefficients ($M/k = 0.83$,
-$r > 0.95$), reaching $r > 0.95$ at $M = 140$ for the 20-head circuit, a
-$7{,}490\times$ reduction over enumeration. Each discovery method imposes a different
+recovers it from fewer coalitions than there are coefficients: $r > 0.95$ at
+$M = 100$ for the 15-head circuits ($M/k = 0.83$) and at $M = 140$ for the 20-head
+circuit ($M/k = 0.67$, a $7{,}490\times$ reduction over enumeration). Each discovery method imposes a different
 selective pressure on which interactions survive, and the choice of method shapes the
 circuit one finds.
 \end{abstract}
