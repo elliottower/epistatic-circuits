@@ -61,3 +61,7 @@ paper/main.pdf
 
 # the citations tool's local library: its own store, not this paper's source
 .citations/
+
+# superseded paper drafts: kept on disk, not published
+paper/drafts/
+paper/v2/
