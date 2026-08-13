@@ -196,7 +196,7 @@ how it was discovered.
 \section{Background}
 \label{sec:background}
 
-\subsection{Walsh--Hadamard interaction decomposition}
+\subsection{Walsh--Hadamard Interaction Decomposition}
 \label{sec:walsh-decomposition}
 
 Given a circuit of $n$ components (attention heads), the coalition
@@ -235,7 +235,7 @@ order 1 is well approximated by an additive model; one with substantial
 order-2 energy has pairwise interactions that an additive summary
 discards.
 
-\subsection{Ablation primitives}
+\subsection{Ablation Primitives}
 \label{sec:ablation-primitives}
 
 The coalition function depends on how inactive heads are ablated.
@@ -259,7 +259,7 @@ Different primitives yield quantitatively different Walsh spectra. We
 report results under all three where exhaustive sweeps are available
 (15-head circuits) and under mean ablation for the 20-head circuit.
 
-\subsection{Circuit discovery methods}
+\subsection{Circuit Discovery Methods}
 \label{sec:discovery-methods}
 
 \paragraph{Activation patching.}
@@ -291,7 +291,7 @@ relative to the clean run is the direct effect of $S$ on the output
 routed specifically through $R$. Path patching distinguishes direct
 edges from mediated interactions but requires one forward pass per edge.
 
-\subsection{MIB faithfulness metrics}
+\subsection{MIB Faithfulness Metrics}
 \label{sec:mib-metrics}
 
 The Mechanistic Interpretability Benchmark
@@ -340,7 +340,7 @@ sizes:
 % Requires: booktabs, amsmath, graphicx, natbib (\citet/\citep).
 % =====================================================================
 
-\subsection{Sparse recovery scales coalition sweeps beyond 15 heads}
+\subsection{Sparse Recovery of the Interaction Spectrum}
 \label{sec:sparse-walsh-recovery}
 
 A coalition sweep over $n$ heads requires $2^n$ forward passes: 32\,768
@@ -485,7 +485,7 @@ identify a candidate head set.
 % Status: v1 draft. Data from results/all_walsh_results.csv (60 sweeps).
 % =====================================================================
 
-\subsection{The interaction spectrum varies systematically across tasks}
+\subsection{Variation Across Tasks}
 \label{sec:energy-spectrum}
 
 The Walsh--Hadamard decomposition partitions each circuit's total
@@ -560,7 +560,7 @@ across circuits within each task.}
 \end{figure}
 
 
-\section{Auditing circuit discovery proxies}
+\section{Auditing Circuit Discovery Proxies}
 \label{sec:auditing}
 
 The coalition sweeps above give exact pairwise interaction coefficients. The three
@@ -584,7 +584,7 @@ show which aspects each discovery method preserves and which it discards.
 % Requires: booktabs, amsmath, natbib (\citet/\citep).
 % =====================================================================
 
-\subsection{Weight geometry does not predict head-pair epistasis}
+\subsection{Weight Geometry}
 \label{sec:weight-geometry}
 
 All inter-head communication in a transformer passes through the residual
@@ -686,7 +686,7 @@ static ones (CV~$R^2 = {-}0.08$). Head-pair epistasis is not a property that
 pairwise subspace relationships decompose, whether measured from weights or
 activations. The coalition sweep measures something geometry does not contain.
 
-\paragraph{The logit difference reads about two percent of the interaction.}
+\paragraph{Projection onto the logit direction.}
 A null result about activation-derived features invites the reading that activation
 space carries no interaction signal at all. It carries one, and most of it never
 reaches the output metric. Substituting the residual stream
@@ -739,7 +739,7 @@ geometry does not reach.
 % Requires: booktabs, amsmath, natbib.
 % =====================================================================
 
-\subsection{Path patching and Walsh interaction are nearly orthogonal}
+\subsection{Path Patching}
 \label{sec:path-patching}
 
 EAP edge scores correlate moderately with Walsh interaction coefficients
@@ -842,7 +842,7 @@ aspects of circuit structure.}
 % Data: results/mib_144head/mib_faithfulness_results.json
 % =====================================================================
 
-\subsection{Walsh-ranked circuits are faithful}
+\subsection{Faithfulness of Walsh-Ranked Circuits}
 \label{sec:mib-benchmark}
 
 The preceding sections compare discovery methods by how they weight the
@@ -952,7 +952,7 @@ the random baseline. All structured methods converge by $k \approx
 % the label matches before wiring this in.
 % =====================================================================
 
-\section{What the interaction structure contains}
+\section{What the Interaction Structure Contains}
 \label{sec:what-epistasis-contains}
 
 The complementation analysis reported in this section was preregistered (\texttt{prereg\_v13}, sha \texttt{1f915bbc}, amended \texttt{e258d592}). The conditional-marginal test below was derived from the pairwise result rather than registered in advance, and is reported as a follow-up.
@@ -964,7 +964,7 @@ documented. Reading the canonical indirect object identification circuit of
 \citet{wang2022ioi} against its own taxonomy recovers a dependency between two of its head
 classes that the published account records as unexplained.
 
-\subsection{Double ablation decides whether two components are one unit}
+\subsection{Double Ablation and Complementation}
 
 Genetics has decided whether two mutations belong to one unit or two since the 1950s, using
 a test that requires no knowledge of what the unit is made of. Two recessive mutations are
@@ -994,7 +994,7 @@ $|w_{ij}|$; the sign carries the verdict.
 Interpretability assigns head roles from what a head appears to do. Applying the
 complementation test to those roles asks whether the names track a functional criterion.
 
-\subsection{The taxonomy separates induction and name-mover heads, and merges two others}
+\subsection{Comparison with the IOI Taxonomy}
 
 Hierarchical clustering on $M$ for the 15-head IOI circuit, with cluster count selected by
 silhouette, recovers induction heads (L5H5, L6H9) and name-mover heads (L9H9, L10H0) as
@@ -1017,7 +1017,7 @@ role at ARI $0.571$, raw layer at $0.053$, and layer band at $0.217$, while role
 matches layer band at $0.526$. The clustering tracks role an order of magnitude better than
 depth.
 
-\subsection{The merge is asymmetric, and the asymmetry is the result}
+\subsection{Asymmetry of the Merge}
 
 Figure 2 of \citet{wang2022ioi} places name movers, negative name movers, and backup name
 movers inside one group, with S-inhibition writing the queries of all three. On that
@@ -1045,7 +1045,7 @@ source, same key and value input, same output edge, opposite OV sign. A topologi
 of the merge predicts that S-inhibition masks both classes, and the circuit diagram has no
 element that would distinguish them.
 
-\subsection{The negative heads invert rather than diminish}
+\subsection{Sign Inversion in Negative Name Movers}
 
 The OV sign difference predicts the asymmetry. Negative name movers write the negation of
 whatever they attend to. With S-inhibition intact they attend to the indirect object and
@@ -1099,13 +1099,13 @@ fixed background, which makes a dependency of this kind visible only where the b
 happens to expose it. The interaction decomposition holds the whole lattice, so the
 dependency appears for both heads, with a magnitude and a stability attached.
 
-\subsection{What an additive circuit discards}
+\subsection{Cost of an Additive Summary}
 
 This dependency lives entirely in order-2. A circuit summarized by its order-1 coefficients
 retains that negative name movers lower the logit difference on average, and loses that the
 sign of their contribution is set by an upstream class. The EAP-IG circuit
 carries $90.4\%$ of its energy at order 1 against the canonical circuit's $78.6\%$
-(Table~\ref{tab:energy}), and that gap is the room in which effects like the sign inversion sit.
+(Table~\ref{tab:energy}); the sign inversion sits in that gap.
 
 \begin{table}[h]
 \centering
@@ -1127,7 +1127,7 @@ concentrates energy at order 1; circuits selected for functional relevance
 \label{tab:energy}
 \end{table}
 
-The consequence for practice is narrow and concrete. A head's measured contribution is a
+A head's measured contribution is a
 property of the head together with the background it was measured against, and reporting it
 as a property of the head alone is safe only when the order-2 terms coupling it to the rest
 of the circuit are small. Those terms are measurable, so the assumption is checkable rather
@@ -1173,7 +1173,7 @@ than assumed.
 \section{Discussion}
 \label{sec:discussion}
 
-\subsection{The selective-pressure analogy}
+\subsection{Selective Pressure}
 
 Circuit discovery methods are evaluation instruments, and every
 instrument selects for what it measures. Activation patching selects for
@@ -1193,7 +1193,7 @@ detectably different structure. The ``right'' discovery method depends on what
 the analyst wants to learn: marginal importance, direct wiring, or
 functional coupling.
 
-\subsection{Implications for circuit interpretation}
+\subsection{Implications for Circuit Interpretation}
 
 The complementation test in
 Section~\ref{sec:what-epistasis-contains} shows that interaction
@@ -1253,7 +1253,7 @@ robust to the choice of ablation primitive or metric. Our results should
 be interpreted as specific to mean ablation on logit difference, not as
 general claims about circuit quality.
 
-\subsection{Future directions}
+\subsection{Future Directions}
 
 The sparse Walsh recovery protocol converts interaction analysis from a
 small-circuit diagnostic into a practical method applicable wherever
