@@ -41,29 +41,34 @@
 \maketitle
 
 \begin{abstract}
-Transformer circuit discovery methods rank components by individual
-importance scores and treat the resulting circuits as additive. Yet
-attention mechanisms are structurally incapable of implementing additive
-models: the softmax normalization forces every head's output to depend
-on every other head in the same layer. We provide the first exact, non-human-curated ground truth for pairwise
-interaction structure in a real trained circuit. The ground truth comes
-from exhaustive Walsh--Hadamard coalition sweeps over 15- and 20-head
-subcircuits of GPT-2 small. We then use
-this ground truth to benchmark three discovery methods. Weight-space
-geometry (OV and QK composition scores) carries no cross-validated
-predictive power for pairwise interaction (no positive CV~$R^2$ in any
-conditions). Edge Attribution Patching (EAP) agrees moderately with the
-Walsh interaction spectrum (Spearman $\rho = 0.58$). Path patching, which
-isolates direct causal edges, measures a nearly orthogonal quantity
-(Spearman $\rho = 0.21$, signed Pearson $r = 0.07$). Compressed sensing
-makes the ground truth practical to compute: LASSO recovers the full
-pairwise spectrum from 140 random coalitions ($r > 0.95$, $7{,}490\times$
-compression). The recovered interaction structure carries mechanism ---
-a complementation test on the interaction matrix rediscovers that
-negative name movers invert sign when their upstream S-inhibition heads
-are removed, a dependency the original IOI analysis flagged as
-unexplained. Each discovery method imposes a different selective pressure
-on which interactions survive, and the choice of method shapes the
+Transformer circuit discovery methods rank components by individual importance scores
+and treat the resulting circuits as additive. The architecture gives reason to doubt
+that. \citet{leemann2024slalom} prove that transformers structurally cannot represent
+additive models over input tokens, because softmax normalization introduces
+dependencies across the whole sequence; whether the same holds between a circuit's
+\emph{components} is an empirical question, and this paper answers it. Exhaustive
+Walsh--Hadamard coalition sweeps over subcircuits of GPT-2 small give the exact
+pairwise interaction spectrum --- every deviation from additivity for every pair of
+attention heads --- for fourteen 15-head circuits spanning indirect object
+identification and reverse token identification under three ablation primitives, and
+for one 20-head circuit.
+Scored against that ground truth, three families of discovery proxy disagree about what
+a circuit is. Weight-space geometry (OV and QK composition scores) carries no
+cross-validated predictive power for pairwise interaction, with no positive CV~$R^2$ in
+any condition. Edge Attribution Patching agrees moderately (Spearman $\rho = 0.58$).
+Path patching, which isolates direct causal edges, measures a nearly orthogonal
+quantity (Spearman $\rho = 0.21$, signed Pearson $r = 0.07$): functional coupling and
+information flow are different things, and a circuit selected for one is not selected
+for the other.
+The spectrum carries mechanism rather than only structure. A complementation test on
+the interaction matrix rediscovers that negative name movers invert sign when their
+upstream S-inhibition heads are removed --- a dependency the original IOI analysis
+flagged as unexplained, and one no additive summary of the same circuit can express.
+Exhaustive sweeps do not scale, and need not: because the spectrum is sparse, LASSO
+recovers it from fewer coalitions than there are coefficients ($M/k = 0.83$,
+$r > 0.95$), reaching $r > 0.95$ at $M = 140$ for the 20-head circuit, a
+$7{,}490\times$ reduction over enumeration. Each discovery method imposes a different
+selective pressure on which interactions survive, and the choice of method shapes the
 circuit one finds.
 \end{abstract}
 
@@ -97,12 +102,19 @@ its parts.
 
 Attention mechanisms violate this assumption at the architecture level.
 \citet{leemann2024slalom} prove that transformers with attention
-mechanisms structurally cannot represent additive models over sequences
-of more than one token: the softmax normalization forces every head's
-output to depend on every other head in the same layer. The theorem
-applies to both single-layer and multi-layer architectures, and the
-result is tight --- the non-additivity is a property of the function
-class, not a failure of training. Any circuit discovery method that
+mechanisms structurally cannot represent additive models over input
+tokens: softmax normalization ``necessarily introduces token
+dependencies over the entire sequence length.'' The theorem applies to
+both single-layer and multi-layer architectures, and the result is
+tight --- the non-additivity is a property of the function class rather
+than a failure of training.
+
+That theorem is about tokens. Whether the same non-additivity holds
+between a circuit's \emph{components} does not follow from it: heads
+within a layer read the same residual stream and write to it
+independently, and softmax normalizes over key positions rather than
+over heads. Component-level interaction is therefore an empirical
+question, and measuring it is what this paper does. Any circuit discovery method that
 reports only marginal importance scores discards this interaction
 structure by design.
 
