@@ -8,8 +8,9 @@ quantity with the reference implementation rather than a reconstruction.
 
 Image pins, dataset loader and the attribute() call follow a working EAP-IG
 environment; the only change is loading stock GPT-2 rather than a factorized
-checkpoint. The MIB sources are mounted from a local checkout of the
-MIB circuit track, whose path is set by MIB_REPO below.
+checkpoint. The MIB sources are mounted from the pinned upstream submodule at
+reference/MIB-circuit-track (hannamw/MIB-circuit-track, EAP-IG at 7af394a),
+so the attribution is the reference implementation with no local modifications.
 
 Usage:
     modal run --detach scripts/modal_eapig_ioi_vanilla_gpt2.py
@@ -20,11 +21,9 @@ import os
 
 import modal
 
-# Local checkout supplying MIB-circuit-track; override with MIB_REPO if it lives elsewhere.
-MIB_REPO = os.environ.get(
-    "MIB_REPO",
-    os.path.join(os.path.expanduser("~"), "Documents/GitHub/factorization-circuits"),
-)
+# Upstream MIB, pinned as a submodule at reference/MIB-circuit-track.
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MIB = os.path.join(REPO, "reference", "MIB-circuit-track")
 
 
 def _skip_heavy(p):
@@ -47,11 +46,11 @@ image = (
     )
     .env({"PYTHONPATH": "/root/repo"})
     .add_local_dir(
-        os.path.join(MIB_REPO, "MIB/MIB-circuit-track/MIB_circuit_track"),
+        os.path.join(MIB, "MIB_circuit_track"),
         "/root/repo/MIB_circuit_track",
     )
     .add_local_dir(
-        os.path.join(MIB_REPO, "MIB/MIB-circuit-track/EAP-IG/src/eap"),
+        os.path.join(MIB, "EAP-IG", "src", "eap"),
         "/root/repo/eap",
     )
 )

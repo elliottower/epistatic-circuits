@@ -43,7 +43,7 @@ Thumbs.db
 
 # Reference material — third-party papers, downloaded for verification.
 # Not redistributed from this repo.
-reference/
+reference/*
 sources/.pdfs/
 test_sparse_walsh.*
 
@@ -65,3 +65,6 @@ paper/main.pdf
 # superseded paper drafts: kept on disk, not published
 paper/drafts/
 paper/v2/
+
+# upstream MIB, pinned as a submodule
+!reference/MIB-circuit-track
