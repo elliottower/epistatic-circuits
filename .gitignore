@@ -68,3 +68,7 @@ paper/v2/
 
 # upstream MIB, pinned as a submodule
 !reference/MIB-circuit-track
+
+# workshop adaptation: kept on disk, not published
+paper/epistatic_workshop_*
+paper/neurips_2026.sty
