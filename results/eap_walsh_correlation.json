@@ -1,0 +1,90 @@
+{
+  "circuit": "20-head IOI circuit, GPT-2 small",
+  "walsh": {
+    "source": "data/phase2_all_walsh_coefficients.json",
+    "ablation": "mean",
+    "n_order2_coefficients": 190
+  },
+  "eap": {
+    "source": "results/eapig_ioi_vanilla_gpt2.json",
+    "implementation": "MIB EAP-IG (MIB-circuit-track/EAP-IG)",
+    "dataset": "mib-bench/ioi, 200 examples",
+    "metric": "logit_diff"
+  },
+  "aggregation": "sum of |edge score| over q/k/v slots and both directions",
+  "interval": "delete-one-head jackknife, t(n_heads-1)",
+  "variants": {
+    "EAP-IG-inputs": {
+      "n_pairs": 176,
+      "n_pairs_available": 190,
+      "n_excluded_no_edge": 14,
+      "spearman": {
+        "point": 0.5385439868149343,
+        "jackknife_se": 0.08137768835448946,
+        "t_critical": 2.0930240544083087,
+        "n_heads": 20,
+        "leave_one_head_out_range": [
+          0.492720069716852,
+          0.5769057976495842
+        ],
+        "ci95": [
+          0.368218527596845,
+          0.7088694460330236
+        ],
+        "interval_scale": "direct"
+      },
+      "pearson": {
+        "point": 0.5420800647827484,
+        "jackknife_se": 0.3264361867924853,
+        "t_critical": 2.0930240544083087,
+        "n_heads": 20,
+        "leave_one_head_out_range": [
+          0.412120656100906,
+          0.7860743636885494
+        ],
+        "jackknife_se_fisher_z": 0.5461763234969518,
+        "ci95": [
+          -0.49000249712923033,
+          0.9414047519301438
+        ],
+        "interval_scale": "Fisher z, back-transformed"
+      }
+    },
+    "EAP": {
+      "n_pairs": 176,
+      "n_pairs_available": 190,
+      "n_excluded_no_edge": 14,
+      "spearman": {
+        "point": 0.534083780876862,
+        "jackknife_se": 0.09743723549134524,
+        "t_critical": 2.0930240544083087,
+        "n_heads": 20,
+        "leave_one_head_out_range": [
+          0.4916999548058,
+          0.5906844468816125
+        ],
+        "ci95": [
+          0.3301453031984295,
+          0.7380222585552946
+        ],
+        "interval_scale": "direct"
+      },
+      "pearson": {
+        "point": 0.5682318030752198,
+        "jackknife_se": 0.32791597372251835,
+        "t_critical": 2.0930240544083087,
+        "n_heads": 20,
+        "leave_one_head_out_range": [
+          0.38612344065784543,
+          0.7856149927603234
+        ],
+        "jackknife_se_fisher_z": 0.5232673428817539,
+        "ci95": [
+          -0.42214849609443256,
+          0.9402404067869607
+        ],
+        "interval_scale": "Fisher z, back-transformed"
+      }
+    }
+  }
+}

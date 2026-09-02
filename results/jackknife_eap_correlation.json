@@ -1,0 +1,116 @@
+{
+  "published_point_estimate": {
+    "abs_spearman": 0.58,
+    "abs_pearson": 0.73
+  },
+  "eap_source": "results/eap_ioi_head_scores.json (Modal, GPT-2 small, 200 IOI prompts)",
+  "walsh_source": "results/subspace_epistasis_pairs.csv",
+  "method": "delete-one-head jackknife; all pairs touching a head removed together",
+  "circuits": {
+    "ioi_C2_eap": {
+      "n_pairs": 105,
+      "abs_spearman": {
+        "point": 0.04562512958739373,
+        "jackknife_se": 0.3000996044047505,
+        "ci95": [
+          -0.5425700950459172,
+          0.6338203542207047
+        ],
+        "n_heads_deleted": 15
+      },
+      "abs_pearson": {
+        "point": -0.09904202626512071,
+        "jackknife_se": 0.1810340397754144,
+        "ci95": [
+          -0.45386874422493295,
+          0.25578469169469153
+        ],
+        "n_heads_deleted": 15
+      }
+    },
+    "ioi_C3_canonical": {
+      "n_pairs": 105,
+      "abs_spearman": {
+        "point": 0.1660688368235538,
+        "jackknife_se": 0.23736552821718612,
+        "ci95": [
+          -0.29916759848213104,
+          0.6313052721292386
+        ],
+        "n_heads_deleted": 15
+      },
+      "abs_pearson": {
+        "point": 0.057499190434402526,
+        "jackknife_se": 0.16741065525781074,
+        "ci95": [
+          -0.2706256938709065,
+          0.3856240747397116
+        ],
+        "n_heads_deleted": 15
+      }
+    },
+    "ioi_C4_random": {
+      "n_pairs": 105,
+      "abs_spearman": {
+        "point": 0.5154053493676135,
+        "jackknife_se": 0.21691129274922274,
+        "ci95": [
+          0.09025921557913691,
+          0.9405514831560902
+        ],
+        "n_heads_deleted": 15
+      },
+      "abs_pearson": {
+        "point": 0.269751074375711,
+        "jackknife_se": 0.19231357983224617,
+        "ci95": [
+          -0.10718354209549147,
+          0.6466856908469134
+        ],
+        "n_heads_deleted": 15
+      }
+    },
+    "ioi_C5_walsh": {
+      "n_pairs": 105,
+      "abs_spearman": {
+        "point": 0.14272237196765497,
+        "jackknife_se": 0.2598053939108334,
+        "ci95": [
+          -0.3664962000975785,
+          0.6519409440328885
+        ],
+        "n_heads_deleted": 15
+      },
+      "abs_pearson": {
+        "point": -0.05748735609676585,
+        "jackknife_se": 0.17930913744751478,
+        "ci95": [
+          -0.4089332654938948,
+          0.2939585533003631
+        ],
+        "n_heads_deleted": 15
+      }
+    },
+    "ioi_C6_epistatic": {
+      "n_pairs": 105,
+      "abs_spearman": {
+        "point": -0.015892597968069667,
+        "jackknife_se": 0.23714177779509568,
+        "ci95": [
+          -0.48069048244645723,
+          0.44890528651031786
+        ],
+        "n_heads_deleted": 15
+      },
+      "abs_pearson": {
+        "point": -0.11908069635382912,
+        "jackknife_se": 0.1111112936416967,
+        "ci95": [
+          -0.33685883189155463,
+          0.0986974391838964
+        ],
+        "n_heads_deleted": 15
+      }
+    }
+  }
+}

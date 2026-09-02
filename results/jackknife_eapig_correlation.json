@@ -1,0 +1,127 @@
+{
+  "published_point_estimate": {
+    "abs_spearman": 0.58,
+    "abs_pearson": 0.73
+  },
+  "eap_source": "MIB EAP-IG-inputs, stock GPT-2 small, mib-bench/ioi, 200 examples, ig_steps=5",
+  "walsh_source": "results/subspace_epistasis_pairs.csv",
+  "aggregation": "sum of |edge score| over q/k/v and both directions",
+  "method": "delete-one-head jackknife; interval uses t(n_heads-1), not the normal quantile",
+  "circuits": {
+    "ioi_C2_eap": {
+      "n_pairs": 98,
+      "abs_spearman": {
+        "point": 0.1494749727444867,
+        "jackknife_se": 0.3588243345881789,
+        "t_critical": 2.144786687917804,
+        "ci95": [
+          -0.6201266833812034,
+          0.9190766288701768
+        ],
+        "n_heads_deleted": 15
+      },
+      "abs_pearson": {
+        "point": 0.32452559471819004,
+        "jackknife_se": 0.35463819974974575,
+        "t_critical": 2.144786687917804,
+        "ci95": [
+          -0.4360976951321997,
+          1.0851488845685797
+        ],
+        "n_heads_deleted": 15
+      }
+    },
+    "ioi_C3_canonical": {
+      "n_pairs": 101,
+      "abs_spearman": {
+        "point": 0.11907979033197437,
+        "jackknife_se": 0.30148521452241606,
+        "t_critical": 2.144786687917804,
+        "ci95": [
+          -0.527541684379747,
+          0.7657012650436957
+        ],
+        "n_heads_deleted": 15
+      },
+      "abs_pearson": {
+        "point": 0.45413258600563144,
+        "jackknife_se": 0.26457057685292945,
+        "t_critical": 2.144786687917804,
+        "ci95": [
+          -0.11331486524326595,
+          1.021580037254529
+        ],
+        "n_heads_deleted": 15
+      }
+    },
+    "ioi_C4_random": {
+      "n_pairs": 97,
+      "abs_spearman": {
+        "point": 0.6430806858826004,
+        "jackknife_se": 0.15644518179377434,
+        "t_critical": 2.144786687917804,
+        "ci95": [
+          0.30753914258243237,
+          0.9786222291827684
+        ],
+        "n_heads_deleted": 15
+      },
+      "abs_pearson": {
+        "point": 0.26293036308332596,
+        "jackknife_se": 0.12335412402677498,
+        "t_critical": 2.144786687917804,
+        "ci95": [
+          -0.0016379200290627671,
+          0.5274986461957147
+        ],
+        "n_heads_deleted": 15
+      }
+    },
+    "ioi_C5_walsh": {
+      "n_pairs": 97,
+      "abs_spearman": {
+        "point": 0.6899195245108353,
+        "jackknife_se": 0.14511684976217634,
+        "t_critical": 2.144786687917804,
+        "ci95": [
+          0.3786748369483515,
+          1.001164212073319
+        ],
+        "n_heads_deleted": 15
+      },
+      "abs_pearson": {
+        "point": 0.6270901809036202,
+        "jackknife_se": 0.5282299755479027,
+        "t_critical": 2.144786687917804,
+        "ci95": [
+          -0.5058504388106686,
+          1.760030800617909
+        ],
+        "n_heads_deleted": 15
+      }
+    },
+    "ioi_C6_epistatic": {
+      "n_pairs": 98,
+      "abs_spearman": {
+        "point": 0.7392906553436743,
+        "jackknife_se": 0.10666940833252024,
+        "t_critical": 2.144786687917804,
+        "ci95": [
+          0.5105075283440165,
+          0.9680737823433322
+        ],
+        "n_heads_deleted": 15
+      },
+      "abs_pearson": {
+        "point": 0.5382344119823351,
+        "jackknife_se": 0.12555675935770713,
+        "t_critical": 2.144786687917804,
+        "ci95": [
+          0.2689419459338257,
+          0.8075268780308446
+        ],
+        "n_heads_deleted": 15
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "comparison": "both proxies scored against the same Walsh coefficients, same pairs",
+  "transformation": "|Walsh| vs |EAP| and |Walsh| vs |path-patch|, magnitude throughout",
+  "variants": {
+    "EAP-IG-inputs": {
+      "n_pairs": 176,
+      "rho_eap": 0.5385439868149343,
+      "rho_pp": 0.20971778192274237,
+      "delta": 0.32882620489219194,
+      "jackknife_se": 0.09005028769067304,
+      "t_critical": 2.0930240544083087,
+      "ci95": [
+        0.14034878664922484,
+        0.5173036231351591
+      ],
+      "excludes_zero": true
+    },
+    "EAP": {
+      "n_pairs": 176,
+      "rho_eap": 0.534083780876862,
+      "rho_pp": 0.20971778192274237,
+      "delta": 0.32436599895411966,
+      "jackknife_se": 0.08729225579852425,
+      "t_critical": 2.0930240544083087,
+      "ci95": [
+        0.14166120780424524,
+        0.5070707901039941
+      ],
+      "excludes_zero": true
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "source": "results/phase2/path_patching_results.json",
+  "n_pairs_cross_layer": 176,
+  "n_heads": 20,
+  "method": "delete-one-head jackknife; all pairs touching a head are removed together",
+  "path_patching_vs_walsh": {
+    "abs_spearman": {
+      "point": 0.20971778192274237,
+      "jackknife_se": 0.10876894528328467,
+      "t_critical": 2.0930240544083087,
+      "ci95": [
+        -0.017938236927793588,
+        0.43737380077327837
+      ],
+      "n_heads_deleted": 20,
+      "min_over_deletions": 0.17344718553907915,
+      "max_over_deletions": 0.2697078945970499
+    },
+    "signed_pearson": {
+      "point": 0.06526205897263407,
+      "jackknife_se": 0.16845933426744764,
+      "t_critical": 2.0930240544083087,
+      "ci95": [
+        -0.2873273798387437,
+        0.41785149778401187
+      ],
+      "n_heads_deleted": 20,
+      "min_over_deletions": -0.043572308610123005,
+      "max_over_deletions": 0.16202485757139132
+    }
+  }
+}
