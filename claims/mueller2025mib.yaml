@@ -2,7 +2,7 @@ source:
   citation: mueller2025mib
   local: reference/mueller_2025_mib_benchmark.pdf
   sha256: null
-  extract_cmd: pdftotext -layout
+  extract_cmd: pdftotext -layout {} -
 
 claims:
   cpr-cmd-unbounded:

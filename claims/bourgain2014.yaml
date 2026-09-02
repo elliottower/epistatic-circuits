@@ -2,7 +2,7 @@ source:
   citation: bourgain2014
   local: reference/blasiok_2019_walsh_rip_lower_bound.pdf
   sha256: null
-  extract_cmd: pdftotext -layout
+  extract_cmd: pdftotext -layout {} -
 
 claims:
   bourgain-bound-cited-by-blasiok:

@@ -2,7 +2,7 @@ source:
   citation: candes2005decoding
   local: reference/candes_2005_decoding_rip.pdf
   sha256: null
-  extract_cmd: pdftotext -layout
+  extract_cmd: pdftotext -layout {} -
 
 claims:
   rip-definition:

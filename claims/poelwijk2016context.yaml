@@ -2,7 +2,7 @@ source:
   citation: poelwijk2016context
   local: reference/poelwijk_2016_context_dependence.pdf
   sha256: null
-  extract_cmd: pdftotext -layout
+  extract_cmd: pdftotext -layout {} -
 
 claims:
   walsh-background-averaged:

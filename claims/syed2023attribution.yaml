@@ -2,7 +2,7 @@ source:
   citation: syed2023attribution
   local: reference/syed_2023_attribution_patching.pdf
   sha256: null
-  extract_cmd: pdftotext -layout
+  extract_cmd: pdftotext -layout {} -
 
 claims:
   eap-definition:

@@ -2,7 +2,7 @@ source:
   citation: fluidity2024elife
   local: reference/baheti_2024_fluidity_epistasis.pdf
   sha256: null
-  extract_cmd: pdftotext -layout
+  extract_cmd: pdftotext -layout {} -
 
 claims:
   background-switches-interaction-type:

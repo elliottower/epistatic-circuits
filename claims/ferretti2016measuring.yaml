@@ -2,7 +2,7 @@ source:
   citation: ferretti2016measuring
   local: reference/ferretti_2016_measuring_epistasis.pdf
   sha256: null
-  extract_cmd: pdftotext -layout
+  extract_cmd: pdftotext -layout {} -
 
 claims:
   gamma-definition:

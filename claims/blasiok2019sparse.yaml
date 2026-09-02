@@ -2,7 +2,7 @@ source:
   citation: li2019sparse
   local: reference/blasiok_2019_walsh_rip_lower_bound.pdf
   sha256: null
-  extract_cmd: pdftotext -layout
+  extract_cmd: pdftotext -layout {} -
 
 claims:
   lower-bound-walsh:

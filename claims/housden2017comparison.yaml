@@ -2,7 +2,7 @@ source:
   citation: housden2017comparison
   local: reference/housden_2017_loss_of_function_genetic_tools_cross_platform.pdf
   sha256: null
-  extract_cmd: pdftotext -layout
+  extract_cmd: pdftotext -layout {} -
 
 claims:
   lof-methods-disagree:
