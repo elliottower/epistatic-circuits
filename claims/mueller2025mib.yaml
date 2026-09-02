@@ -1,0 +1,23 @@
+source:
+  citation: mueller2025mib
+  local: reference/mueller_2025_mib_benchmark.pdf
+  sha256: null
+  extract_cmd: pdftotext -layout
+
+claims:
+  cpr-cmd-unbounded:
+    statement: 'MIB leaves CPR and CMD unbounded; the best-case and worst-case values cannot be anticipated in a realistic network.'
+    verified: true
+    quotes:
+      - exact: 'In a realistic neural network, it is difficult to anticipate the'
+        section: 'Section 3, faithfulness metrics'
+      - exact: 'cannot bound the metric without losing information.'
+        section: 'Section 3, faithfulness metrics'
+  trapezoidal-rule:
+    statement: 'CPR is the area under the faithfulness curve and CMD the area between the curve and 1, both computed by the trapezoidal rule.'
+    verified: true
+    quotes:
+      - exact: 'Compute the area under f (CPR) and the area between'
+        section: 'Section 3, faithfulness metrics'
+      - exact: 'f and 1 (CMD) using the trapezoidal rule.'
+        section: 'Section 3, faithfulness metrics'

@@ -1,0 +1,13 @@
+source:
+  citation: housden2017comparison
+  local: reference/housden_2017_loss_of_function_genetic_tools_cross_platform.pdf
+  sha256: null
+  extract_cmd: pdftotext -layout
+
+claims:
+  lof-methods-disagree:
+    statement: 'Results obtained using different loss-of-function approaches are often inconsistent.'
+    verified: true
+    quotes:
+      - exact: 'Results that are obtained using different LOF approaches are often inconsistent.'
+        section: 'Cross-platform differences'
