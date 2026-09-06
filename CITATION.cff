@@ -9,3 +9,10 @@ authors:
 type: software
 license: MIT
 repository-code: "https://github.com/elliottower/epistatic-circuits"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21913331"
+    description: "Zenodo (all versions)"
+  - type: doi
+    value: "10.5281/zenodo.21913332"
+    description: "Zenodo (v1)"
